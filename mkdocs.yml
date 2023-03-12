@@ -7,6 +7,16 @@ site_description: 朱镐哲的个人网站
 # [Navigtion]
 nav:
   - index.md
+  - 大二秋冬:
+    - 计算机系统二: 
+      - OS Services & Structures: 系统二/1. OS Services & Structures (11.7、11.14).md
+      - OS Structures: 系统二/2. OS Structures (11.17).md
+      - Process: 系统二/3. Process(11.17、11.21、11.24).md
+      - Threads: 系统二/4. Threads(11.24、11.28、12.1).md
+      - Threads_b: 系统二/5. Threads_b（12.1）.md
+      - CPU_Scheduling: 系统二/6. CPU_Scheduling（12.5、12.8、12.12）.md
+      - Mars: 系统二/7. Mars（12.12）.md
+      - Synchronization Tools: 系统二/8. Synchronization Tools (12.14).md
   - 大二春夏:
     - 机器人导论: 机器人导论/机器人导论.md
     - 中国现当代小说赏析: 中国现当代小说赏析/中国现当代小说赏析.md

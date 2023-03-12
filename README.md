@@ -1,2 +1,7 @@
-# ZJU-zhz.github.io
-- 咳咳，做一个个人网站！
+# zhz的个人网站
+
+<https://ZJU-zhz.github.io>
+
+- 生成 [MkDocs](https://www.mkdocs.org) 
+- 主题 [Material](https://github.com/squidfunk/mkdocs-material)
+- 发布 [GitHub Pages](https://pages.github.com) 

@@ -62,6 +62,8 @@ plugins:
         - en
         - ja
   - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
+  - encryptcontent:
+      global_password: '1221504'
 markdown_extensions:
   - pymdownx.arithmatex: # latex支持
       generic: true

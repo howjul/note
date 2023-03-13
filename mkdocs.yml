@@ -107,9 +107,15 @@ copyright: 朱镐哲 CC-BY-NC-4.0 # 左下角的版权声明
 ## [bottom-right corner]
 extra:
   social: # icons
-    # - icon: fontawesome/brands/bilibili
-    #   link: https://space.bilibili.com/24502827
-    #   name: Bilibili | 我不是小杰 # 鼠标悬浮提示
+    - icon: fontawesome/brands/weixin
+      link: https://wx.qq.com/
+      name: 微信号 | zhz19357570421
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:zjuzhz@outlook.com
+      name: Outlook 
+    - icon: fontawesome/brands/qq
+      link: https://user.qzone.qq.com/750429346
+      name: QQ | 凰亦 # 鼠标悬浮提示
     - icon: fontawesome/brands/github
       link: https://github.com/ZJU-zhz
       name: GitHub | ZJU-zhz

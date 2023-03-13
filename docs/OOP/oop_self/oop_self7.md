@@ -1,6 +1,3 @@
-```toc
-```
-
 ### 1. namespace
 #### 1.1 声明namespace
 

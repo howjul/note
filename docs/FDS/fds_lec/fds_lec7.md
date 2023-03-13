@@ -1,5 +1,3 @@
-```toc
-```
 ## The disjoint set ADT
 等价类划分，不是数据结构，是一个问题。
 ### 1. Equivalence Relations（等价关系）

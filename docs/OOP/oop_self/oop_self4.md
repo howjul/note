@@ -1,6 +1,3 @@
-```toc
-```
-
 #### Structure of C++ program
 
 ![image-20221113150110097](../../img/test/image-20221113150110097.png)

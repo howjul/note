@@ -1,5 +1,3 @@
-```toc
-```
 ### 1. Templates
 #### 1.1 Function templates
 

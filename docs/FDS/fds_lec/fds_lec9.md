@@ -1,5 +1,3 @@
-```toc
-```
 ### 1. Acyclic Graphs
 - CPM(Critical Path Method)
 	- 边之间有先后关系；

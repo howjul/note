@@ -1,5 +1,3 @@
-```toc
-```
 ## fds_hw2
 >consecutive 连续的
 

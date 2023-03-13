@@ -1,5 +1,3 @@
-```toc
-```
 ### 1. Iterators
 #### 1.1 作用
 - Provide a way to visit the elements in order, without knowing the details of the container.

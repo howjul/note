@@ -1,5 +1,3 @@
-```toc
-```
 ### 1. Inheritrnce
 - 父类public的东西，子类也是public；父类protected的东西，子类变成了private；
 - protected的东西只能被子类访问；

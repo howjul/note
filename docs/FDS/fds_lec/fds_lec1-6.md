@@ -1,5 +1,3 @@
-```toc
-```
 ## Lec 1
 ### 1. algorithm
 

@@ -6,8 +6,9 @@ site_description: zhz's site
 
 # [Navigtion]
 nav:
-  - home: index.md
-  - Course:
+  - Home: index.md
+  - Course: 
+    - 说明: ./course.md
     - 计算机系统二: 
       - 说明: 系统二/explain.md
       - OS Services & Structures: 系统二/1. OS Services & Structures (11.7、11.14).md
@@ -35,23 +36,23 @@ nav:
         - hw14: FDS/fds_hw/fds_hw14.md
         - hw15: FDS/fds_hw/fds_hw15.md
       - lec:
-        - lec1-6: FDS/fds_lwc/fds_lec1-6.md
-        - lec7: FDS/fds_lwc/fds_lec7.md 
-        - lec8: FDS/fds_lwc/fds_lec8.md 
-        - lec9: FDS/fds_lwc/fds_lec9.md 
-        - lec10: FDS/fds_lwc/fds_lec10.md 
-        - lec11: FDS/fds_lwc/fds_lec11.md 
-        - lec12: FDS/fds_lwc/fds_lec12.md 
-        - lec13-14: FDS/fds_lwc/fds_lec13&&lec_14.md 
-      - oop:
-        - 说明: OOP/explain.md
-        - lec:
-          - exam: OOP/oop_lec/oop_exam.md 
-          - lec11: OOP/oop_lec/oop_lec11.md 
-          - lec12: OOP/oop_lec/oop_lec12.md 
-          - lec13: OOP/oop_lec/oop_lec13.md 
-          - lec14: OOP/oop_lec/oop_lec14.md 
-          - lec15: OOP/oop_lec/oop_lec15.md 
+        - lec1-6: FDS/fds_lec/fds_lec1-6.md
+        - lec7: FDS/fds_lec/fds_lec7.md 
+        - lec8: FDS/fds_lec/fds_lec8.md 
+        - lec9: FDS/fds_lec/fds_lec9.md 
+        - lec10: FDS/fds_lec/fds_lec10.md 
+        - lec11: FDS/fds_lec/fds_lec11.md 
+        - lec12: FDS/fds_lec/fds_lec12.md 
+        - lec13-14: FDS/fds_lec/fds_lec13&&lec_14.md 
+    - oop:
+      - 说明: OOP/explain.md
+      - lec:
+        - exam: OOP/oop_lec/oop_exam.md 
+        - lec11: OOP/oop_lec/oop_lec11.md 
+        - lec12: OOP/oop_lec/oop_lec12.md 
+        - lec13: OOP/oop_lec/oop_lec13.md 
+        - lec14: OOP/oop_lec/oop_lec14.md 
+        - lec15: OOP/oop_lec/oop_lec15.md 
       - selfstudy:
         - self1: OOP/oop_self/oop_self1.md 
         - self2: OOP/oop_self/oop_self2.md 
@@ -67,7 +68,7 @@ nav:
       - 第三课 微控制器: 机器人导论/微控制器.md
       - 第四课 机器人传感器: 机器人导论/传感器.md
     - 中国现当代小说赏析: 中国现当代小说赏析/中国现当代小说赏析.md
-  - 友链: 友情链接/link.md
+  - Friend: Friend/link.md
   
 # [UI]
 ## [top]
@@ -147,5 +148,5 @@ extra_javascript:
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
   - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
-  - mkdocs/css/flink.css
+  - css/flink.css
 

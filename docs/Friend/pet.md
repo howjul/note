@@ -40,7 +40,7 @@
     <div class="flink-list-item">
         <a href=" " title="" target="_blank">
             <div class="flink-item-icon">
-                <img src="../../img/yt.png" alt="yt">
+                <img src="../../img/yt.jpg" alt="yt">
             </div>
             <div class="flink-item-name"> 龍胆拓🤯 </div>
             <div class="flink-item-desc"> 阿离大小姐火鹰船长 <br> 😇兵giegie带你飞😌 </div>

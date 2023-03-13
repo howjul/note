@@ -6,7 +6,7 @@ site_description: zhz's site
 
 # [Navigtion]
 nav:
-  - index.md
+  - home: index.md
   - Course:
     - 大二秋冬:
       - 计算机系统二: 

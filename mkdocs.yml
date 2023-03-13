@@ -15,9 +15,9 @@ nav:
         - OS Structures: 系统二/2. OS Structures (11.17).md
         - Process: 系统二/3. Process(11.17、11.21、11.24).md
         - Threads: 系统二/4. Threads(11.24、11.28、12.1).md
-        - Threads_b: 系统二/5. Threads_b（12.1）.md
-        - CPU_Scheduling: 系统二/6. CPU_Scheduling（12.5、12.8、12.12）.md
-        - Mars: 系统二/7. Mars（12.12）.md
+        - Threads_b: 系统二/5. Threads_b(12.1).md
+        - CPU_Scheduling: 系统二/6. CPU_Scheduling(12.5、12.8、12.12).md
+        - Mars: 系统二/7. Mars(12.12).md
         - Synchronization Tools: 系统二/8. Synchronization Tools (12.14).md
       - fds:
         - 说明: FDS/explain.md

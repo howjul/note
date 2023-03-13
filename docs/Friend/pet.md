@@ -18,7 +18,7 @@
             <div class="flink-item-icon">
                 <img src="../../img/zzth.jpg" alt="zzth">
             </div>
-            <div class="flink-item-name">赵振夭鸿</div>
+            <div class="flink-item-name">赵振&夭鸡&天🐶</div>
             <div class="flink-item-desc"> 🤗空虚寂寞找朋友🥴 <br> Q我2910957086</div>
         </a >
     </div>
@@ -30,7 +30,7 @@
             <div class="flink-item-icon">
                 <img src="../../img/xhs.png" alt="xhs">
             </div>
-            <div class="flink-item-name">小x蠢h森s</div>
+            <div class="flink-item-name">小x蠢森s</div>
             <div class="flink-item-desc"> 他们都说我好帅 <br> 🥵为了追我想破脑袋🥵 </div>
         </a >
     </div>
@@ -44,6 +44,30 @@
             </div>
             <div class="flink-item-name"> 龍胆拓🤯 </div>
             <div class="flink-item-desc"> 阿离大小姐火鹰船长 <br> 😇兵giegie带你飞😌 </div>
+        </a >
+    </div>
+</div>
+
+<div class="flink-list">
+    <div class="flink-list-item">
+        <a href=" " title="" target="_blank">
+            <div class="flink-item-icon">
+                <img src="../../img/lyy.jpg" alt="lyy">
+            </div>
+            <div class="flink-item-name"> 小洋乳酸君 </div>
+            <div class="flink-item-desc"> 对不起沉重地溜不出嘴边 <br> 🤓念无妨 </div>
+        </a >
+    </div>
+</div>
+
+<div class="flink-list">
+    <div class="flink-list-item">
+        <a href=" " title="" target="_blank">
+            <div class="flink-item-icon">
+                <img src="../../img/qky.jpg" alt="qky">
+            </div>
+            <div class="flink-item-name"> 宝昱 </div>
+            <div class="flink-item-desc"> 😩呜呜呜想XXX😩 <br> 😭今天又考炸了😭 </div>
         </a >
     </div>
 </div>

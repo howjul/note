@@ -1,25 +1,77 @@
 # [Info]
-site_name: 朱镐哲的个人网站 # 左上角标题
+site_name: 凰亦 # 左上角标题
 site_url: https://ZJU-zhz.github.io
-site_author: 朱镐哲
-site_description: 朱镐哲的个人网站
+site_author: zhz
+site_description: zhz's site
 
 # [Navigtion]
 nav:
   - index.md
-  - 大二秋冬:
-    - 计算机系统二: 
-      - OS Services & Structures: 系统二/1. OS Services & Structures (11.7、11.14).md
-      - OS Structures: 系统二/2. OS Structures (11.17).md
-      - Process: 系统二/3. Process(11.17、11.21、11.24).md
-      - Threads: 系统二/4. Threads(11.24、11.28、12.1).md
-      - Threads_b: 系统二/5. Threads_b（12.1）.md
-      - CPU_Scheduling: 系统二/6. CPU_Scheduling（12.5、12.8、12.12）.md
-      - Mars: 系统二/7. Mars（12.12）.md
-      - Synchronization Tools: 系统二/8. Synchronization Tools (12.14).md
-  - 大二春夏:
-    - 机器人导论: 机器人导论/机器人导论.md
-    - 中国现当代小说赏析: 中国现当代小说赏析/中国现当代小说赏析.md
+  - Course:
+    - 大二秋冬:
+      - 计算机系统二: 
+        - 说明: 系统二/explain.md
+        - OS Services & Structures: 系统二/1. OS Services & Structures (11.7、11.14).md
+        - OS Structures: 系统二/2. OS Structures (11.17).md
+        - Process: 系统二/3. Process(11.17、11.21、11.24).md
+        - Threads: 系统二/4. Threads(11.24、11.28、12.1).md
+        - Threads_b: 系统二/5. Threads_b（12.1）.md
+        - CPU_Scheduling: 系统二/6. CPU_Scheduling（12.5、12.8、12.12）.md
+        - Mars: 系统二/7. Mars（12.12）.md
+        - Synchronization Tools: 系统二/8. Synchronization Tools (12.14).md
+      - fds:
+        - 说明: FDS/explain.md
+        - exam: 
+          - 说明: FDS/试卷/试卷.md
+          - 21-22期中卷: FDS/试卷/21-22 期中卷.md
+          - 期中卷: FDS/试卷/期中卷.md
+        - hw:
+          - hw1-7: FDS/fds_hw/fds_hw1-7.md
+          - hw8: FDS/fds_hw/fds_hw8.md
+          - hw9: FDS/fds_hw/fds_hw9.md
+          - hw10: FDS/fds_hw/fds_hw10.md
+          - hw11: FDS/fds_hw/fds_hw11.md
+          - hw12: FDS/fds_hw/fds_hw12.md
+          - hw13: FDS/fds_hw/fds_hw13.md
+          - hw14: FDS/fds_hw/fds_hw14.md
+          - hw15: FDS/fds_hw/fds_hw15.md
+        - lec:
+          - lec1-6: FDS/fds_lwc/fds_lec1-6.md
+          - lec7: FDS/fds_lwc/fds_lec7.md 
+          - lec8: FDS/fds_lwc/fds_lec8.md 
+          - lec9: FDS/fds_lwc/fds_lec9.md 
+          - lec10: FDS/fds_lwc/fds_lec10.md 
+          - lec11: FDS/fds_lwc/fds_lec11.md 
+          - lec12: FDS/fds_lwc/fds_lec12.md 
+          - lec13-14: FDS/fds_lwc/fds_lec13&&lec_14.md 
+      - oop:
+        - 说明: OOP/explain.md
+        - lec:
+          - exam: OOP/oop_lec/oop_exam.md 
+          - lec11: OOP/oop_lec/oop_lec11.md 
+          - lec12: OOP/oop_lec/oop_lec12.md 
+          - lec13: OOP/oop_lec/oop_lec13.md 
+          - lec14: OOP/oop_lec/oop_lec14.md 
+          - lec15: OOP/oop_lec/oop_lec15.md 
+        - selfstudy:
+          - self1: OOP/oop_self/oop_self1.md 
+          - self2: OOP/oop_self/oop_self2.md 
+          - self3: OOP/oop_self/oop_self3.md 
+          - self4: OOP/oop_self/oop_self4.md 
+          - self5: OOP/oop_self/oop_self5.md 
+          - self6: OOP/oop_self/oop_self6.md 
+          - self7: OOP/oop_self/oop_self7.md 
+          - self8: OOP/oop_self/oop_self8.md 
+          - self9: OOP/oop_self/oop_self9.md 
+          - self10: OOP/oop_self/oop_self10.md 
+    - 大二春夏:
+      - ads:
+      - 计算机系统三: 
+      - 机器人导论: 
+        - 第三课 微控制器: 机器人导论/微控制器.md
+        - 第四课 机器人传感器: 机器人导论/传感器.md
+      - 中国现当代小说赏析: 中国现当代小说赏析/中国现当代小说赏析.md
+  - 友链: 友情链接/link.md
   
 # [UI]
 ## [top]
@@ -54,7 +106,7 @@ edit_uri: edit/main/docs # 编辑按钮跳转的链接
 repo_url: https://github.com/ZJU-zhz/ZJU-zhz.github.io # 右上角点击跳转的链接
 repo_name: ZJU-zhz.github.io # 右上角的名字
 ## [bottom-left corner]
-//copyright: 杨希杰 CC-BY-4.0 # 左下角的版权声明
+copyright: 朱镐哲 CC-BY-NC-4.0 # 左下角的版权声明
 ## [bottom-right corner]
 extra:
   social: # icons
@@ -99,4 +151,5 @@ extra_javascript:
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
   - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
+  - mkdocs/css/flink.css
 

@@ -28,16 +28,16 @@ nav:
         - 说明: FDS/试卷/试卷.md
         - 21-22期中卷: FDS/试卷/21-22 期中卷.md
         - 期中卷: FDS/试卷/期中卷.md
-      - hw:
-        - hw1-7: FDS/fds_hw/fds_hw1-7.md
-        - hw8: FDS/fds_hw/fds_hw8.md
-        - hw9: FDS/fds_hw/fds_hw9.md
-        - hw10: FDS/fds_hw/fds_hw10.md
-        - hw11: FDS/fds_hw/fds_hw11.md
-        - hw12: FDS/fds_hw/fds_hw12.md
-        - hw13: FDS/fds_hw/fds_hw13.md
-        - hw14: FDS/fds_hw/fds_hw14.md
-        - hw15: FDS/fds_hw/fds_hw15.md
+      # - hw:
+      #   - hw1-7: FDS/fds_hw/fds_hw1-7.md
+      #   - hw8: FDS/fds_hw/fds_hw8.md
+      #   - hw9: FDS/fds_hw/fds_hw9.md
+      #   - hw10: FDS/fds_hw/fds_hw10.md
+      #   - hw11: FDS/fds_hw/fds_hw11.md
+      #   - hw12: FDS/fds_hw/fds_hw12.md
+      #   - hw13: FDS/fds_hw/fds_hw13.md
+      #   - hw14: FDS/fds_hw/fds_hw14.md
+      #   - hw15: FDS/fds_hw/fds_hw15.md
       - lec:
         - lec1-6: FDS/fds_lec/fds_lec1-6.md
         - lec7: FDS/fds_lec/fds_lec7.md 
@@ -125,6 +125,20 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/ZJU-zhz
       name: GitHub | ZJU-zhz
+  analytics: 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/heart
+          name: This page was helpful
+          data: 1
+          note: >-
+            谢谢支持, v我五十🤗
+        - icon: material/heart-broken
+          name: This page could be improved
+          data: 0
+          note: >- 
+            会改的😭
 
 # [Extensions]
 plugins:

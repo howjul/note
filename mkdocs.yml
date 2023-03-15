@@ -7,6 +7,7 @@ site_description: zhz's site
 # [Navigtion]
 nav:
   - Home: index.md
+  - About: about.md
   - Course: 
     - 说明: ./course.md
     - 计算机系统二: 

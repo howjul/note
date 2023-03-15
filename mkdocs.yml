@@ -6,7 +6,9 @@ site_description: zhz's site
 
 # [Navigtion]
 nav:
-  - Home: index.md
+  - Home: 
+    - Real Home: head.md
+    - 写在前面: index.md
   - About: about.md
   - Course: 
     - 说明: ./course.md
@@ -70,7 +72,9 @@ nav:
       - 第四课 机器人传感器: 机器人导论/传感器.md
     - 中国现当代小说赏析: 中国现当代小说赏析/中国现当代小说赏析.md
   - Friend: Friend/link.md
-  - Wish: Friend/pet.md
+  - Strange: 
+    - 209志怪录: Friend/pet.md
+    - 丽泽秘闻: Friend/lize.md
   
 # [UI]
 ## [top]

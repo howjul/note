@@ -1,4 +1,3 @@
->此处粘贴宠物心愿!!!!!!
 
 <div class="flink-list">
     <div class="flink-list-item">
@@ -28,46 +27,34 @@
     <div class="flink-list-item">
         <a href=" " title="" target="_blank">
             <div class="flink-item-icon">
-                <img src="../../img/xhs.png" alt="xhs">
-            </div>
-            <div class="flink-item-name">小x蠢森s</div>
-            <div class="flink-item-desc"> 他们都说我好帅 <br> 🥵为了追我想破脑袋🥵 </div>
-        </a >
-    </div>
-</div>
-
-<div class="flink-list">
-    <div class="flink-list-item">
-        <a href=" " title="" target="_blank">
-            <div class="flink-item-icon">
-                <img src="../../img/yt.jpg" alt="yt">
-            </div>
-            <div class="flink-item-name"> 龍胆拓🤯 </div>
-            <div class="flink-item-desc"> 阿离大小姐火鹰船长 <br> 😇兵giegie带你飞😌 </div>
-        </a >
-    </div>
-</div>
-
-<div class="flink-list">
-    <div class="flink-list-item">
-        <a href=" " title="" target="_blank">
-            <div class="flink-item-icon">
-                <img src="../../img/lyy.jpg" alt="lyy">
-            </div>
-            <div class="flink-item-name"> 小洋乳酸君 </div>
-            <div class="flink-item-desc"> 对不起沉重地溜不出嘴边 <br> 🤓念无妨 </div>
-        </a >
-    </div>
-</div>
-
-<div class="flink-list">
-    <div class="flink-list-item">
-        <a href=" " title="" target="_blank">
-            <div class="flink-item-icon">
                 <img src="../../img/qky.jpg" alt="qky">
             </div>
             <div class="flink-item-name"> 宝昱 </div>
             <div class="flink-item-desc"> 😩呜呜呜想XXX😩 <br> 😭今天又考炸了😭 </div>
+        </a >
+    </div>
+</div>
+
+<div class="flink-list">
+    <div class="flink-list-item">
+        <a href=" " title="" target="_blank">
+            <div class="flink-item-icon">
+                <img src="../../img/dy.jpg" alt="dy">
+            </div>
+            <div class="flink-item-name"> 董小姐👄🌞 </div>
+            <div class="flink-item-desc"> 数学的尽头 <br> let🥶it🥶go～</div>
+        </a >
+    </div>
+</div>
+
+<div class="flink-list">
+    <div class="flink-list-item">
+        <a href=" " title="" target="_blank">
+            <div class="flink-item-icon">
+                <img src="../../img/hcjn.jpg" alt="hcjn">
+            </div>
+            <div class="flink-item-name"> 🪷江南🪷 </div>
+            <div class="flink-item-desc"> 取什么名字呢 <br> 不想取名字 </div>
         </a >
     </div>
 </div>

@@ -77,11 +77,14 @@ nav:
   - Strange: 
     - 209志怪录: Friend/pet.md
     - 丽泽秘闻: Friend/lize.md
+  - Triviality:
+    - 网页美化: 琐碎/triviality.md
   
 # [UI]
 ## [top]
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: default # 日间模式
       primary: indigo # 上方的
@@ -103,6 +106,7 @@ theme:
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - content.code.copy # 可以通过按钮复制代码
+    - content.code.annotate
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github
@@ -114,6 +118,7 @@ repo_name: ZJU-zhz.github.io # 右上角的名字
 copyright: 朱镐哲 CC-BY-NC-4.0 # 左下角的版权声明
 ## [bottom-right corner]
 extra:
+  vssue: shafish  # 随便填值，主要是设置{% set vssue = config.extra.vssue %}时，vssue初始值可用
   social: # icons
     - icon: fontawesome/brands/weixin
       link: https://wx.qq.com/
@@ -128,6 +133,8 @@ extra:
       link: https://github.com/ZJU-zhz
       name: GitHub | ZJU-zhz
   analytics: 
+    provider: google
+    property: G-XXXXXXXXXX
     feedback:
       title: Was this page helpful?
       ratings:
@@ -153,18 +160,36 @@ plugins:
   - encryptcontent: {}
       #global_password: '1221504'
 markdown_extensions:
-  - pymdownx.arithmatex: # latex支持
+  #列表
+  - def_list
+  - pymdownx.tasklist:
+        custom_checkbox: true
+  # latex支持
+  - pymdownx.arithmatex: 
       generic: true
-  - attr_list # 给图片后面添加{width="300"}设置大小
+  # 给图片后面添加{width="300"}设置大小
+  - attr_list 
+  - md_in_html
   - toc:
       permalink: true # 固定标题位置为当前位置
   - pymdownx.highlight: # 代码块高亮
-      # linenums: true # 显示行号
-      # auto_title: true # 显示编程语言名称
+      linenums: true # 显示行号
+      auto_title: true # 显示编程语言名称
   - pymdownx.superfences # 代码块高亮插件
   - meta # 支持Markdown文件上方自定义标题标签等
   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks
   - pymdownx.details # admonition需要
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables #表格
+  - footnotes #注脚
+  #表情
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 
 extra_javascript:
   # latex支持

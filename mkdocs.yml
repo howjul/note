@@ -98,6 +98,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
+  # 导航栏
   features:
     - navigation.tabs # 使用Tab来进行分类
     - navigation.top # 返回顶部的按钮 在上滑时出现
@@ -110,7 +111,7 @@ theme:
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github
-edit_uri: edit/main/docs # 编辑按钮跳转的链接
+## edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
 repo_url: https://github.com/ZJU-zhz/ZJU-zhz.github.io # 右上角点击跳转的链接
 repo_name: ZJU-zhz.github.io # 右上角的名字
@@ -159,6 +160,7 @@ plugins:
   - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
   - encryptcontent: {}
       #global_password: '1221504'
+
 markdown_extensions:
   #列表
   - def_list
@@ -168,10 +170,13 @@ markdown_extensions:
   - pymdownx.arithmatex: 
       generic: true
   # 给图片后面添加{width="300"}设置大小
+  # 按钮
   - attr_list 
   - md_in_html
+  #锚点
   - toc:
       permalink: true # 固定标题位置为当前位置
+  # 代码块
   - pymdownx.highlight: # 代码块高亮
       linenums: true # 显示行号
       auto_title: true # 显示编程语言名称
@@ -185,7 +190,7 @@ markdown_extensions:
   - pymdownx.snippets
   - tables #表格
   - footnotes #注脚
-  #表情
+  #图标
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg

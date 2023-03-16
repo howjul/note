@@ -1,3 +1,6 @@
+---
+comments: true
+---
 >🔗🔗🔗🔗🔗友情链接🔗🔗🔗🔗🔗
 
 <div class="flink-list">

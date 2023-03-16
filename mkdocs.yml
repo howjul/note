@@ -84,7 +84,7 @@ nav:
 ## [top]
 theme:
   name: material
-  custom_dir: overrides/partials
+  custom_dir: overrides
   palette:
     - scheme: default # 日间模式
       primary: indigo # 上方的

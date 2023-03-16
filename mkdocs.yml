@@ -198,7 +198,6 @@ extra_javascript:
   - java/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
-  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
 
 extra_css:
   - css/no-footer.css # 不使用底部的翻页

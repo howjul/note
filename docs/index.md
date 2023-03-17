@@ -5,6 +5,8 @@
 
 一天晚上，Z在研究室里加班时，突然感觉到身后有人的呼吸声。他下意识地回头一看，只见黑暗中有一个人影正向他靠近。Z立刻警惕起来，但是对方却一言不发地递给他一张照片，然后消失在黑暗中。照片上是一张极为模糊的人脸，但是Z却觉得这个人很熟悉，仿佛在哪里见过。看着夜色如墨，Z喃喃道：“终究要来了吗......”
 
-- [丽泽秘闻](./Friend/lize.md)
-- [209异物志](./Friend/pet.md)
-- [Home](./head.md)
+!!! tip "点此跳转"
+    
+    * [:fontawesome-solid-user-secret: 丽泽秘闻](./Friend/lize.md){ .md-button }
+    * [:material-duck: 209异物志](./Friend/pet.md){ .md-button }
+    * [:fontawesome-solid-house: Home](./head.md){ .md-button }

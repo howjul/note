@@ -110,4 +110,4 @@ markdown_extensions:
 ```
 
 [yml配置教程](https://shafish.cn/blog/mkdocs/){ .md-button .md-button--primary}
-
+[图标编码！](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#mkdocsyml){.md-button .md-button--primary}

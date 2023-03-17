@@ -10,3 +10,4 @@
     * [:fontawesome-solid-user-secret: 丽泽秘闻](./Friend/lize.md){ .md-button }
     * [:material-duck: 209异物志](./Friend/pet.md){ .md-button }
     * [:fontawesome-solid-house: Home](./head.md){ .md-button }
+

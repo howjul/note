@@ -12,6 +12,7 @@ nav:
   - About: about.md
   - Course: 
     - 说明: ./course.md
+    - 计算机系统一: 系统一/系统一.md
     - 计算机系统二: 
       - 说明: 系统二/explain.md
       - OS Services & Structures: 系统二/1. OS Services & Structures (11.7、11.14).md

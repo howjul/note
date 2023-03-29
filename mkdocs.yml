@@ -14,7 +14,6 @@ nav:
     - 说明: ./course.md
     - 计算机系统一: 系统一/系统一.md
     - 计算机系统二: 
-      - 说明: 系统二/explain.md
       - OS Services & Structures: 系统二/1. OS Services & Structures (11.7、11.14).md
       - OS Structures: 系统二/2. OS Structures (11.17).md
       - Process: 系统二/3. Process(11.17、11.21、11.24).md
@@ -24,7 +23,6 @@ nav:
       - Mars: 系统二/7. Mars(12.12).md
       - Synchronization Tools: 系统二/8. Synchronization Tools (12.14).md
     - fds:
-      - 说明: FDS/explain.md
       - exam: 
         - 说明: FDS/试卷/试卷.md
         - 21-22期中卷: FDS/试卷/21-22 期中卷.md
@@ -49,7 +47,6 @@ nav:
         - lec12: FDS/fds_lec/fds_lec12.md 
         - lec13-14: FDS/fds_lec/fds_lec13&&lec_14.md 
     - oop:
-      - 说明: OOP/explain.md
       - lec:
         - exam: OOP/oop_lec/oop_exam.md 
         - lec11: OOP/oop_lec/oop_lec11.md 

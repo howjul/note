@@ -1,6 +1,6 @@
 # [Info]
 site_name: 凰亦 # 左上角标题
-site_url: https://zju-zhz.github.io
+site_url: https://howjuly.github.io/note
 site_author: zhz
 site_description: zhz's site
 
@@ -124,8 +124,8 @@ theme:
     repo: fontawesome/brands/github
 ## edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
-repo_url: https://github.com/ZJU-zhz/ZJU-zhz.github.io # 右上角点击跳转的链接
-repo_name: ZJU-zhz.github.io # 右上角的名字
+repo_url: https://github.com/howjuly/note # 右上角点击跳转的链接
+repo_name: howjuly/note # 右上角的名字
 ## [bottom-left corner]
 copyright: 朱镐哲 CC-BY-NC-4.0 # 左下角的版权声明
 ## [bottom-right corner]
@@ -142,8 +142,8 @@ extra:
       link: https://user.qzone.qq.com/750429346
       name: QQ | 凰亦 # 鼠标悬浮提示
     - icon: fontawesome/brands/github
-      link: https://github.com/ZJU-zhz
-      name: GitHub | ZJU-zhz
+      link: https://github.com/howjuly
+      name: GitHub | howjuly
   analytics: 
     provider: google
     property: G-XXXXXXXXXX

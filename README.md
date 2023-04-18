@@ -1,6 +1,6 @@
 # zhz的个人网站
 
-<https://ZJU-zhz.github.io>
+<https://howjuly.github.io/note>
 
 - 生成 [MkDocs](https://www.mkdocs.org) 
 - 主题 [Material](https://github.com/squidfunk/mkdocs-material)

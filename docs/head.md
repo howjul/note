@@ -4,7 +4,7 @@ comments: true
 
 # 你好
 
-这里是zhz的个人网站 <https://ZJU-zhz.github.io>
+这里是zhz的个人网站 <https://howjuly.github.io/note>
 
 - 通过主题和目录以打开文章
     - PC端 在上方标签栏选择主题 在左侧目录选择文章

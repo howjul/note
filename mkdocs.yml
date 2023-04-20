@@ -1,5 +1,5 @@
 # [Info]
-site_name: 凰亦 # 左上角标题
+site_name: HowJul # 左上角标题
 site_url: https://howjul.github.io/note
 site_author: zhz
 site_description: zhz's site
@@ -7,9 +7,9 @@ site_description: zhz's site
 # [Navigtion]
 nav:
   - Home: 
-    - Real Home: head.md
-    - 写在前面: index.md
-  - About: about.md
+    - Home: index.md
+    - 写在前面: head.md
+    - About: about.md
   - Course: 
     - 说明: ./course.md
     - 计算机系统一: 系统一/系统一.md
@@ -85,7 +85,7 @@ nav:
       - 余华小说赏析: 中国现当代小说赏析/余华小说赏析.md
       - 鬼子小说赏析: 中国现当代小说赏析/鬼子小说赏析.md
 
-  - Friend: Friend/link.md
+  # - Friend: Friend/link.md
   - Strange: 
     - 209志怪录: Friend/pet.md
     - 丽泽秘闻: Friend/lize.md

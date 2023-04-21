@@ -8,7 +8,7 @@ site_description: zhz's site
 nav:
   - Home: 
     - Home: index.md
-    - 写在前面: head.md
+    - Secondary disease: head.md
     - About: about.md
   - Course: 
     - 说明: ./course.md

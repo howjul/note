@@ -111,3 +111,7 @@ markdown_extensions:
 
 [yml配置教程](https://shafish.cn/blog/mkdocs/){ .md-button .md-button--primary}
 [图标编码！](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#mkdocsyml){.md-button .md-button--primary}
+
+<hr>
+<span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
+<br/>

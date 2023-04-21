@@ -36,7 +36,5 @@ comments: true
     [:fontawesome-solid-user: 个人主页](https://howjul.github.io){ .md-button }
 
 <hr>
-<span id="busuanzi_container_site_pv"><font size="3" color="grey">本站总阅读量<span id="busuanzi_value_site_pv"></span>次</font></span><br>
-<span id="busuanzi_container_site_uv"><font size="3" color="grey">本站总访客数<span id="busuanzi_value_site_uv"></span>次</font></span><br>
-<span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
+<span id="busuanzi_container_site_uv"><font size="3" color="grey">本站总访客数<span id="busuanzi_value_site_uv"></span>次</font></span>
 <br/>

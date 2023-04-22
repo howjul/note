@@ -1,5 +1,5 @@
 # [Info]
-site_name: HowJul # 左上角标题
+site_name: HowJul的学习笔记 # 左上角标题
 site_url: https://howjul.github.io/note
 site_author: zhz
 site_description: zhz's site
@@ -99,14 +99,14 @@ theme:
   custom_dir: overrides
   palette:
     - scheme: default # 日间模式
-      primary: indigo # 上方的
-      accent: orange # 链接等可交互元件的高亮色
+      primary: teal # 上方的
+      accent: teal # 链接等可交互元件的高亮色
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
     - scheme: slate # 夜间模式
-      primary: indigo
-      accent: orange
+      primary: teal
+      accent: teal
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
@@ -123,6 +123,7 @@ theme:
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github
+  logo: ./img/logo.jpg
 ## edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
 repo_url: https://github.com/howjul/note # 右上角点击跳转的链接

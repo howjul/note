@@ -124,7 +124,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   logo: ./img/logo.jpg
-  favicon: ./img/logo.jpg
+  favicon: ./img/logo.ico
 ## edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
 repo_url: https://github.com/howjul/note # 右上角点击跳转的链接

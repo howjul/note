@@ -22,7 +22,7 @@ nav:
       - CPU_Scheduling: 系统二/6. CPU_Scheduling(12.5、12.8、12.12).md
       - Mars: 系统二/7. Mars(12.12).md
       - Synchronization Tools: 系统二/8. Synchronization Tools (12.14).md
-    - fds:
+    - 数据结构基础:
       - exam: 
         - 说明: FDS/试卷/试卷.md
         - 21-22期中卷: FDS/试卷/21-22 期中卷.md
@@ -46,7 +46,7 @@ nav:
         - lec11: FDS/fds_lec/fds_lec11.md 
         - lec12: FDS/fds_lec/fds_lec12.md 
         - lec13-14: FDS/fds_lec/fds_lec13&&lec_14.md 
-    - oop:
+    - 面向对象程序设计:
       - lec:
         - exam: OOP/oop_lec/oop_exam.md 
         - lec11: OOP/oop_lec/oop_lec11.md 
@@ -65,6 +65,26 @@ nav:
         - self8: OOP/oop_self/oop_self8.md 
         - self9: OOP/oop_self/oop_self9.md 
         - self10: OOP/oop_self/oop_self10.md 
+    - 高级数据结构与算法分析:
+      - 1. AVL Tree&Splay Tree: ADS/1. AVL Tree&Splay Tree 2.28.md
+      - 2. Red-Black Trees&B+ Trees: ADS/2. Red-Black Trees&B+ Trees3.7.md
+      - 3. Inverted File Index: ADS/3. Inverted File Index.md
+      - 4. Leftist Heaps and Skew Heaps: ADS/4. Leftist Heaps and Skew Heaps.md
+      - 5. Binomial Queue: ADS/5. Binomial Queue.md
+      - 6. Backtracking: ADS/6. Backtracking.md
+      - 7. Divide and Conquer: ADS/7. Divide and Conquer.md
+      - 8. Dynamic Programming: ADS/8. Dynamic Programming.md
+    - 计算机系统三:
+      - 第三课: 系统三/第三课 3.6.md
+      - 第四课: 系统三/第四课 3.9.md
+      - 第五课: 系统三/第五课 3.13.md
+      - 第六课: 系统三/第六课 3.16.md
+      - 第七课: 系统三/第七课 3.20.md
+      - 第八课: 系统三/第八课 3.23.md
+      - 第九课: 系统三/第九课 3.27.md
+      - 第十课: 系统三/第十课 3.30.md
+      - 第十五课: 系统三/第十五课 4.17.md
+    - 密码学: 密码学/explain.md
     - 机器人导论: 
       - 第三课 微控制器: 机器人导论/第三课 3.6 微控制器.md
       - 第四课 机器人传感器: 机器人导论/第四课 3.10 机器人传感器.md
@@ -83,6 +103,7 @@ nav:
       - 张爱玲小说赏析: 中国现当代小说赏析/张爱玲小说赏析.md
       - 谌容小说赏析: 中国现当代小说赏析/谌容小说赏析.md
       - 余华小说赏析: 中国现当代小说赏析/余华小说赏析.md
+      - 刘震云小说赏析: 中国现当代小说赏析/刘震云小说赏析.md
       - 鬼子小说赏析: 中国现当代小说赏析/鬼子小说赏析.md
 
   # - Friend: Friend/link.md

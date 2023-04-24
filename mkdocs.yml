@@ -151,20 +151,20 @@ theme:
 repo_url: https://github.com/howjul/note # 右上角点击跳转的链接
 repo_name: note # 右上角的名字
 ## [bottom-left corner]
-copyright: 朱镐哲 CC-BY-NC-4.0 # 左下角的版权声明
+copyright: HowJul. CC-BY-NC-4.0 # 左下角的版权声明
 ## [bottom-right corner]
 extra:
   vssue: shafish  # 随便填值，主要是设置{% set vssue = config.extra.vssue %}时，vssue初始值可用
   social: # icons
     - icon: fontawesome/brands/weixin
       link: https://wx.qq.com/
-      name: 微信号 | zhz19357570421
+      name: 微信号 | HowJul.(邮箱联系)
     - icon: fontawesome/solid/paper-plane
       link: mailto:zjuzhz@outlook.com
       name: Outlook 
     - icon: fontawesome/brands/qq
-      link: https://user.qzone.qq.com/750429346
-      name: QQ | 凰亦 # 鼠标悬浮提示
+      link: https://user.qzone.qq.com
+      name: QQ | 凰亦(邮箱联系) # 鼠标悬浮提示
     - icon: fontawesome/brands/github
       link: https://github.com/howjul
       name: GitHub | howjul

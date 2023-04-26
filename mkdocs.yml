@@ -74,6 +74,7 @@ nav:
       - 6. Backtracking: ADS/6. Backtracking.md
       - 7. Divide and Conquer: ADS/7. Divide and Conquer.md
       - 8. Dynamic Programming: ADS/8. Dynamic Programming.md
+      - 参考: ADS/inference.md
     - 计算机系统三:
       - 第三课: 系统三/第三课 3.6.md
       - 第四课: 系统三/第四课 3.9.md
@@ -106,7 +107,7 @@ nav:
       - 刘震云小说赏析: 中国现当代小说赏析/刘震云小说赏析.md
       - 鬼子小说赏析: 中国现当代小说赏析/鬼子小说赏析.md
 
-  # - Friend: Friend/link.md
+  - Friend: Friend/link.md
   - Strange: 
     - 209志怪录: Friend/pet.md
     - 丽泽秘闻: Friend/lize.md

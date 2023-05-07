@@ -10,6 +10,12 @@ nav:
     - Home: index.md
     - Secondary disease: head.md
     - About: about.md
+  - Conclusion:
+    - 大二春夏: ./课程总结/大二春夏.md
+    - 大二秋冬: ./课程总结/大二秋冬.md
+    - 大一暑假: ./课程总结/大一暑假.md
+    - 大一春夏: ./课程总结/大一春夏.md
+    - 大一秋冬: ./课程总结/大一秋冬.md
   - Course: 
     - 说明: ./course.md
     - 计算机系统一: 系统一/系统一.md

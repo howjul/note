@@ -93,6 +93,15 @@ nav:
       - 第十五课: 系统三/第十五课 4.17.md
       - 操作系统导论笔记: 系统三/操作系统导论笔记.md
     - 密码学: 密码学/explain.md
+    - 数据安全与隐私保护: 
+      - 1.Course Overview: 数据安全/1. Course Overview.md
+      - 2.User Authentication: 数据安全/2. User Authentication.md
+      - 3.Unix Discretionary Access Control: 数据安全/3.  Unix Discretionary Access Control.md
+      - 4.MAC and Intergrity Protection: 数据安全/4. MAC and Intergrity Protection.md
+      - 5.Role Based Access Control: 数据安全/5. Role Based Access Control.md
+      - 6.Modern Crypto: 数据安全/6. Modern Crypto.md
+      - 7.Stream Ciphers and CPA Security: 数据安全/7. Stream Ciphers and CPA Security.md
+      - 8.PRF, CPA Security and CCA Security: 数据安全/8. PRF, CPA Security and CCA Security.md
     - 机器人导论: 
       - 第三课 微控制器: 机器人导论/第三课 3.6 微控制器.md
       - 第四课 机器人传感器: 机器人导论/第四课 3.10 机器人传感器.md

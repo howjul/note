@@ -18,7 +18,7 @@ nav:
     - 大一秋冬: ./课程总结/大一秋冬.md
   - Course: 
     - 说明: ./course.md
-    - 计算机系统一: 系统一/系统一.md
+    # - 计算机系统一: 系统一/系统一.md
     - 计算机系统二: 
       - OS Services & Structures: 系统二/1. OS Services & Structures (11.7、11.14).md
       - OS Structures: 系统二/2. OS Structures (11.17).md

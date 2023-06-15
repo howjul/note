@@ -72,7 +72,6 @@ nav:
         - self9: OOP/oop_self/oop_self9.md 
         - self10: OOP/oop_self/oop_self10.md 
     - 高级数据结构与算法分析:
-      - 0.Introduce: ADS/Introduction.md
       - 1.AVL Tree&Splay Tree: ADS/1. AVL Tree&Splay Tree 2.28.md
       - 2.Red-Black Trees&B+ Trees: ADS/2. Red-Black Trees&B+ Trees3.7.md
       - 3.Inverted File Index: ADS/3. Inverted File Index.md
@@ -100,19 +99,19 @@ nav:
       - 第10课: 系统三/第十课 3.30.md
       - 第15课: 系统三/第十五课 4.17.md
       - 第16课: 系统三/第16课 4.20.md
-      - 第17课: 系统三/第17课 4.20.md
-      - 第18课: 系统三/第18课 4.20.md
-      - 第19课: 系统三/第19课 4.20.md
-      - 第20课: 系统三/第20课 4.20.md
-      - 第21课: 系统三/第21课 4.20.md
-      - 第22课: 系统三/第22课 4.20.md
-      - 第23课: 系统三/第23课 4.20.md
-      - 第24课: 系统三/第24课 4.20.md
-      - 第25课: 系统三/第25课 4.20.md
-      - 第26课: 系统三/第26课 4.20.md
-      - 第27课: 系统三/第27课 4.20.md
-      - 第28课: 系统三/第28课 4.20.md
-      - 第29课: 系统三/第29课 4.20.md
+      - 第17课: 系统三/第17课 4.24.md
+      - 第18课: 系统三/第18课 4.27.md
+      - 第19课: 系统三/第19课 5.4.md
+      - 第20课: 系统三/第20课 5.8.md
+      - 第21课: 系统三/第21课 5.11.md
+      - 第22课: 系统三/第22课 5.15.md
+      - 第23课: 系统三/第23课 5.18.md
+      - 第24课: 系统三/第24课 5.22.md
+      - 第25课: 系统三/第25课 5.25.md
+      - 第26课: 系统三/第26课 5.29.md
+      - 第27课: 系统三/第27课 6.1.md
+      - 第28课: 系统三/第28课 6.5.md
+      - 第29课: 系统三/第29课 6.8.md
       - 操作系统导论笔记: 系统三/操作系统导论笔记.md
     - 密码学: 密码学/explain.md
     - 软件安全: 
@@ -124,7 +123,7 @@ nav:
       - 5.ROP & BROP: 软件安全/5. ROP & BROP.md
       - 6.Format String Attack: 软件安全/6. 格式化字符串漏洞.md
       - 7.Static Analysis: 软件安全/7. 静态分析.md
-      - 8.Symbolic&Concolic Execution.md: 软件安全/8. Symbolic&Concolic Execution.md
+      - 8.Symbolic&Concolic Execution: 软件安全/8. Symbolic&Concolic Execution.md
       - 9.Taint Analysis: 软件安全/9. Taint Analysis.md
       - 10.fuzz: 软件安全/10. fuzz.md
       - 11.SFI&CFI: 软件安全/11. SFI & CFI.md

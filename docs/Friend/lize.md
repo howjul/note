@@ -10,8 +10,8 @@ comments: true
             <div class="flink-item-icon">
                 <img src="../../img/头像/xhs.png" alt="xhs">
             </div>
-            <div class="flink-item-name">小x蠢森s</div>
-            <div class="flink-item-desc"> 他们都说我好帅 <br> 🥵为了追我想破脑袋🥵 </div>
+            <div class="flink-item-name"> 大shuai(违心)森 </div>
+            <div class="flink-item-desc"> 他们都说我好帅 <br> 🥵为了追到我想破脑袋🥵 </div>
         </a >
     </div>
 </div>

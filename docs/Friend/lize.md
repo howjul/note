@@ -56,7 +56,7 @@ comments: true
     <div class="flink-list-item">
         <a href=" " title="" target="_blank">
             <div class="flink-item-icon">
-                <img src="../../img/头像/sh2.jpg" alt="benben">
+                <img src="../../img/头像/sh2.png" alt="benben">
             </div>
             <div class="flink-item-name"> 6QQ微信都用真名的屑 </div>
             <div class="flink-item-desc"> ：我有点笨，有点傻，怎么了 <br> 评论：有自知之明🧖🏻‍♂️ </div>

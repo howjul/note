@@ -1,11 +1,11 @@
 ### 1. Iterators
 #### 1.1 作用
 - Provide a way to visit the elements in order, without knowing the details of the container.
-  - Generalization of pointers(泛化的指针)
+    - Generalization of pointers(泛化的指针)
 
 - Separate container and algorithms with standard 
   iterator interface functions.
-  - The glue between algorithms and data structures.
+    - The glue between algorithms and data structures.
 
 #### 1.2 用法
 

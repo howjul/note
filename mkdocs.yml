@@ -11,6 +11,10 @@ nav:
     - Secondary disease: head.md
     - About: about.md
   - Conclusion:
+    - 说明: ./课程总结/index.md
+    - 大三春夏: ./课程总结/大三春夏.md
+    - 大三秋冬: ./课程总结/大三秋冬.md
+    - 大二暑假: ./课程总结/大二暑假.md
     - 大二春夏: ./课程总结/大二春夏.md
     - 大二秋冬: ./课程总结/大二秋冬.md
     - 大一暑假: ./课程总结/大一暑假.md
@@ -26,6 +30,7 @@ nav:
       - 4.技术文档的结构: 技术沟通/4 技术文档的结构.md
       - 5.技术文档的语言: 技术沟通/5 技术文档的语言.md
       - 6.演示方法: 技术沟通/6 演示方法.md
+      - 7.演讲方法: 技术沟通/7 演讲方法.md
     - 计算机系统二: 
       - 1.OS Services & Structures: 系统二/1. OS Services & Structures (11.7、11.14).md
       - 2.OS Structures: 系统二/2. OS Structures (11.17).md

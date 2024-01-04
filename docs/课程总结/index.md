@@ -1,0 +1,24 @@
+---
+comments: true
+---
+
+!!! abstract "Overview"
+
+    本栏为对于每个课程的总结和概述，希望能对你有所帮助。如下的两个指数仅供参考，有强烈的主观性。
+
+!!! tip "推荐指数介绍"
+
+    - :star2:: 不推荐
+    - :star2::star2:: 马马虎虎，没有亮点
+    - :star2::star2::star2:: 作业少压力小，给分好，有收获占其一
+    - :star2::star2::star2::star2:: 作业少压力小，给分好，有收获占其二
+    - :star2::star2::star2::star2::star2:: 作业少压力小，给分好，有收获占其三
+    
+!!! example "作业指数介绍"
+
+    作业指数并不是与学分相称的作业指数，比如5.5分的计算机系统，那作业就是五星的，而中国共产党历史，作业就是一星的。
+    
+
+<hr>
+<span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
+<br/>

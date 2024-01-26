@@ -176,6 +176,9 @@ nav:
       - 鬼子小说赏析: 中国现当代小说赏析/鬼子小说赏析.md
   - ML: 
     - Python自学笔记: ML/Python.md
+    - Linux笔记: ML/Linux.md
+    - 李宏毅机器学习课程:
+      - Lec1 Introduction of Deep Learning: ML/Lec1 Introduction of Deep Learning.md
 
   - Friend: Friend/link.md
   - Strange: 
@@ -265,7 +268,7 @@ plugins:
         - en
         - ja
   - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
-  - encryptcontent: {}
+  #- encryptcontent: {}
       #global_password: '1221504'
 
 markdown_extensions:
@@ -285,7 +288,7 @@ markdown_extensions:
       permalink: true # 固定标题位置为当前位置
   # 代码块
   - pymdownx.highlight: # 代码块高亮
-      linenums: true # 显示行号
+      linenums: false # 显示行号
       auto_title: true # 显示编程语言名称
   - pymdownx.superfences # 代码块高亮插件
   - meta # 支持Markdown文件上方自定义标题标签等
@@ -299,8 +302,13 @@ markdown_extensions:
   - footnotes #注脚
   #图标
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 
 
 extra_javascript:

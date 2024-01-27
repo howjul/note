@@ -175,8 +175,9 @@ nav:
       - 刘震云小说赏析: 中国现当代小说赏析/刘震云小说赏析.md
       - 鬼子小说赏析: 中国现当代小说赏析/鬼子小说赏析.md
   - ML: 
-    - Python自学笔记: ML/Python.md
-    - Linux笔记: ML/Linux.md
+    - Git学习笔记: ML/Git.md
+    - Python学习笔记: ML/Python.md
+    - Linux学习笔记: ML/Linux.md
     - 李宏毅机器学习课程:
       - Lec1 Introduction of Deep Learning: ML/Lec1 Introduction of Deep Learning.md
 

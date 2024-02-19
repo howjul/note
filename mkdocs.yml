@@ -181,6 +181,7 @@ nav:
     - Pytorch学习笔记:
       - Pytorch1: ML/Pytorch1.md
       - Pytorch2: ML/Pytorch2.md
+      - Pytorch3: ML/Pytorch3.md
     - 李宏毅机器学习课程:
       - Lec1 Introduction of Deep Learning: ML/Lec1 Introduction of Deep Learning.md
 

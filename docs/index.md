@@ -34,6 +34,7 @@ comments: true
 
 ???+ example "最近更新"
 
+    - 24.2.20 Pytorch3笔记和相关代码上传
     - 24.2.19 Pytorch2笔记和相关代码上传
     - 24.2.6 Pytorch1笔记和相关资料上传
     - 24.1.27 Git笔记上传

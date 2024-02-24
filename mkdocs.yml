@@ -177,6 +177,7 @@ nav:
   - ML: 
     - Git学习笔记: ML/Git.md
     - Python学习笔记: ML/Python.md
+    - Numpy学习笔记: ML/Numpy.md
     - Linux学习笔记: ML/Linux.md
     - Pytorch学习笔记:
       - Pytorch1: ML/Pytorch1.md

@@ -184,7 +184,15 @@ nav:
       - Pytorch2: ML/Pytorch2.md
       - Pytorch3: ML/Pytorch3.md
     - 李宏毅机器学习课程:
-      - Lec1 Introduction of Deep Learning: ML/Lec1 Introduction of Deep Learning.md
+      - Lec1 Introduction of Deep Learning: ML/Lec1_Introduction of Deep Learning.md
+      - Lec2 What to do if my network fails to train:
+        - 0_General Guidance: ML/Lec2_0_General Guidance.md
+        - 1_Local Minimum And Saddle Point: ML/Lec2_1_Local Minimum And Saddle Point.md
+        - 2_Batch and Momentum: ML/Lec2_2_Batch and Momentum.md
+        - 3_Adaptive Learning Rate: ML/Lec2_3_Adaptive Learning Rate.md
+        - 4_Batch Normalization: ML/Lec2_4_Batch Normalization.md
+        - 5_Classification: ML/Lec2_5_Classification.md
+      - Lec3 Image as input: ML/Lec3_CNN.md
 
   - Friend: Friend/link.md
   - Strange: 

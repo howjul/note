@@ -8,7 +8,7 @@ critical point其实不一定是训练Network时候会遇到的最大障碍，�
 
 为什么我说这个critical point不一定是我们训练过程中，最大的阻碍呢？
 
-<img src="lihongyi_pic/image-20210319093601105.png" alt="image-20210319093601105" style="zoom:67%;" />
+![image-20210319093601105](lihongyi_pic/image-20210319093601105.png)
 
 往往同学们，在训练一个network的时候，你会把它的loss记录下来，所以你会看到，你的loss原来很大，随着你参数不断的update，横轴代表参数update的次数，随着你参数不断的update，这个loss会越来越小，最后就卡住了，你的loss不再下降
 
@@ -16,13 +16,13 @@ critical point其实不一定是训练Network时候会遇到的最大障碍，�
 
 当我们说走到critical point的时候，意味着gradient非常的小，但是你有确认过，当**你的loss不再下降的时候，gradient真的很小吗？**其实多数的同学可能，都没有确认过这件事，而事实上在这个例子里面，在今天我show的这个例子里面，当我们的loss不再下降的时候，gradient并没有真的变得很小
 
-<img src="lihongyi_pic/image-20210319093237570.png" alt="image-20210319093237570" style="zoom:67%;" />
+![image-20210319093237570](lihongyi_pic/image-20210319093237570.png)
 
 gradient是一个向量，下面是gradient的norm，即gradient这个向量的长度，随着参数更新的时候的变化，你会发现说**虽然loss不再下降，但是这个gradient的norm，gradient的大小并没有真的变得很小**
 
 这样子的结果其实也不难猜想，也许你遇到的是这样子的状况
 
-<img src="lihongyi_pic/image-20210319094055839.png" alt="image-20210319094055839" style="zoom:67%;" />
+![image-20210319094055839](lihongyi_pic/image-20210319094055839.png)
 
 这个是我们的error surface，然后你现在的gradient，在error surface山谷的两个谷壁间，**不断的来回的震荡**
 
@@ -38,7 +38,7 @@ gradient是一个向量，下面是gradient的norm，即gradient这个向量的�
 
 有的同学就会有一个问题，如果我们在训练的时候，其实很少卡到saddle point，或者是local minima，那这一个图是怎么做出来的呢?
 
-<img src="lihongyi_pic/image-20210319094741294.png" alt="image-20210319094741294" style="zoom:67%;" />
+![image-20210319094741294](lihongyi_pic/image-20210319094741294.png)
 
 我们上次有画过这个图是说我们现在训练一个Network，训练到现在参数**在critical point附近，然后我们再来根据eigen value的正负号，来判断说这个critical point，比较像是saddle point，还是local minima**
 
@@ -54,7 +54,7 @@ gradient是一个向量，下面是gradient的norm，即gradient这个向量的�
 
 如果今天critical point不是问题的话，为什么我们的training会卡住呢，我这边举一个非常简单的例子，我这边有一个，非常简单的error surface
 
-<img src="lihongyi_pic/image-20210319095748513.png" alt="image-20210319095748513" style="zoom:67%;" />
+![image-20210319095748513](lihongyi_pic/image-20210319095748513.png)
 
 我们只有两个参数，这两个参数值不一样的时候，Loss的值不一样，我们就画出了一个error surface，这个**error surface的最低点**在==黄色X==这个地方，事实上，这个error surface是convex的形状(可以理解为凸的或者凹的，convex optimization常翻译为“凸优化”)
 
@@ -64,7 +64,7 @@ gradient是一个向量，下面是gradient的norm，即gradient这个向量的�
 
 你可能觉得说，这个convex的error surface，做gradient descend，有什么难的吗？不就是一路滑下来，然后可能再走过去吗，应该是非常容易。你实际上自己试一下，你会发现说，就连这种convex的error surface，形状这么简单的error surface，你用gradient descend，都不见得能把它做好，举例来说这个是我实际上，自己试了一下的结果
 
-<img src="lihongyi_pic/image-20210319100229839.png" alt="image-20210319100229839" style="zoom:67%;" />
+![image-20210319100229839](lihongyi_pic/image-20210319100229839.png)
 
 我learning rate设10⁻²的时候，我的这个参数在峡谷的两端，我的参数在山壁的两端不断的震荡，我的loss掉不下去，但是gradient其实仍然是很大的
 
@@ -72,11 +72,11 @@ gradient是一个向量，下面是gradient的norm，即gradient这个向量的�
 
 事实不然，因为我试著去，调整了这个learning rate，就会发现你光是要train这种convex的optimization的问题，你就觉得很痛苦，我就调这个learning rate，从10⁻²，一直调到10⁻⁷，调到10⁻⁷以后，终于不再震荡了
 
-<img src="lihongyi_pic/image-20210319100647667.png" alt="image-20210319100647667" style="zoom:67%;" />
+![image-20210319100647667](lihongyi_pic/image-20210319100647667.png)
 
 终于从这个地方滑滑滑，滑到山谷底终于左转，但是你发现说，这个训练永远走不到终点，因为我的**learning rate已经太小了**，竖直往上这一段这个很斜的地方，因为这个坡度很陡，gradient的值很大，所以还能够前进一点，左拐以后这个地方坡度已经非常的平滑了，这么小的learning rate，根本没有办法再让我们的训练前进
 
-<img src="lihongyi_pic/image-20210319102724035.png" alt="image-20210319102724035" style="zoom:50%;" />
+![image-20210319102724035](lihongyi_pic/image-20210319102724035.png)
 
 事实上在左拐这个地方，看到这边一大堆黑点，这边**有十万个点**，这个是张辽八百冲十万的那个十万，但是我都没有办法靠近，这个local minima的地方，所以显然**就算是一个convex的error surface，你用gradient descend也很难train**
 
@@ -92,7 +92,7 @@ gradient是一个向量，下面是gradient的norm，即gradient这个向量的�
 
 从刚才的例子里面，其实我们可以看到一个大原则，**如果在某一个方向上，我们的gradient的值很小，非常的平坦，那我们会希望learning rate调大一点，如果在某一个方向上非常的陡峭，坡度很大，那我们其实期待，learning rate可以设得小一点**
 
-<img src="lihongyi_pic/image-20210319103709570.png" alt="image-20210319103709570" style="zoom:67%;" />
+![image-20210319103709570](lihongyi_pic/image-20210319103709570.png)
 
 那这个learning rate要如何自动的，根据这个gradient的大小做调整呢
 
@@ -118,7 +118,7 @@ $$
 
 那这个σ有什么样的方式，可以把它计算出来呢，一个常见的类型是算，gradient的Root Mean Square
 
-<img src="lihongyi_pic/image-20210319150808494.png" alt="image-20210319150808494" style="zoom:67%;" />
+![image-20210319150808494](lihongyi_pic/image-20210319150808494.png)
 
 现在参数要update的式子，我们从θᵢ⁰初始化参数减掉gᵢ⁰，乘上learning rate η除以σᵢ⁰，就得到θᵢ¹，
 $$
@@ -171,7 +171,7 @@ $$
 
 那这一招被用在一个叫做 ==Adagrad== 的方法里面，**为什么这一招可以做到我们刚才讲的，坡度比较大的时候，learning rate就减小，坡度比较小的时候，learning rate就放大呢？**
 
-<img src="lihongyi_pic/image-20210319160639783.png" alt="image-20210319160639783" style="zoom:67%;" />
+![image-20210319160639783](lihongyi_pic/image-20210319160639783.png)
 
 你可以想像说，现在我们有两个参数:**一个叫θᵢ¹，一个叫θᵢ² ，θᵢ¹坡度小，θᵢ²坡度大**
 
@@ -197,11 +197,11 @@ $$
 
 举例来说我们来看，这个新月形的error surface
 
-<img src="lihongyi_pic/image-20210319211518875.png" alt="image-20210319211518875" style="zoom:50%;" />
+![image-20210319211518875](lihongyi_pic/image-20210319211518875.png)
 
 如果我们考虑横轴的话，考虑左右横的水平线的方向的话，你会发现说，在绿色箭头这个地方坡度**比较陡峭，所以我们需要比较小的learning rate**，
 
-<img src="lihongyi_pic/image-20210319211631968.png" alt="image-20210319211631968" style="zoom:50%;" />
+![image-20210319211631968](lihongyi_pic/image-20210319211631968.png)
 
 但是走到了中间这一段，到了红色箭头的时候呢，坡度又变得平滑了起来，**平滑了起来就需要比较大的learning rate**，所以就算是**同一个参数同一个方向，我们也期待说，learning rate是可以动态的调整的**，于是就有了一个新的招数，这个招数叫做 ==RMS Prop==
 
@@ -209,7 +209,7 @@ $$
 
 RMS Prop这个方法有点传奇，它传奇的地方在于它找不到论文，非常多年前应该是将近十年前，Hinton在Coursera上，开过deep learning的课程，那个时候他在他的课程里面，讲了RMS Prop这个方法，然后这个方法没有论文，所以你要cite的话，你要cite那个影片的连结，这是个传奇的方法叫做RMS Prop
 
-<img src="lihongyi_pic/image-20210319212301760.png" alt="image-20210319212301760" style="zoom: 67%;" />
+![image-20210319212301760](lihongyi_pic/image-20210319212301760.png)
 
 RMS Prop这个方法，**它的第一步跟刚才讲的Root Mean Square，也就是那个Apagrad的方法，是一模一样的** 
 $$
@@ -242,17 +242,17 @@ $$
 
 那RMSProp我们刚刚讲过说，透过α这一项你可以决定说，gᵢᵗ相较于之前存在，σᵢᵗ⁻¹里面的gᵢᵗ到gᵢᵗ⁻¹而言，它的重要性有多大，如果你用RMS Prop的话，你就可以动态调整σ这一项，我们现在假设从这个地方开始
 
-<img src="lihongyi_pic/image-20210319220043063.png" alt="image-20210319220043063" style="zoom:50%;" />
+![image-20210319220043063](lihongyi_pic/image-20210319220043063.png)
 
 这个黑线是我们的error surface，从这个地方开始你要update参数，好你这个球就从这边走到这边，那因为一路上都很平坦，很平坦就代表说g算出来很小，代表现在update参数的时候，我们会走比较大的步伐
 
-<img src="lihongyi_pic/image-20210319220106088.png" alt="image-20210319220106088" style="zoom:50%;" />
+![image-20210319220106088](lihongyi_pic/image-20210319220106088.png)
 
 接下来继续滚，滚到这边以后我们gradient变大了，如果不是RMS Prop，原来的Adagrad的话它反应比较慢，但如果你用RMS Prop，然后呢你把α设小一点，你就是让新的，刚看到的gradient影响比较大的话，那你就可以很快的让σ的值变大，也可以很快的让你的步伐变小
 
 你就可以踩一个刹车，本来很平滑走到这个地方，突然变得很陡，那RMS Prop可以很快的踩一个刹车，把learning rate变小，如果你没有踩剎车的话，你走到这里这个地方，learning rate太大了，那gradient又很大，两个很大的东西乘起来，你可能就很快就飞出去了，飞到很远的地方
 
-<img src="lihongyi_pic/image-20210319220231462.png" alt="image-20210319220231462" style="zoom:50%;" />
+![image-20210319220231462](lihongyi_pic/image-20210319220231462.png)
 
 如果继续走，又走到平滑的地方了，因为这个σᵢᵗ 你可以调整α，让它比较看重于，最近算出来的gradient，所以你gradient一变小，σ可能就反应很快，它的这个值就变小了，然后呢你走的步伐就变大了，这个就是RMS Prop，
 
@@ -260,7 +260,7 @@ $$
 
 那今天你最常用的，optimization的策略，有人又叫做optimizer，今天最常用的optimization的策略，就是Adam
 
-<img src="lihongyi_pic/image-20210319220458633.png" alt="image-20210319220458633" style="zoom:67%;" />
+![image-20210319220458633](lihongyi_pic/image-20210319220458633.png)
 
 Adam就是RMS Prop加上Momentum，那Adam的演算法跟原始的论文https://arxiv.org/pdf/1412.6980.pdf
 
@@ -268,13 +268,13 @@ Adam就是RMS Prop加上Momentum，那Adam的演算法跟原始的论文https://
 
 ## Learning Rate Scheduling
 
-<img src="lihongyi_pic/image-20210319221134976.png" alt="image-20210319221134976" style="zoom:67%;" />
+![image-20210319221134976](lihongyi_pic/image-20210319221134976.png)
 
 我们刚才讲说这个简单的error surface，我们都train不起来，现在我们来看一下，加上Adaptive Learning Rate以后，train不train得起来，
 
 那这边是采用，最原始的Adagrad那个做法啦，就是把过去看过的，这个learning rate通通都，过去看过的gradient，通通都取平方再平均再开根号当作这个σ ，做起来是这个样子的
 
-<img src="lihongyi_pic/image-20210319221217246.png" alt="image-20210319221217246" style="zoom:50%;" />
+![image-20210319221217246](lihongyi_pic/image-20210319221217246.png)
 
 这个走下来没有问题，然后接下来在左转的时候，这边也是update了十万次，之前update了十万次，只卡在左转这个地方
 
@@ -297,7 +297,7 @@ Adam就是RMS Prop加上Momentum，那Adam的演算法跟原始的论文https://
 
 什么是learning rate的scheduling呢
 
-<img src="lihongyi_pic/image-20210319221921888.png" alt="image-20210319221921888" style="zoom: 67%;" />
+![image-20210319221921888](lihongyi_pic/image-20210319221921888.png)
 
 我们刚才这边还有一项η，这个η是一个固定的值，learning rate scheduling的意思就是说，我们**不要把η当一个常数，我们把它跟时间有关**
 
@@ -305,11 +305,11 @@ Adam就是RMS Prop加上Momentum，那Adam的演算法跟原始的论文https://
 
 那这个也就合理了，因为一开始我们距离终点很远，随着参数不断update，我们距离终点越来越近，所以我们把learning rate减小，让我们参数的更新踩了一个刹车，让我们参数的更新能够慢慢地慢下来，所以刚才那个状况，如果加上Learning Rate Decay有办法解决
 
-<img src="lihongyi_pic/image-20210319222132512.png" alt="image-20210319222132512" style="zoom:50%;" />
+![image-20210319222132512](lihongyi_pic/image-20210319222132512.png)
 
 刚才那个状况，如果加上Learning Rate Decay的话，我们就可以很平顺的走到终点，因为在这个地方，这个η已经变得非常的小了，虽然说它本来想要左右乱喷，但是因为乘上这个非常小的η，就停下来了 就可以慢慢地走到终点，那除了Learning Rate Decay以外，还有另外一个经典，常用的Learning Rate Scheduling的方式，叫做==Warm Up==
 
-<img src="lihongyi_pic/image-20210319222229363.png" alt="image-20210319222229363" style="zoom:50%;" />
+![image-20210319222229363](lihongyi_pic/image-20210319222229363.png)
 
 Warm Up这个方法，听起来有点匪夷所思，这Warm Up的方法是**让learning rate，要先变大后变小**，你会问说 变大要变到多大呢，变大速度要多快呢 ，小速度要多快呢，**这个也是hyperparameter**，你要自己用手调的，但是大方向的大策略就是，learning rate要先变大后变小，那这个方法听起来很神奇，就是一个黑科技这样，这个黑科技出现在，很多远古时代的论文里面
 
@@ -317,7 +317,7 @@ Warm Up这个方法，听起来有点匪夷所思，这Warm Up的方法是**让l
 
 这个warm up，最近因为在训练BERT的时候，往往需要用到Warm Up，所以又被大家常常拿出来讲，但它并不是有BERT以后，才有Warm Up的，Warm Up这东西远古时代就有了，举例来说，Residual Network里面是有Warm Up的
 
-<img src="lihongyi_pic/image-20210319222727186.png" alt="image-20210319222727186" style="zoom: 67%;" />
+![image-20210319222727186](lihongyi_pic/image-20210319222727186.png)
 
 这边是放了Residual network，五六年前的文章，在deep learning变化，这么快速的领域里面，五六年前就是上古时代，那在上古时代，这个Residual Network里面，就已经记载了Warm Up的这件事情，它说我们**用learning rate 0.01，取Warm Up，先用learning rate 0.01，再把learning rate改成0.1**
 
@@ -325,7 +325,7 @@ Warm Up这个方法，听起来有点匪夷所思，这Warm Up的方法是**让l
 
 而在这个黑科技，在知名的Transformer里面(这门课也会讲到)，也用一个式子提了它
 
-<img src="lihongyi_pic/image-20210319222922951.png" alt="image-20210319222922951" style="zoom:67%;" />
+![image-20210319222922951](lihongyi_pic/image-20210319222922951.png)
 
 它这边有一个式子说，它的learning rate遵守这一个，神奇的function来设定，它的learning rate
 
@@ -337,7 +337,7 @@ Warm Up这个方法，听起来有点匪夷所思，这Warm Up的方法是**让l
 
 那为什么需要warm Up呢，这个仍然是今天，一个可以研究的问题啦
 
-<img src="lihongyi_pic/image-20210319223155277.png" alt="image-20210319223155277" style="zoom:50%;" />
+![image-20210319223155277](lihongyi_pic/image-20210319223155277.png)
 
 这边有一个可能的解释是说，你想想看当我们在用Adam RMS Prop，或Adagrad的时候，我们会需要计算σ，它是一个统计的结果，**σ告诉我们，某一个方向它到底有多陡，或者是多平滑**，那这个统计的结果，**要看得够多笔数据以后，这个统计才精准，所以一开始我们的统计是不精准的**
 
@@ -351,7 +351,7 @@ Warm Up这个方法，听起来有点匪夷所思，这Warm Up的方法是**让l
 
 所以我们从最原始的gradient descent，进化到这一个版本
 
-<img src="lihongyi_pic/image-20210319223716331.png" alt="image-20210319223716331" style="zoom:50%;" />
+![image-20210319223716331](lihongyi_pic/image-20210319223716331.png)
 
 这个版本里面
 
@@ -359,7 +359,7 @@ Warm Up这个方法，听起来有点匪夷所思，这Warm Up的方法是**让l
 
 - 接下来应该要update多大的步伐呢，我们要除掉，gradient的Root Mean Square
 
-    <img src="lihongyi_pic/image-20210319223804064.png" alt="image-20210319223804064" style="zoom:50%;" />
+    ![image-20210319223804064](lihongyi_pic/image-20210319223804064.png)
 
     那讲到这边可能有同学会觉得很困惑，这一个momentum是考虑，过去所有的gradient，这个σ也是考虑过去所有的gradient，一个放在分子一个放在分母，都考虑过去所有的gradient，不就是正好**抵消了吗**，
 
@@ -369,7 +369,7 @@ Warm Up这个方法，听起来有点匪夷所思，这Warm Up的方法是**让l
 
 - 那最后我们还会加上，一个learning rate的scheduling，
 
-    <img src="lihongyi_pic/image-20210319224032465.png" alt="image-20210319224032465" style="zoom:50%;" />
+    ![image-20210319224032465](lihongyi_pic/image-20210319224032465.png)
 
     那这个是今天optimization的，完整的版本了，这种Optimizer，除了Adam以外，Adam可能是今天最常用的，但除了Adam以外，还有各式各样的变形，但其实各式各样的变形都不脱，就是要嘛不同的方法算M，要嘛不同的方法算σ，要嘛不同的，Learning Rate Scheduling的方式
 
@@ -377,11 +377,11 @@ Warm Up这个方法，听起来有点匪夷所思，这Warm Up的方法是**让l
 
 那如果你想要知道更多，跟optimization有关的事情的话，那有之前助教的录影，给大家参考到这里，影片蛮长的大概两个小时，所以你可以想见说，有关Optimizer的东西，其实是还有蛮多东西可以讲的，所以时间的关系我们就不讲下去
 
-<img src="lihongyi_pic/image-20210319224115312.png" alt="image-20210319224115312" style="zoom:50%;" />
+![image-20210319224115312](lihongyi_pic/image-20210319224115312.png)
 
 到目前为止呢 我们讲的是什么，我们讲的是，当我们的error surface非常的崎岖，就像这个例子一样非常的崎岖的时候
 
-<img src="lihongyi_pic/image-20210319224221772.png" alt="image-20210319224221772" style="zoom:50%;" />
+![image-20210319224221772](lihongyi_pic/image-20210319224221772.png)
 
 我们需要一些比较好的方法，来做optimization，前面有一座山挡著，我们希望可以绕过那座山，山不转路转的意思这样，你知道这个gradient，这奇怪的error surface，会让人觉得很痛苦
 

@@ -4,7 +4,7 @@
 
 接下来讲有关分类怎么做这件事情，这边讲的是一个短的版本，因为时间有限的关系，如果你想要看长的版本的话，可以看一下[过去上课的录影](https://www.bilibili.com/video/BV13x411v7US?p=10)
 
-<img src="lihongyi_pic/image-20210320164739451.png" alt="image-20210320164739451" style="zoom:67%;" />
+![image-20210320164739451](lihongyi_pic/image-20210320164739451.png)
 
 过去可能是花两个小时，到三个小时的时间才讲完，分类这件事情，我们这边用一个最快的方法，直接跟你讲分类是怎么做的
 
@@ -12,13 +12,13 @@
 
 分类是怎么做的呢？我们已经讲了Regression，就是输入一个向量，然后输出一个数值，我们希望输出的数值跟某一个label，也就是我们要学习的目标，越接近越好。这门课里面，**如果是正确的答案就有加Hat，Model的输出没有加Hat**
 
-<img src="lihongyi_pic/image-20210320165723587.png" alt="image-20210320165723587" style="zoom:67%;" />
+![image-20210320165723587](lihongyi_pic/image-20210320165723587.png)
 
 
 
 有一个可能，假设你会用Regression的话，我们其实可以**把Classification，当作是Regression来看**
 
-<img src="lihongyi_pic/image-20210320170048002.png" alt="image-20210320170048002" style="zoom:67%;" />
+![image-20210320170048002](lihongyi_pic/image-20210320170048002.png)
 
 这个方法不一定是个好方法，这是一个比较奇妙的方法，输入一个东西以后，我们的输出仍然是一个scaler，它叫做y 然后这一个y，我们要让它跟正确答案，那个Class越接近越好，但是**y是一个数字**，我们怎么让它跟Class越接近越好呢，我们**必须把Class也变成数字**
 
@@ -26,7 +26,7 @@
 
 但是这会是一个好方法吗，如果你仔细想想的话，这个方法也许在某些状况下，是会有瑕疵的
 
-<img src="lihongyi_pic/image-20210320170353342.png" alt="image-20210320170353342" style="zoom:67%;" />
+![image-20210320170353342](lihongyi_pic/image-20210320170353342.png)
 
 因为如果你假设说Class one就是编号1，Class two就是编号2，Class3就是编号3，意味着说你觉得**Class1跟Class2是比较像**，然后**Class1跟Class3 它是比较不像**，像这样子的表示Class的方式，有时候可行，有时候不可行
 
@@ -38,7 +38,7 @@
 
 当你在做分类的问题的时候，比较常见的做法是把你的Class，用 One-hot vector来表示
 
-<img src="lihongyi_pic/image-20210320170948476.png" alt="image-20210320170948476" style="zoom:67%;" />
+![image-20210320170948476](lihongyi_pic/image-20210320170948476.png)
 
 如果有三个Class，我们的 label 这个ŷ，就是一个三维的向量，然后呢 如果是Class1就是$\begin{bmatrix}{1} \\\ {0}\\\ {0}\end{bmatrix}$，如果是Class2就是$\begin{bmatrix} {0}\\\ {1}\\\ {0}\end{bmatrix}$，如果是Class3就是$\begin{bmatrix} {0}\\\ {0}\\\ {1}\end{bmatrix}$，所以每一个Class，你都用一个One-hot vector来表示
 
@@ -46,7 +46,7 @@
 
 如果我们今天的目标y hat是一个向量。比如说，ŷ是有三个element的向量，那我们的network，也应该要Output的维度也是三才行
 
-<img src="lihongyi_pic/image-20210320185241328.png" alt="image-20210320185241328" style="zoom: 50%;" />
+![image-20210320185241328](lihongyi_pic/image-20210320185241328.png)
 
 到目前为止我们讲的network，其实都只Output一个数值，因为我们**过去做的都是Regression的问题，所以只Output一个数字**
 
@@ -54,7 +54,7 @@
 
 你可以Output一个数值，你就可以Output三个数值，所以把本来Output一个数值的方法，重复三次
 
-<img src="lihongyi_pic/image-20210320185906259.png" alt="image-20210320185906259" style="zoom:50%;" />
+![image-20210320185906259](lihongyi_pic/image-20210320185906259.png)
 
 - 把a₁ a₂ a₃，乘上三个不同的Weight 加上bias，得到y₁
 
@@ -68,11 +68,11 @@
 
 好 那所以我们现在，知道了Regression是怎么做的，输入 x 输出 y 要跟 label ŷ，越接近越好
 
-<img src="lihongyi_pic/image-20210320190545539.png" alt="image-20210320190545539" style="zoom:67%;" />
+![image-20210320190545539](lihongyi_pic/image-20210320190545539.png)
 
 如果是Classification，input x可能乘上一个W，再加上b 再通过activation function，再乘上W'再加上b' 得到y，我们现在的**y它不是一个数值，它是一个向量**
 
-<img src="lihongyi_pic/image-20210320190621261.png" alt="image-20210320190621261" style="zoom:67%;" />
+![image-20210320190621261](lihongyi_pic/image-20210320190621261.png)
 
 但是在做Classification的时候，我们往往会**把y再通过一个叫做Soft-max的function得到y'**，然后我们才去计算，y'跟y hat之间的距离
 
@@ -88,7 +88,7 @@ Soft-max要做的事情，就是把本来y里面可以放任何值，改成挪�
 
 这个是 Soft-max 的 block，输入y₁ y₂ y₃，它会产生y₁' y₂' y₃'
 
-<img src="lihongyi_pic/image-20210320193732150.png" alt="image-20210320193732150" style="zoom:50%;" />
+![image-20210320193732150](lihongyi_pic/image-20210320193732150.png)
 
 它里面运作的模式是这个样子的
 $$
@@ -98,7 +98,7 @@ $$
 
 或者是用图示化的方法是这个样子
 
-<img src="lihongyi_pic/image-20210320194237298.png" alt="image-20210320194237298" style="zoom:50%;" />
+![image-20210320194237298](lihongyi_pic/image-20210320194237298.png)
 
 有了这个式子以后，你就会发现
 
@@ -121,7 +121,7 @@ $$
 
 ## Loss of Classification
 
-<img src="lihongyi_pic/image-20210320195929935.png" alt="image-20210320195929935" style="zoom:67%;" />
+![image-20210320195929935](lihongyi_pic/image-20210320195929935.png)
 
 我们把 x，丢到一个 Network 里面产生 y 以后，我们会通过 soft-max 得到 y'，再去计算 y' 跟 ŷ 之间的距离，这个写作 е
 
@@ -143,7 +143,7 @@ $$
 
 但是为什么会有 Cross-entropy，这么奇怪的式子出现呢？
 
-<img src="lihongyi_pic/image-20210320201703299.png" alt="image-20210320201703299" style="zoom:50%;" />
+![image-20210320201703299](lihongyi_pic/image-20210320201703299.png)
 
 那如果要讲得长一点的话，这整个故事我们可以把它讲成，**Make Minimize Cross-entropy 其实就是 maximize likelihood**，你很可能在很多地方，都听过 likelihood 这个词汇，详见[过去上课影片](https://www.bilibili.com/video/BV13x411v7US?p=10)
 
@@ -159,7 +159,7 @@ $$
 
 如果你不想知道的话，那我们就是举一个例子来告诉你说，为什么是Cross-entropy比较好
 
-<img src="lihongyi_pic/image-20210320205142242.png" alt="image-20210320205142242" style="zoom:67%;" />
+![image-20210320205142242](lihongyi_pic/image-20210320205142242.png)
 
 那现在我们要做一个**3个Class的分类**
 
@@ -175,7 +175,7 @@ Network 先输出 y₁ y₂ y₃，在通过 soft-max 以后，产生 y₁' y₂
 
 那我们看一下 如果我们这个 e，设定为 Mean Square Error，跟 Cross-entropy 的时候，算出来的 Error surface 会有什么样，不一样的地方。底下这两个图，就分别在我们 e 是 Mean square error，跟 Cross-entropy 的时候， y₁ y₂ 的变化对 loss 的影响，对 Error surface 的影响，
 
-<img src="lihongyi_pic/image-20210320205913652.png" alt="image-20210320205913652" style="zoom:67%;" />
+![image-20210320205913652](lihongyi_pic/image-20210320205913652.png)
 
 我们这边是用**红色代表 Loss 大，蓝色代表 Loss 小**
 
@@ -185,7 +185,7 @@ Network 先输出 y₁ y₂ y₃，在通过 soft-max 以后，产生 y₁' y₂
 
 所以这两个图都是**左上角 Loss 大，右下角 Loss 小**，所以我们就期待说，我们最后**在 Training 的时候，我们的参数可以走到右下角**的地方
 
-<img src="lihongyi_pic/image-20210320210341112.png" alt="image-20210320210341112" style="zoom:67%;" />
+![image-20210320210341112](lihongyi_pic/image-20210320210341112.png)
 
 那假设**我们开始的地方，都是左上角**
 

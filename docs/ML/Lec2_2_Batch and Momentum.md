@@ -4,7 +4,7 @@
 
 ​	上次我们有讲说，我们**实际上在算微分的时候，并不是真的对所有 Data 算出来的 L 作微分**，你是把所有的 Data 分成一个一个的 Batch，有的人是叫Mini Batch ，那我这边叫做 Batch，其实指的是一样的东西，助教投影片里面，是写 Mini Batch
 
-<img src="lihongyi_pic/image-20210315142626597.png" alt="image-20210315142626597" style="zoom:67%;" />
+![image-20210315142626597](lihongyi_pic/image-20210315142626597.png)
 
 ​	每一个 Batch 的大小呢，就是大 B 一笔的资料，我们每次**在 Update 参数的时候，我们是拿大 B 一笔资料出来，算个 Loss，算个 Gradient，Update 参数**，拿另外B一笔资料，再算个 Loss，再算个 Gradient，再 Update 参数，以此类推，所以我们不会拿所有的资料一起去算出 Loss，我们只会拿一个 Batch 的资料，拿出来算 Loss
 
@@ -16,7 +16,7 @@
 
 ​	我们先解释为什么要用 Batch，再说 Batch 对 Training 带来了什么样的帮助。
 
-<img src="lihongyi_pic/image-20210315143616253.png" alt="image-20210315143616253" style="zoom: 50%;" />
+![image-20210315143616253](lihongyi_pic/image-20210315143616253.png)
 
 ​	我们来比较左右两边这两个 Case，那假设现在我们有20笔训练资料
 
@@ -31,7 +31,7 @@
 
 ​	所以如果我们比较左边跟右边，哪一个比较好呢，他们有什么差别呢？
 
-<img src="lihongyi_pic/image-20210315145816823.png" alt="image-20210315145816823" style="zoom:50%;" />
+![image-20210315145816823](lihongyi_pic/image-20210315145816823.png)
 
 ​	你会发现左边没有用 Batch 的方式，它蓄力的时间比较长，还有它技能冷却的时间比较长，你要把所有的资料都看过一遍，才能够 Update 一次参数
 
@@ -49,7 +49,7 @@
 
 ​	那以下是做在一个叫做 ==MNIST== 上面，MNIST(Mixed National Institute of Standards and Technology database)是美国国家标准与技术研究院收集整理的大型手写数字数据库，机器要做的事情，就是给它一张图片，然后判断这张图片，是0到9的哪一个数字，它要做数字的分类，那 MNIST 呢 是机器学习的helloworld，就是假设你今天，从来没有做过机器学习的任务，一般大家第一个会尝试的机器学习的任务，往往就是做 MNIST 做手写数字辨识，
 
-<img src="lihongyi_pic/image-20210315150435096.png" alt="image-20210315150435096" style="zoom:50%;" />
+![image-20210315150435096](lihongyi_pic/image-20210315150435096.png)
 
 ​	这边我们就是做了一个实验，我们想要知道说，给机器一个 Batch，它要计算出 Gradient，进而 Update 参数，到底需要花多少的时间
 
@@ -65,7 +65,7 @@
 
 ​	所以 GPU 虽然有平行运算的能力，但它平行运算能力终究是有个极限，所以你 Batch Size 真的很大的时候，时间还是会增加的
 
-<img src="lihongyi_pic/image-20210315151645146.png" alt="image-20210315151645146" style="zoom:67%;" />
+![image-20210315151645146](lihongyi_pic/image-20210315151645146.png)
 
 ​	但是因为有平行运算的能力，因此实际上，当你的 **Batch Size 小的时候，你要跑完一个 Epoch，花的时间是比大的 Batch Size 还要多**的，怎么说呢
 
@@ -77,7 +77,7 @@
 
 ​	在没有考虑平行运算的时候，你觉得大的 Batch 比较慢，但实际上，在有考虑平行运算的时候，一个 Epoch 大的 Batch 花的时间反而是比较少的
 
-<img src="lihongyi_pic/image-20210315152534804.png" alt="image-20210315152534804" style="zoom:67%;" />
+![image-20210315152534804](lihongyi_pic/image-20210315152534804.png)
 
 ​	我们如果要比较这个 Batch Size 大小的差异的话，看起来直接用技能时间冷却的长短，并不是一个精确的描述，看起来在技能时间上面，大的 Batch 并没有比较吃亏，甚至还占到优势了.
 
@@ -91,7 +91,7 @@
 
 ​	如果你今天拿不同的 Batch 来训练你的模型，你可能会得到这样子的结果，左边是做在 MNIST 上，右边是做在 CIFAR-10 上，不管是 MNIST 还是 CIFAR-10，都是影像辨识的问题
 
-<img src="lihongyi_pic/image-20210315153147903.png" alt="image-20210315153147903" style="zoom:67%;" />
+![image-20210315153147903](lihongyi_pic/image-20210315153147903.png)
 
 - 横轴代表的是 Batch Size，从左到右越来越大
 - 纵轴代表的是正确率，越上面正确率越高，当然正确率越高越好
@@ -106,7 +106,7 @@
 
 ​	为什么小的 Batch Size，在 Training Set 上会得到比较好的结果，为什么 Noisy 的 Update，Noisy 的 Gradient 会在 Training 的时候，给我们比较好的结果呢？一个可能的解释是这样子的
 
-<img src="lihongyi_pic/image-20210315155345489.png" alt="image-20210315155345489" style="zoom:67%;" />
+![image-20210315155345489](lihongyi_pic/image-20210315155345489.png)
 
 ​	假设你是 Full Batch，那你今天在 Update 你的参数的时候，你就是沿著一个 Loss Function 来 Update 参数，今天 Update 参数的时候走到一个 Local Minima，走到一个 Saddle Point，显然就停下来了，Gradient 是零，如果你不特别去看Hession的话，那你用 Gradient Descent 的方法，你就没有办法再更新你的参数了
 
@@ -122,7 +122,7 @@
 
 ​	假设你有一些方法，你努力的调大的 Batch 的 Learning Rate，然后想办法把大的 Batch，跟小的 Batch Training 得一样好，结果你会发现**小的 Batch，居然在 Testing 的时候会是比较好的**，那以下这个实验结果是引用自，On Large-Batch Training For Deep Learning，Generalization Gap And Sharp Minima https://arxiv.org/abs/1609.04836 这篇 Paper 的实验结果
 
-<img src="lihongyi_pic/image-20210315160405510.png" alt="image-20210315160405510" style="zoom:67%;" />
+![image-20210315160405510](lihongyi_pic/image-20210315160405510.png)
 
 ​	那这篇 Paper 里面，作者 Train 了六个 Network 里面有 CNN 的，有 Fully Connected Network 的，做在不同的 Cover 上，来代表这个实验是很泛用的，在很多不同的 Case 都观察到一样的结果，那它有小的 Batch，一个 Batch 里面有256笔 Example，大的 Batch 就是那个 Data Set 乘 0.1，Data Set 乘 0.1，Data Set 有60000笔，那你就是一个 Batch 里面有6000笔资料
 
@@ -132,7 +132,7 @@
 
 
 
-<img src="lihongyi_pic/image-20210315161935349.png" alt="image-20210315161935349" style="zoom:67%;" />
+![image-20210315161935349](lihongyi_pic/image-20210315161935349.png)
 
 ​	假设这个是我们的 Training Loss，那在这个 Training Loss 上面呢，可能有很多个 Local Minima，有不只一个 Local Minima，那这些 Local Minima 它们的 Loss 都很低，它们 Loss 可能都趋近于 0，但是这个 **Local Minima，还是有好 Minima 跟坏 Minima 之分**
 
@@ -155,7 +155,7 @@
 
 ​	那这边就是比较了一下，大的 Batch 跟小的 Batch
 
-<img src="lihongyi_pic/image-20210315164405953.png" alt="image-20210315164405953" style="zoom:67%;" />
+![image-20210315164405953](lihongyi_pic/image-20210315164405953.png)
 
 ​	左边这个是第一个 Column 是小的 Batch，第二个 Column 是大的 Batch
 
@@ -167,7 +167,7 @@
 
 ​	那我们能不能够鱼与熊掌兼得呢，我们能不能够截取大的 Batch 的优点，跟小的 Batch 的优点，我们用大的 Batch Size 来做训练，用平行运算的能力来增加训练的效率，但是训练出来的结果同时又得到好的结果呢，又得到好的训练结果呢。
 
-<img src="lihongyi_pic/image-20210315165345030.png" alt="image-20210315165345030" style="zoom:67%;" />
+![image-20210315165345030](lihongyi_pic/image-20210315165345030.png)
 
 ​	这是有可能的，有很多文章都在探讨这个问题，那今天我们就不细讲，我们把这些 Reference 列在这边给大家参考，那你发现这些 Paper，往往它想要做的事情都是什么，哇 76分钟 Train BERT，15分钟 Train ResNet，一分钟 Train Imagenet 等等，这为什么他们可以做到那么快，就是因为他们 Batch Size 是真的开很大，比如说在第一篇 Paper 里面，Batch Size 里面有三万笔 Example 这样，Batch Size 开很大，Batch Size 开大 真的就可以算很快，你可以在很短的时间内看到大量的资料，那他们需要有一些特别的方法来解决，Batch Size 可能会带来的劣势。
 
@@ -177,7 +177,7 @@
 
 ### Small Gradient
 
-<img src="lihongyi_pic/image-20210315165829425.png" alt="image-20210315165829425" style="zoom:67%;" />
+![image-20210315165829425](lihongyi_pic/image-20210315165829425.png)
 
 ​	它的概念，你可以想像成在物理的世界里面，假设 Error Surface 就是真正的斜坡，而我们的参数是一个球，你把球从斜坡上滚下来，如果今天是 Gradient Descent，它走到 Local Minima 就停住了，走到 Saddle Point 就停住了
 
@@ -189,7 +189,7 @@
 
 ​	那我们先很快的复习一下，原来的 Gradient Descent 长得是什么样子，这个是 Vanilla 的 Gradient Descent，Vanilla 的意思就是一般的的意思，它直译是香草的，但就其实是一般的，一般的 Gradient Descent 长什么样子呢
 
-<img src="lihongyi_pic/image-20210315170131552.png" alt="image-20210315170131552" style="zoom:67%;" />
+![image-20210315170131552](lihongyi_pic/image-20210315170131552.png)
 
 ​	
 
@@ -203,7 +203,7 @@ $$
 
 ​	加上 Momentum 以后，每一次我们在移动我们的参数的时候，我们不是只往 Gradient 的反方向来移动参数，我们是 **Gradient 的反方向加上前一步移动的方向，两者加起来的结果，去调整去到我们的参数，**
 
-<img src="lihongyi_pic/image-20210315171104120.png" alt="image-20210315171104120" style="zoom: 50%;" />
+![image-20210315171104120](lihongyi_pic/image-20210315171104120.png)
 
 ​	那具体说起来是这个样子，一样找一个初始的参数，然后我们假设前一步的参数的 Update 量呢，就设为 0
 $$
@@ -230,11 +230,11 @@ $$
 - Gradient 说要往**红色反方向这个方向**走
 - **把两者相加起来**，走两者的折中，也就是往**蓝色$m^2$这一个方向走**，所以我们就移动了 m2，走到 θ2 这个地方
 
-​	<img src="lihongyi_pic/image-20210315173052976.png" alt="image-20210315173052976" style="zoom: 67%;" />
+​	![image-20210315173052976](lihongyi_pic/image-20210315173052976.png)
 
 ​	接下来就反复进行同样的过程，在这个位置我们计算出 Gradient，但我们不是只根据 Gradient 反方向走，我们看前一步怎么走，前一步走这个方向，走这个蓝色虚线的方向，我们把蓝色的虚线加红色的虚线，前一步指示的方向跟 Gradient 指示的方向，当做我们下一步要移动的方向
 
-​	<img src="lihongyi_pic/image-20210315192909326.png" alt="image-20210315192909326" style="zoom:67%;" />
+​	![image-20210315192909326](lihongyi_pic/image-20210315192909326.png)
 
 ​	每一步的移动，我们都用 m 来表示，那这个 m 其实可以写成之前所有算出来的，Gradient 的 Weighted Sum。从右边的这个式子，其实就可以轻易的看出来
 $$
@@ -249,15 +249,15 @@ m0 我们把它设为 0，m1 是 m0 减掉 g0，m0 为 0，所以 m1 就是 g0 �
 
 ​	有一个更简单的例子，希望帮助你了解 Momentum 
 
-<img src="lihongyi_pic/image-20210315193547074.png" alt="image-20210315193547074" style="zoom:50%;" />
+![image-20210315193547074](lihongyi_pic/image-20210315193547074.png)
 
 ​	那我们从这个地方开始 Update 参数，根据 Gradient 的方向告诉我们，应该往右 Update 参数，那现在没有前一次 Update 的方向，所以我们就完全按照 Gradient 给我们的指示，往右移动参数，好 那我们的参数，就往右移动了一点到这个地方
 
-<img src="lihongyi_pic/image-20210315193633595.png" alt="image-20210315193633595" style="zoom:50%;" />
+![image-20210315193633595](lihongyi_pic/image-20210315193633595.png)
 
 Gradient 变得很小，告诉我们往右移动，但是只有往右移动一点点，但前一步是往右移动的，我们把前一步的方向用虚线来表示，放在这个地方，我们把之前 Gradient 告诉我们要走的方向，跟前一步移动的方向加起来，得到往右走的方向，那再往右走 走到一个 Local Minima，照理说走到 Local Minima，一般 Gradient Descent 就无法向前走了，因为已经没有这个 Gradient 的方向，那走到 Saddle Point 也一样，没有 Gradient 的方向已经无法向前走了
 
-<img src="lihongyi_pic/image-20210315193703079.png" alt="image-20210315193703079" style="zoom:50%;" />
+![image-20210315193703079](lihongyi_pic/image-20210315193703079.png)
 
 ​	但没有关系，如果有 Momentum 的话，你还是有办法继续走下去，因为 Momentum 不是只看 Gradient，Gradient 就算是 0，你还有前一步的方向，前一步的方向告诉我们向右走，我们就继续向右走，甚至你走到这种地方，Gradient 告诉你应该要往左走了，但是假设你前一步的影响力，比 Gradient 要大的话，你还是有可能继续往右走，甚至翻过一个小丘，搞不好就可以走到更好 Local Minima，这个就是 Momentum 有可能带来的好处
 

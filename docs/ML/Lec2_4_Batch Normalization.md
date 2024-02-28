@@ -12,7 +12,7 @@
 
 假设你的两个参数啊，它们对 **Loss 的斜率差别非常大**，在 $w_1$ 这个方向上面，你的斜率变化很小，在 $w_2$ 这个方向上面斜率变化很大
 
-<img src="lihongyi_pic/image-20210426165831571.png" alt="image-20210426165831571" style="zoom:67%;" />
+![image-20210426165831571](lihongyi_pic/image-20210426165831571.png)
 
 如果是**固定的 learning rate**，你可能很难得到好的结果，所以我们才说你需要adaptive 的 learning rate、 Adam 等等比较进阶的 optimization 的方法，才能够得到好的结果
 
@@ -22,13 +22,13 @@
 
 假设我现在有一个非常非常非常简单的 model，它的输入是 $x_1$ 跟 $x_2$，它对应的参数就是 $ w_1 $ 跟 $w_2$，它是一个 linear 的 model，没有 activation function
 
-<img src="lihongyi_pic/image-20210426195448250.png" alt="image-20210426195448250" style="zoom:67%;" />
+![image-20210426195448250](lihongyi_pic/image-20210426195448250.png)
 
 $ w_1 $ 乘 $x_1$，$w_2$ 乘 $x_2$ 加上 b 以后就得到 y，然后会计算 y 跟 $\hat{y}$ 之间的差距当做 e，把所有 training data e 加起来就是你的 Loss，然后去 minimize 你的 Loss
 
 那什么样的状况我们会产生像上面这样子，**比较不好 train 的 error surface** 呢？
 
-<img src="lihongyi_pic/image-20210426200056679.png" alt="image-20210426200056679" style="zoom: 50%;" />
+![image-20210426200056679](lihongyi_pic/image-20210426200056679.png)
 
 当我们对 **$ w_1 $ 有一个小小的改变**，比如说加上 delta $ w_1 $ 的时候，那这个 L 也会有一个改变，那这个 $ w_1 $ 呢，是透过 $ w_1 $ 改变的时候，你就改变了 y，y 改变的时候你就改变了 e，然后接下来就**改变了 L**
 
@@ -40,7 +40,7 @@ $ w_1 $ 乘 $x_1$，$w_2$ 乘 $x_2$ 加上 b 以后就得到 y，然后会计算
 
 反之呢，如果今天是 $x_2$ 的话
 
-<img src="lihongyi_pic/image-20210426201332297.png" alt="image-20210426201332297" style="zoom:50%;" />
+![image-20210426201332297](lihongyi_pic/image-20210426201332297.png)
 
 那假设 **$x_2$ 的值都很大**，当你的 $w_2$ 有一个小小的变化的时候，虽然 $w_2$ 这个变化可能很小，但是因为它乘上了 $x_2$，$x_2$ 的值很大，那 y 的变化就很大，那 e 的变化就很大，那 L 的变化就会很大，就会导致我们在 w 这个方向上，做变化的时候，我们把 w 改变一点点，那我们的 error surface 就会有很大的变化
 
@@ -48,7 +48,7 @@ $ w_1 $ 乘 $x_1$，$w_2$ 乘 $x_2$ 加上 b 以后就得到 y，然后会计算
 
 所以怎么办呢，我们有没有可能给feature 里面**不同的 dimension，让它有同样的数值的范围**
 
-<img src="lihongyi_pic/image-20210426201611113.png" alt="image-20210426201611113" style="zoom:50%;" />
+![image-20210426201611113](lihongyi_pic/image-20210426201611113.png)
 
 如果我们可以给不同的 dimension，同样的数值范围的话，那我们可能就可以制造比较好的 error surface，让 training 变得比较容易一点
 
@@ -58,7 +58,7 @@ $ w_1 $ 乘 $x_1$，$w_2$ 乘 $x_2$ 加上 b 以后就得到 y，然后会计算
 
 以下所讲的方法只是Feature Normalization 的一种可能性，它**并不是 Feature Normalization 的全部**，假设 $x^1$ 到 $x^R$，是我们所有的训练资料的 feature vector
 
-<img src="lihongyi_pic/image-20210426202545360.png" alt="image-20210426202545360" style="zoom:50%;" />
+![image-20210426202545360](lihongyi_pic/image-20210426202545360.png)
 
 我们把所有训练资料的 feature vector ，统统都集合起来，那每一个 vector ，$x_1$ 里面就 $x^1_1 $代表 $x_1$ 的第一个 element，$x^2_1 $，就代表 $x_2$ 的第一个 element，以此类推
 
@@ -74,7 +74,7 @@ $$
 
 那做完 normalize 以后有什么好处呢？
 
-<img src="lihongyi_pic/image-20210426204629991.png" alt="image-20210426204629991" style="zoom:50%;" />
+![image-20210426204629991](lihongyi_pic/image-20210426204629991.png)
 
 - 做完 normalize 以后啊，这个 dimension 上面的数值就会平均是 0，然后它的 variance就会是 1，所以**这一排数值的分布就都会在 0 上下**
 
@@ -86,11 +86,11 @@ $$
 
 $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，去做接下来的计算和训练，所以把 $\tilde x_1$ 通过第一个 layer 得到 $z^1$，那你有可能通过 activation function，不管是选 Sigmoid 或者 ReLU 都可以，然后再得到 $a^1$，然后再通过下一层等等，那就看你有几层 network 你就做多少的运算
 
-<img src="lihongyi_pic/image-20210426210627226.png" alt="image-20210426210627226" style="zoom:50%;" />
+![image-20210426210627226](lihongyi_pic/image-20210426210627226.png)
 
 所以每一个 x 都做类似的事情，但是如果我们进一步来想的话，对 $w_2$ 来说
 
-<img src="lihongyi_pic/image-20210426210742842.png" alt="image-20210426210742842" style="zoom:50%;" />
+![image-20210426210742842](lihongyi_pic/image-20210426210742842.png)
 
 这边的 $a^1$ $a^3$ 这边的 $z^1$ $z^3$，其实也是另外一种 input，如果这边 $\tilde{x}$，虽然它已经做 normalize 了，但是通过 $ w_1 $ 以后它就**没有做 normalize**，如果 $\tilde{x}$ 通过 $ w_1 $ 得到是 $z^1$，而 $z^1$ 不同的 dimension 间，它的数值的分布仍然有很大的差异的话，那我们要 train $w_2$ 第二层的参数，会不会也有困难呢
 
@@ -104,7 +104,7 @@ $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，�
 
 那怎么对 z 做 Feature Normalization 呢
 
-<img src="lihongyi_pic/image-20210426212301934.png" alt="image-20210426212301934" style="zoom:50%;" />
+![image-20210426212301934](lihongyi_pic/image-20210426212301934.png)
 
 那你就把 z，想成是另外一种 feature ，我们这边有 $z^1$ $z^2$ $z^3$，我们就把 $z^1$ $z^2$ $z^3$ 拿出来，从 $z^1$ $z^2$ $z^3$，算出 $μ$ 和 $\sigma$
 
@@ -112,7 +112,7 @@ $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，�
 
 接下来就把这边的每一个 z ，都去减掉 $μ$ 除以 $\sigma$，你把 $z^i$减掉 $μ$，除以 $\sigma$，就得到 $\tilde z^i$
 
-<img src="lihongyi_pic/image-20210427084717687.png" alt="image-20210427084717687" style="zoom:50%;" />
+![image-20210427084717687](lihongyi_pic/image-20210427084717687.png)
 
 那这边的 $μ$ 跟 $\sigma$，它都是**向量**，所以这边这个除的意思是**element wise 的相除**，就是 $z^i$减 $μ$，它是一个向量，所以分子的地方是一个向量，分母的地方也是一个向量，把这个两个向量，它们对应的 element 的值相除，是我这边这个除号的意思，这边得到 Z 的 tilde
 
@@ -120,17 +120,17 @@ $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，�
 
 在这边有一件有趣的事情，这边的 $μ$ 跟 $\sigma$，它们其实都是根据 $z^1$ $z^2$ $z^3$ 算出来的
 
-<img src="lihongyi_pic/image-20210427085020924.png" alt="image-20210427085020924" style="zoom:50%;" />
+![image-20210427085020924](lihongyi_pic/image-20210427085020924.png)
 
 所以这边 $z^1$ 啊，它本来，如果我们没有做 Feature Normalization 的时候，你改变了 $z^1$ 的值，你会改变这边 a 的值，但是现在啊，当你改变 $z^1$ 的值的时候，$μ$ 跟 $\sigma$ 也会跟着改变，$μ$ 跟 $\sigma$ 改变以后，$z^2$ 的值 $a^2$ 的值，$z^3$ 的值 $a^3$ 的值，也会跟着改变
 
-<img src="lihongyi_pic/image-20210427085056015.png" alt="image-20210427085056015" style="zoom:50%;" />
+![image-20210427085056015](lihongyi_pic/image-20210427085056015.png)
 
 所以**之前**，我们每一个 $\tilde{x}_1$  $\tilde{x}_2$ $\tilde{x}_3$，它是**独立分开处理的**，但是我们在做 **Feature Normalization 以后**，这三个 example，它们变得**彼此关联**了
 
 我们这边 $z^1$ 只要有改变，接下来 $z^2$ $a^2$ $z^3$ $a^3$，也都会跟着改变，所以这边啊，其实你要把，当你有做 Feature Normalization 的时候，你要把这一整个 process，就是有收集一堆 feature，把这堆 feature 算出 $μ$ 跟 $\sigma$ 这件事情，当做是 network 的一部分
 
-<img src="lihongyi_pic/image-20210427085228640.png" alt="image-20210427085228640" style="zoom:50%;" />
+![image-20210427085228640](lihongyi_pic/image-20210427085228640.png)
 
 也就是说，你现在有一个比较大的 network
 
@@ -158,7 +158,7 @@ $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，�
 
 而 $β$ 跟 $γ$，你要把它想成是 network 的参数，它是另外再被learn出来的，
 
-<img src="lihongyi_pic/image-20210427090245986.png" alt="image-20210427090245986" style="zoom:50%;" />
+![image-20210427090245986](lihongyi_pic/image-20210427090245986.png)
 
 那为什么要加上 $β$ 跟 $γ$ 呢
 
@@ -185,7 +185,7 @@ $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，�
 
 但是假设你真的有系统上线，你是一个真正的线上的 application，你可以说，我今天一定要等 30，比如说你的 batch size 设 64，我一定要等 64 笔资料都进来，我才一次做运算吗，这显然是不行的
 
-<img src="lihongyi_pic/image-20210427101815357.png" alt="image-20210427101815357" style="zoom:50%;" />
+![image-20210427101815357](lihongyi_pic/image-20210427101815357.png)
 
 但是在做 Batch Normalization 的时候，一个 $\tilde{x}$，一个 normalization 过的 feature 进来，然后你有一个 z，你的 z 呢，要减掉 $μ$ 跟除 $\sigma$，那这个 $μ$ 跟 $\sigma$，是**用一个 batch 的资料算出来的**
 
@@ -195,7 +195,7 @@ $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，�
 
 在 training 的时候，如果你有在做 Batch Normalization 的话，在 training 的时候，你每一个 batch 计算出来的 $μ$ 跟 $\sigma$，他都会拿出来算 ==moving average==
 
-<img src="lihongyi_pic/image-20210427101956211.png" alt="image-20210427101956211" style="zoom:50%;" />
+![image-20210427101956211](lihongyi_pic/image-20210427101956211.png)
 
 你每一次取一个 batch 出来的时候，你就会算一个 $μ^1$，取第二个 batch 出来的时候，你就算个 $μ^2$，一直到取第 t 个 batch 出来的时候，你就算一个 $μ^t$ 
 
@@ -209,7 +209,7 @@ $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，�
 
 好 那这个是从 Batch Normalization，原始的文件上面截出来的一个实验结果，那在原始的文件上还讲了很多其他的东西，举例来说，我们今天还没有讲的是，Batch Normalization 用在 CNN 上，要怎么用呢，那你自己去读一下原始的文献，里面会告诉你说，Batch Normalization 如果用在 CNN 上，应该要长什么样子
 
-<img src="lihongyi_pic/image-20210427102536377.png" alt="image-20210427102536377" style="zoom: 67%;" />
+![image-20210427102536377](lihongyi_pic/image-20210427102536377.png)
 
 这个是原始文献上面截出来的一个数据
 
@@ -225,7 +225,7 @@ $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，�
 
 他认为说今天在 train network 的时候，会有以下这个问题，这个问题是这样
 
-<img src="lihongyi_pic/image-20210427105347073.png" alt="image-20210427105347073" style="zoom:50%;" />
+![image-20210427105347073](lihongyi_pic/image-20210427105347073.png)
 
 network 有很多层
 
@@ -242,7 +242,7 @@ network 有很多层
 
 那如果说 Batch Normalization 的话，我们会让，因为我们每次都有做 normalization，我们就会让 a 跟 a′ 呢，它的分布比较接近，也许这样就会对训练呢，有帮助
 
-<img src="lihongyi_pic/image-20210427105049445.png" alt="image-20210427105049445" style="zoom:50%;" />
+![image-20210427105049445](lihongyi_pic/image-20210427105049445.png)
 
 但是有一篇 paper 叫做，How Does Batch Normalization，Help Optimization，然后他就**打脸了internal covariate shift 的这一个观点**
 
@@ -258,7 +258,7 @@ network 有很多层
 
 为什么 Batch Normalization 会比较好呢，那在这篇 How Does Batch Normalization，Help Optimization 这篇论文里面，他从实验上，也从理论上，至少**支持了 Batch Normalization，可以改变 error surface，让 error surface 比较不崎岖这个观点**
 
-<img src="lihongyi_pic/image-20210427110340852.png" alt="image-20210427110340852" style="zoom:50%;" />
+![image-20210427110340852](lihongyi_pic/image-20210427110340852.png)
 
 所以这个观点是有理论的支持，也有实验的佐证的，那在这篇文章里面呢，作者还讲了一个非常有趣的话，他说他觉得啊，这个 Batch Normalization 的 positive impact
 

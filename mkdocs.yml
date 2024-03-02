@@ -204,6 +204,17 @@ nav:
         - 2_GAN: ML/Lec6_2_GAN.md
         - 3_GAN: ML/Lec6_3_GAN.md
         - 4_GAN: ML/Lec6_4_GAN.md
+      - Lec7 Self-supervised learning for Speech and Image:
+        - 1_BERT: ML/Lec7_1_BERT_P1.md
+        - 2_BERT: ML/Lec7_2_BERT_P2.md
+        - 3_BERT: ML/Lec7_3_BERT_P3.md
+      - Lec8 Auto-encoder/ Anomaly Detection:
+        - 1_Auto-encoder: ML/Lec8_1_Auto-encoder_P1.md
+        - 2_Auto-encoder: ML/Lec8_2_Auto-encoder_P2.md
+      - Lec9 Explainable AI:
+        - 1_Explainable AI: ML/Lec9_1_Explainable AI_P1.md
+        - 2_Explainable AI: ML/Lec9_2_Explainable AI_P2.md
+
 
   - Friend: Friend/link.md
   - Strange: 

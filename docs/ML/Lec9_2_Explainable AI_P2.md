@@ -11,7 +11,7 @@ Global 的 Explanation 是什么意思呢，我们在前一堂课讲的是 Local
 
 举例来说，假设你今天 Train 好一个，Convolutional 的 Neural Network，Train 好在这边，那你知道在 Convolutional 的，Neural Network 里面呢，就是有很多的 Filter，有很多的这个 Convolutional Layer
 
-<img src="lihongyi_pic/image-20210823120807142.png" alt="image-20210823120807142" style="zoom:67%;" />
+![image-20210823120807142](lihongyi_pic/image-20210823120807142.png)
 
 Convolutional Layer 里面呢，有一堆的 Filter，那你把一张图片作为输入，Convolutional 的 Layer，它的输出是什么呢，它的**输出是一个 Feature Map**，那每一个 Filter 都会给我们一个 Metric
 
@@ -27,7 +27,7 @@ Convolutional Layer 里面呢，有一堆的 Filter，那你把一张图片作�
 
 那怎么找这张图片呢，我们假设 Filter 1，它是这个 Filter 1 的这个 Feature Map，里面的每一个 Element 叫做 $a_{ij}$，就是 Filter 1 的那个 Feature Map 是一个矩阵，那矩阵里面每一个 Element，我们用 $a_{ij}$ 来表示
 
-<img src="lihongyi_pic/image-20210823123359105.png" alt="image-20210823123359105" style="zoom:50%;" />
+![image-20210823123359105](lihongyi_pic/image-20210823123359105.png)
 
 那我们现在要做的事情是找一张图片 X，这张图片不是 Database 里面的图片，而是我们**把这个 X 呢，当做一个 Unknown Variable**，当做我们要训练的那个参数，我们去找一张图片，这张图片丢到这个 Filter 以后，通过 Convolutional Layer 以后，输出这个 Feature Map 以后，Filter 1 对应的 Feature Map 里面的值，也就是 $a_{ij}$ 的值越大越好，所以我们要找一个 X，**让 $a_{ij}$ 的总和，也就是 Filter 1 的 Feature Map的 Output，它的值越大越好**，那我们找出来的这个 X，我们就用 $X^⋆$ 来表示
 
@@ -41,7 +41,7 @@ Convolutional Layer 里面呢，有一堆的 Filter，那你把一张图片作�
 
 那这边是一个实际操作的结果了，我们就用这个 ==Mnist==，Mnist 是一个手写数字辨识的 Corpus，用 Mnist Train 出一个 Classifier，这个 Classifier 给它一张图片，它会判断说这张图片里面是 1~9 的哪一个数字
 
-<img src="lihongyi_pic/image-20210823174224160.png" alt="image-20210823174224160" style="zoom:67%;" />
+![image-20210823174224160](lihongyi_pic/image-20210823174224160.png)
 
 训练好这个数字的 Classifier 以后呢，我们就把它的**第二层的 Convolutional Layer，里面的 Filter 拿出来，然后找出每一个 Filter 对应的 $X^⋆$**，所以下面这边每一张图片，就是一个 $X^⋆$，然后每一张图片都对应到一个 Filter
 
@@ -59,7 +59,7 @@ Convolutional Layer 里面呢，有一堆的 Filter，那你把一张图片作�
 
 比如说你选数字 1 出来，然后你希望找一张图片，这张图片丢到这个 Classifier 以后，数字 1 的分数越高越好，那如果你用这个方法，你可以看到什么样的东西呢，你可以看到数字 0~9 吗，你实际上做一下以后发现，没有办法，你看到的结果大概就像是这个样子
 
-<img src="lihongyi_pic/image-20210823175257987.png" alt="image-20210823175257987" style="zoom:67%;" />
+![image-20210823175257987](lihongyi_pic/image-20210823175257987.png)
 
 这张图片，它可以让这个 Image Classifier，觉得看到数字 0 的分数最高，这张图片可以让你的这个 Classifier，觉得看到 1 的分数最高，2 的分数最高，3 的分数最高，以此类推，你会发现说你观察到的，**其实就是一堆杂讯，你根本没有办法看到数字**
 
@@ -75,7 +75,7 @@ Convolutional Layer 里面呢，有一堆的 Filter，那你把一张图片作�
 
 假设我们希望我们今天看到的，是比较像是人想像的数字，应该要怎么办呢，你在**解这个 Optimization 的问题的时候，你要加上更多的限制**，举例来说，我们先对这个数字已经有一些想像，我们已经知道数字可能是长什么样子，我们可以把我们要的这个限制，加到这个 Optimization 的过程里面
 
-<img src="lihongyi_pic/image-20210823175750052.png" alt="image-20210823175750052" style="zoom:67%;" />
+![image-20210823175750052](lihongyi_pic/image-20210823175750052.png)
 
 举例来说，我们现在不是要找一个 X，让 $y_i$ 的分数最大，而是要**找一个 X，同时让 $y_i$ 还有 $R( X)$ 的分数都越大越好**，那这个 $R( X)$ 是什么意思呢，这个**$R( X)$是要拿来衡量说，这个 X 有多么像是一个数字**
 
@@ -89,7 +89,7 @@ Convolutional Layer 里面呢，有一堆的 Filter，那你把一张图片作�
 
 比如说你看下面这篇文献，它告诉你说，它有一个 Image classifier，它用我们刚才提到的方法，它可以反推说，这个 Image classifier 里面，心中的这个丹顶鹤长什么样子
 
-<img src="lihongyi_pic/image-20210823180225684.png" alt="image-20210823180225684" style="zoom:67%;" />
+![image-20210823180225684](lihongyi_pic/image-20210823180225684.png)
 
 或它心中的这个甲虫长什么样子，来看这些图片，这个真的都还蛮像丹顶鹤的，你完全可以看到说，这个有一隻鸟，有一隻丹顶鹤，然后牠有一隻脚插在水里面，那这些图片真的都可以看到甲虫，在图片里面
 
@@ -101,7 +101,7 @@ Convolutional Layer 里面呢，有一堆的 Filter，那你把一张图片作�
 
 你有一堆训练资料，有一堆 Image，那你拿这一堆 Image 呢，来训练一个 Image 的 Generator，比如说你可以用 GAN，可以用 VAE 等等，GAN 我们有教过了，VAE 我们没有教过，反正就是你可以想办法，训练出一个 Image 的 Generator
 
-<img src="lihongyi_pic/image-20210823180750841.png" alt="image-20210823180750841" style="zoom:67%;" />
+![image-20210823180750841](lihongyi_pic/image-20210823180750841.png)
 
 - Image 的 Generator 输入，是一个 Low-dimensional 的 Vector，是一个从 Gaussian distribution 里面，Sample 出来的低维度的向量叫做 z
 
@@ -130,7 +130,7 @@ Convolutional Layer 里面呢，有一堆的 Filter，那你把一张图片作�
 
 好 那找出来的 $X^⋆$ 长什么样子呢
 
-<img src="lihongyi_pic/image-20210823181237152.png" alt="image-20210823181237152" style="zoom:67%;" />
+![image-20210823181237152](lihongyi_pic/image-20210823181237152.png)
 
 假设你今天想要产生，比如说这个让蚂蚁分数，让蚂蚁的信心分数最高的 Image，那产生出来的蚂蚁的照片，这个很厉害，这个长得是这个样子，都看得出这个就是蚂蚁，或者是要让机器产生火山的照片，产生一堆照片，丢到 Classifier 以后，火山的信心分数特别高的，那确实可以找出一堆 Image，这些 Image 一看就知道像是火山一样
 
@@ -144,11 +144,11 @@ Convolutional Layer 里面呢，有一堆的 Filter，那你把一张图片作�
 
 那我们今天呢，就是跟大家介绍了 Explainable AI 的，两个主流的技术，一个是 Local 的 Explanation，一个是 Global 的 Explanation
 
-<img src="lihongyi_pic/image-20210823181400821.png" alt="image-20210823181400821" style="zoom: 67%;" />
+![image-20210823181400821](lihongyi_pic/image-20210823181400821.png)
 
 那其实 Explainable 的 Machine Learning，还有很多的技术，这边再举一个例子，举例来说，你可以**用一个比较简单的模型，想办法去模仿复杂的模型的行为**
 
-<img src="lihongyi_pic/image-20210823181506508.png" alt="image-20210823181506508" style="zoom:67%;" />
+![image-20210823181506508](lihongyi_pic/image-20210823181506508.png)
 
 如果简单的模型可以模仿复杂模型的行为，你再去分析那个简单的模型，也许我们就可以知道，那个复杂的模型在做什么，举例来说，你有一个 Neural Network，因为它是一个黑盒子，你丢一堆 x 进去，比如说丢一堆图片进去，它会给我们分类的结果
 

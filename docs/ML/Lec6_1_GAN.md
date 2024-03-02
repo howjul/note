@@ -333,7 +333,7 @@ Generator训练的目标，是要Discriminator的输出值越大越好， 那因
 
 接下来就是**反复的训练**
 
-<img src="lihongyi_pic/image-20210514160430659.png" alt="image-20210514160430659" style="zoom:50%;" />
+![image-20210514160430659](lihongyi_pic/image-20210514160430659.png)
 
 所以你是训练一阵子discriminator，训练一阵子generator，训练一阵子discriminator，再训练一阵子generator，Generator跟discriminator，它们是反复的去进行训练，当其中一种进行训练的时候，另外一个就固定住，那你期待discriminator跟generator，都可以做得越来越好
 
@@ -345,35 +345,35 @@ Generator训练的目标，是要Discriminator的输出值越大越好， 那因
 
 好那我训练了，我把那个generator呢，Update了一百次以后，所谓generator update 一百次，的意思是说，就是discriminator train一下，generator train一下，discriminator train一下，generator train一下，这样往返一百次以后得到的结果，是这样子
 
-<img src="lihongyi_pic/image-20210514160742613.png" alt="image-20210514160742613" style="zoom: 50%;" />
+![image-20210514160742613](lihongyi_pic/image-20210514160742613.png)
 
 嗯 不知道在做些什么，但我接下来呢就再等了一下，Train 一千次的
 
-<img src="lihongyi_pic/image-20210514160837617.png" alt="image-20210514160837617" style="zoom:50%;" />
+![image-20210514160837617](lihongyi_pic/image-20210514160837617.png)
 
 discriminator 跟generator，各自训练这样反复一千次以后，机器就产生了眼睛，机器知道说人脸就是要有两个眼睛，所以它就把眼睛标上去，训练到两千次的时候，你发现嘴巴就出来了
 
-<img src="lihongyi_pic/image-20210514160903231.png" alt="image-20210514160903231" style="zoom:50%;" />
+![image-20210514160903231](lihongyi_pic/image-20210514160903231.png)
 
 训练到五千次的时候，已经开始有一点人脸的样子了，而且你发现说机器学到说，动画人物啊，就是要有那个水汪汪的大眼睛，所以他每个人的眼睛呢，都涂得非常的大，涂有反白 代表说反光，是水汪汪的大眼睛
 
-<img src="lihongyi_pic/image-20210514160926571.png" alt="image-20210514160926571" style="zoom:50%;" />
+![image-20210514160926571](lihongyi_pic/image-20210514160926571.png)
 
 这个是训练一万次以后的结果，有发现形状已经有出来了，只是有点模糊，很多地方有点晕开的感觉，好像是水彩画的样子，
 
-<img src="lihongyi_pic/image-20210514161000974.png" alt="image-20210514161000974" style="zoom:50%;" />
+![image-20210514161000974](lihongyi_pic/image-20210514161000974.png)
 
 接下来这个是，update两万次的结果
 
-<img src="lihongyi_pic/image-20210514161024546.png" alt="image-20210514161024546" style="zoom:50%;" />
+![image-20210514161024546](lihongyi_pic/image-20210514161024546.png)
 
 这个是update五万次的结果
 
-<img src="lihongyi_pic/image-20210514161043131.png" alt="image-20210514161043131" style="zoom:50%;" />
+![image-20210514161043131](lihongyi_pic/image-20210514161043131.png)
 
 我后来就停在五万次的地方，那其实你在作业里面，是有机会做得比这个结果更好的，这个是助教是学生的时候做的结果啦，那如果是最好，可能可以做到这个样子
 
-<img src="lihongyi_pic/image-20210514161107689.png" alt="image-20210514161107689" style="zoom:50%;" />
+![image-20210514161107689](lihongyi_pic/image-20210514161107689.png)
 
 那你会发现说这些人物呢都还不错，只是有一些比较，还是会有偶尔会有一些崩坏啦，但乍看之下呢可能比一些作画画风，会崩坏的动画公司，比如说一些妹非妹做的还要好一些了，
 
@@ -381,11 +381,11 @@ discriminator 跟generator，各自训练这样反复一千次以后，机器就
 
 我在网络上呢，找到了一个这样子的结果，这个是用StyleGAN做的，那用StyleGAN做起来，可以做到这个样子
 
-<img src="lihongyi_pic/image-20210514161901892.png" alt="image-20210514161901892" style="zoom:67%;" />
+![image-20210514161901892](lihongyi_pic/image-20210514161901892.png)
 
 好那除了产生动画人物以外，当然也可以产生真实的人脸，有一个技术叫做**progressive GAN**，它可以产生非常高清的人脸
 
-<img src="lihongyi_pic/image-20210514161939598.png" alt="image-20210514161939598" style="zoom:50%;" />
+![image-20210514161939598](lihongyi_pic/image-20210514161939598.png)
 
 上下两排都是机器产生的，好所以这个显然progressive GAN，它有办法产生以假乱真的人脸
 
@@ -397,11 +397,11 @@ discriminator 跟generator，各自训练这样反复一千次以后，机器就
 
 你还可以把输入的向量，做内插，做interpolation，把输入的向量做内插以后，会发生什么事呢，你就**会看到两张图片之间连续的变化**
 
-<img src="lihongyi_pic/image-20210514162210347.png" alt="image-20210514162210347" style="zoom:50%;" />
+![image-20210514162210347](lihongyi_pic/image-20210514162210347.png)
 
 举例来说你输入一个向量，这边产生一个看起来非常严肃的男人，你输入一个向量，这边产生一个笑口常开的女人，那你输入这两个向量中间的，interpolation它的内插，你就看到这个男人逐渐的笑了起来
 
-<img src="lihongyi_pic/image-20210514162243414.png" alt="image-20210514162243414" style="zoom:50%;" />
+![image-20210514162243414](lihongyi_pic/image-20210514162243414.png)
 
 你输入一个向量，这个输入的向量这边是假的啦，但这边产生出来的图片是真的，你输入一个向量，这边产生一个往左看的人，你输入一个向量，这边产生一个往右看的人，你把往左看的人跟往右看的人，做interpolation会发生什么事呢
 

@@ -317,7 +317,7 @@ $$
 - Add&norm，就是residual加layer normalization，我们刚才有说self-attention，有加上residual的connection，加下来还要过layer normalization，这边这个图上的Add&amp;norm，就是residual加layer norm的意思
 - 接下来，要过feed forward network
 - fc的feed forward network以后再做一次Add&amp;norm，再做一次residual加layer norm，才是一个block的输出，
-- 然后这个block会重复n次，这个复杂的block，其实在之后会讲到的一个非常重要的模型BERT里面，会再用到，BERT，它其实就是transformer的encoder
+- 然后这个block会重复n次，这个复杂的block，其实在之后会讲到的一个非常重要的模型BERT里面，会再用到，BERT它其实就是transformer的encoder
 
 ## To Learn more
 

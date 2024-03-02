@@ -193,6 +193,17 @@ nav:
         - 4_Batch Normalization: ML/Lec2_4_Batch Normalization.md
         - 5_Classification: ML/Lec2_5_Classification.md
       - Lec3 Image as input: ML/Lec3_CNN.md
+      - Lec4 Sequence as input: 
+        - 1_Self-attention: ML/Lec4_1_Self-attention.md
+        - 2_Self-attention: ML/Lec4_2_Self-attention.md
+      - Lec5 Sequence to sequence:
+        - 1_Transformer: ML/Lec5_1_Transformer.md
+        - 2_Transformer: ML/Lec5_2_Transformer.md
+      - Lec6 Generation:
+        - 1_GAN: ML/Lec6_1_GAN.md
+        - 2_GAN: ML/Lec6_2_GAN.md
+        - 3_GAN: ML/Lec6_3_GAN.md
+        - 4_GAN: ML/Lec6_4_GAN.md
 
   - Friend: Friend/link.md
   - Strange: 

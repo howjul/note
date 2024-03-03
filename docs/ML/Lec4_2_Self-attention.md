@@ -347,7 +347,7 @@ Truncated Self-attention 做的事情就是，我们今天在做 Self-attention 
 
 那这个实验结果，来自于 An image is worth 16 乘以 16 的 words，这个是 Google 的 paper，它就是把这个 Self-attention，apply 在影像上面
 
-那其实**把一张影像呢，拆成 16 乘以 16 个 patch，它把每一个 patch想像成是一个 word**，因为一般我们这个 Self-attention，比较常用在 NLP 上面，所以他就说，想像每一个 patch 其实就是一个 word，所以他就取了一个很 fancy 的 title，叫做一张图呢，值 16 乘以 16 个文字
+那其实**把一张影像呢，拆成 16 乘以 16 个 patch，它把每一个 patch想象成是一个 word**，因为一般我们这个 Self-attention，比较常用在 NLP 上面，所以他就说，想象每一个 patch 其实就是一个 word，所以他就取了一个很 fancy 的 title，叫做一张图呢，值 16 乘以 16 个文字
 
 横轴是训练的影像的量，那你发现说，对 Google 来说 用的，所谓的资料量比较少，也是你没有办法用的资料量啦这边有 10 个 million 就是，1000 万张图，是资料量比较小的 setting，然后资料量比较大的 setting 呢，有 3 亿张图片，在这个实验里面呢，比较了 Self-attention 是浅蓝色的这一条线，跟 CNN 是深灰色的这条线
 

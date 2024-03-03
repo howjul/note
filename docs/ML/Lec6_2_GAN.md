@@ -22,7 +22,7 @@ P1是用了一堆比喻说明 GAN 的操作是怎么进行的
 
 ## Our objective
 
-如果你一下子没有办法想像，这个 PG 、Pdata 是怎么一回事的话，那我们用**一维的状况**来跟大家说明
+如果你一下子没有办法想象，这个 PG 、Pdata 是怎么一回事的话，那我们用**一维的状况**来跟大家说明
 
 ![image-20210516190051672](lihongyi_pic/image-20210516190051672.png)
 
@@ -323,7 +323,7 @@ Wasserstein Distance 它计算的方法，就是想象你在开一台推土机
 
 ![image-20210517165125486](lihongyi_pic/image-20210517165125486.png)
 
-推土机的英文叫做 Earth Mover，想像你在开一台推土机，那你把 P 想成是一堆土，把 Q 想成是你要把土堆放的目的地，那这个推土机**把 P 这边的土，挪到 Q 所移动的平均距离**，就是 **Wasserstein Distance**
+推土机的英文叫做 Earth Mover，想象你在开一台推土机，那你把 P 想成是一堆土，把 Q 想成是你要把土堆放的目的地，那这个推土机**把 P 这边的土，挪到 Q 所移动的平均距离**，就是 **Wasserstein Distance**
 
 在这个例子里面，我们假设 P 都集中在这个点，Q 都集中在这个点，对推土机而言，假设它要把 P 这边的土挪到 Q 这边，那它要平均走的距离，就是 D
 
@@ -331,7 +331,7 @@ Wasserstein Distance 它计算的方法，就是想象你在开一台推土机
 
 所以在这个例子里面，假设 P 集中在一个点，Q 集中在一个点，这两个点之间的距离是 D 的话，那 P 跟 Q 的 Wasserstein Distance，就是 D
 
-那因为在讲这个，Wasserstein Distance 的时候，你要想像有一个 Earth Mover，有一个推土机在推土，所以其实 Wasserstein Distance，又叫 ==Earth Mover Distance==
+那因为在讲这个，Wasserstein Distance 的时候，你要想象有一个 Earth Mover，有一个推土机在推土，所以其实 Wasserstein Distance，又叫 ==Earth Mover Distance==
 
 但是如果是**更复杂的 Distribution**，你要算 **Wasserstein Distance，就有点困难**了
 
@@ -383,7 +383,7 @@ Wasserstein Distance 它计算的方法，就是想象你在开一台推土机
 
 ![image-20210517211703473](lihongyi_pic/image-20210517211703473.png)
 
-右边这个是人类的眼睛，人类的眼睛是非常地复杂的，那有一些生物它有非常原始的眼睛，比如说有一些细胞具备有感光的能力，这可以看做是最原始的眼睛，但是这些最原始的眼睛，怎么变成最复杂的眼睛，这对人类来说其实觉得非常难想像
+右边这个是人类的眼睛，人类的眼睛是非常地复杂的，那有一些生物它有非常原始的眼睛，比如说有一些细胞具备有感光的能力，这可以看做是最原始的眼睛，但是这些最原始的眼睛，怎么变成最复杂的眼睛，这对人类来说其实觉得非常难想象
 
 左边这个图像构造这么简单，只是一些感光的细胞在皮肤上，经过突变产生一些感光的细胞，听起来像是一个合理的，但是天择突变，怎么可能产生这么复杂的器官，怎么产生眼睛这么精巧的器官
 
@@ -461,7 +461,7 @@ WGAN 实际上就是用，当你用 Wasserstein Distance，来取代 JS Divergen
 
 它是说我就 Train Network，那 Train Network 的时候，如果我 Training 的那个**参数**，我就要求它放得**在 C 跟 -C** 之间，如果超过 C，用 Gradient Descent Update 以后**超过 C，就设为 C**，Gradient Descent Update 以后**小于 -C，就直接设为 -C**
 
-其实这个方法，**并不一定真的能够让 Discriminator，变成 1-Lipschitz Function**，那你可以想像说这个方法，也许真的可以让我们的 Discriminator，比较平滑，但它并没有真的去解这个，Optimization 的 Problem，它并没有真的让 Discriminator，符合这个限制
+其实这个方法，**并不一定真的能够让 Discriminator，变成 1-Lipschitz Function**，那你可以想象说这个方法，也许真的可以让我们的 Discriminator，比较平滑，但它并没有真的去解这个，Optimization 的 Problem，它并没有真的让 Discriminator，符合这个限制
 
 所以接下来就有其它的想法，有一个想法叫做 Gradient Penalty
 

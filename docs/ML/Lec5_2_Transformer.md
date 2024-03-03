@@ -250,7 +250,7 @@ NAT 的 Decoder**可能吃的是一整排的 BEGIN 的 Token**，你就把一堆
 
 - 它第一个好处是，**并行化**，这个 AT 的 Decoder，它在输出它的句子的时候，是一个一个一个字产生的，所以你有你的，假设要输出长度一百个字的句子，那你就需要做一百次的 Decode
 
-    但是 NAT 的 Decoder 不是这样，不管句子的长度如何，都是**一个步骤就产生出完整的句子**，所以在速度上，NAT 的 Decoder 它会跑得比 AT 的 Decoder 要快，那你可以想像说，这个 NAT Decoder 的想法显然是在，由这个 Transformer 以后，有这种 Self-Attention 的 Decoder 以后才有的
+    但是 NAT 的 Decoder 不是这样，不管句子的长度如何，都是**一个步骤就产生出完整的句子**，所以在速度上，NAT 的 Decoder 它会跑得比 AT 的 Decoder 要快，那你可以想象说，这个 NAT Decoder 的想法显然是在，由这个 Transformer 以后，有这种 Self-Attention 的 Decoder 以后才有的
 
     因为以前如果你是用那个 ==LSTM==，用 ==RNN== 的话，那你就算给它一排 BEGIN，它也没有办法同时产生全部的输出，它的输出还是一个一个产生的，所以在没有这个 Self-Attention 之前，只有 RNN，只有 LSTM 的时候，根本就不会有人想要做什么 NAT 的 Decoder，不过自从有了 Self-Attention 以后，那 NAT 的 Decoder，现在就算是一个热门的研究的主题了
 
@@ -452,7 +452,7 @@ Encoder 这边有很多层，Decoder 这边有很多层，为什么 Decoder 这�
 
 不知道为什么这样子，就是你这个 Sequence-To-Sequence Model，有时候 Train 出来就是，会产生莫名其妙的结果，**也许在训练资料里面，这种非常短的句子很少**，所以机器不知道要怎么处理这种非常短的句子，你叫它念发财，它把发省略掉只念财，你居然叫它念 4 次的发财，重复 4 次没问题，叫它只念一次，居然会有问题，就是这么的奇怪
 
-当然其实这个例子并没有那么常出现，就这个用 Sequence-To-Sequence，Learn 出来 TTS，也没有你想像的那么差，这个要找这种差的例子也是挺花时间的，要花很多时间才找得到这种差的例子，但这样子的例子是存在的
+当然其实这个例子并没有那么常出现，就这个用 Sequence-To-Sequence，Learn 出来 TTS，也没有你想象的那么差，这个要找这种差的例子也是挺花时间的，要花很多时间才找得到这种差的例子，但这样子的例子是存在的
 
 所以怎么办呢
 
@@ -468,7 +468,7 @@ Encoder 这边有很多层，Decoder 这边有很多层，为什么 Decoder 这�
 
 但是**对语音辨识 语音合成，Guiding Attention，可能就是一个比较重要的技术**
 
-Guiding Attention 要做的事情就是，**要求机器它在做 Attention 的时候，是有固定的方式的**，举例来说，对语音合成或者是语音辨识来说，我们想像中的 **Attention，应该就是由左向右**
+Guiding Attention 要做的事情就是，**要求机器它在做 Attention 的时候，是有固定的方式的**，举例来说，对语音合成或者是语音辨识来说，我们想象中的 **Attention，应该就是由左向右**
 
 ![image-20210506163030902](lihongyi_pic/image-20210506163030902.png)
 
@@ -516,7 +516,7 @@ Beam Search ，我们这边举一个例子，在这个例子里面我们假设�
 
 那这个 Beam Search 这个技术，到底有没有用呢，有趣的事就是，**它有时候有用，有时候没有用，**你会看到有些文献告诉你说，Beam Search 是一个很烂的东西
 
-举例来说这篇 Paper 叫做，The Curious Case Of Neural Text Degeneration，那这个任务要做的事情是，Sentence Completion，也就是机器先读一段句子，接下来它要把这个句子的后半段，把它完成，你给它一则新闻，或者是一个故事的前半部，哇 它自己发挥它的想像创造力，把这个文章，把故事的后半部把它写完
+举例来说这篇 Paper 叫做，The Curious Case Of Neural Text Degeneration，那这个任务要做的事情是，Sentence Completion，也就是机器先读一段句子，接下来它要把这个句子的后半段，把它完成，你给它一则新闻，或者是一个故事的前半部，哇 它自己发挥它的想象创造力，把这个文章，把故事的后半部把它写完
 
 ![image-20210506164817398](lihongyi_pic/image-20210506164817398.png)
 

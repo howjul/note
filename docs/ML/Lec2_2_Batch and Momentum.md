@@ -179,7 +179,7 @@
 
 ![image-20210315165829425](lihongyi_pic/image-20210315165829425.png)
 
-​	它的概念，你可以想像成在物理的世界里面，假设 Error Surface 就是真正的斜坡，而我们的参数是一个球，你把球从斜坡上滚下来，如果今天是 Gradient Descent，它走到 Local Minima 就停住了，走到 Saddle Point 就停住了
+​	它的概念，你可以想象成在物理的世界里面，假设 Error Surface 就是真正的斜坡，而我们的参数是一个球，你把球从斜坡上滚下来，如果今天是 Gradient Descent，它走到 Local Minima 就停住了，走到 Saddle Point 就停住了
 
 ​	但是在物理的世界里，一个球如果从高处滚下来，从高处滚下来就算滚到 Saddle Point，如果有**惯性**，它从左边滚下来，因为惯性的关系它还是会继续往右走，甚至它走到一个 Local Minima，如果今天它的动量够大的话，它还是会继续往右走，甚至翻过这个小坡然后继续往右走
 

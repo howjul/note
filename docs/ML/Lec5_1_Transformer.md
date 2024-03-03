@@ -58,7 +58,7 @@ Transformer就是一个==Sequence-to-sequence==的model，他的缩写，我们�
 
 ![image-20210429102425315](https://github.com/unclestrong/DeepLearning_LHY21_Notes/blob/master/Notes_pic/image-20210429102425315.png?raw=true)
 
-我们可以训练一个类神经网路，这个类神经网路听某一种语言，的声音讯号，输出是另外一种语言的文字。
+我们可以训练一个类神经网络，这个类神经网络听某一种语言，的声音讯号，输出是另外一种语言的文字。
 
 今天你要训练一个neural network，你就需要有input跟output的配合，你需要有台语的声音讯号，跟中文文字的对应关系，那这样的资料是比较容易收集的。比如说YouTube上面，有很多的乡土剧
 
@@ -129,7 +129,7 @@ Transformer就是一个==Sequence-to-sequence==的model，他的缩写，我们�
 
 ### Question Answering (QA)
 
-那事实上Seq2Seq model，在NLP的领域，在natural language processing的领域的使用，是比你想像的更为广泛，其实很多**natural language processing的任务，都可以想成是==question answering，QA==的任务**
+那事实上Seq2Seq model，在NLP的领域，在natural language processing的领域的使用，是比你想象的更为广泛，其实很多**natural language processing的任务，都可以想成是==question answering，QA==的任务**
 
 Question Answering，就是给机器读一段文字，然后你问机器一个问题，希望他可以给你一个正确的答案
 
@@ -237,7 +237,7 @@ seq2seq model的起源，其实非常的早在14年的9月，就有一篇seq2seq
 
 ![image-20210429205447815](lihongyi_pic/image-20210429205447815.png)
 
-可以想像当时的seq2seq's model看起来还是比较阳春的，今天讲到seq2seq's model的时候，大家第一个会浮现在脑中的，可能都是我们今天的主角，也就是transformer
+可以想象当时的seq2seq's model看起来还是比较阳春的，今天讲到seq2seq's model的时候，大家第一个会浮现在脑中的，可能都是我们今天的主角，也就是transformer
 
 ![image-20210429205517760](lihongyi_pic/image-20210429205517760.png)
 

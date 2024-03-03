@@ -165,7 +165,7 @@
 
 ​	这个一无是处的function说，**如果今天x当做输入的时候，我们就去比对这个x，有没有出现在训练集里面，如果x有出现在训练集里面，就把它对应的ŷ当做输出，如果x没有出现在训练集里面，就输出一个随机的值**
 
-​	那你可以想像这个function啥事也没有干，它是一个一无是处的function，但虽然它是一个一无是处的function，它**在training的data上，它的loss可是0呢**
+​	那你可以想象这个function啥事也没有干，它是一个一无是处的function，但虽然它是一个一无是处的function，它**在training的data上，它的loss可是0呢**
 
 ​	你把training的data，通通丢进这个function里面，它的输出跟你的训练集的level，是一模一样的，所以在training data上面，这个一无是处的function，它的loss可是0呢，可是在testing data上面，它的loss会变得很大，因为**它其实什么都没有预测**，这是一个比较极端的例子，在一般的状况下，也有可能发生类似的事情。
 

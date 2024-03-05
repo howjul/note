@@ -22,7 +22,7 @@ CNN以后，我们要讲另外一个常见的Network架构，这个架构叫做S
 
 如果我们把一个**句子里面的每一个词汇，都描述成一个向量**，那我们的Model的**输入**，就会**是一个Vector Set**，而且这个Vector Set的大小每次都不一样，句子的长度不一样，那你的Vector Set的大小就不一样
 
-那**怎么把一个词汇表示成一个向量**，最简单的做法是==One-Hot的Encoding==
+那**怎么把一个词汇表示成一个向量**，最简单的做法是 ==One-Hot的Encoding==
 
 ![image-20210403222112679](lihongyi_pic/image-20210403222112679.png)
 
@@ -30,7 +30,7 @@ CNN以后，我们要讲另外一个常见的Network架构，这个架构叫做S
 
 但是这样子的表示方法有一个非常严重的问题，它假设所有的**词汇彼此之间都是没有关系**的，从这个向量里面你看不到：Cat跟Dog都是动物所以他们比较接近，Cat跟Apple一个动物一个植物，所以他们比较不相像。这个向量里面，没有任何语义的资讯
 
-有另外一个方法叫做==Word Embedding==
+有另外一个方法叫做 ==Word Embedding==
 
 ![image-20210403222544230](lihongyi_pic/image-20210403222544230.png)
 
@@ -42,11 +42,11 @@ Word Embedding，如果你有兴趣的话，可以看一下以下的录影https:
 
 ### 声音信号
 
-一段声音讯号其实是一排向量，怎么说呢，我们会把一段声音讯号取一个范围，这个范围叫做一个==Window==
+一段声音讯号其实是一排向量，怎么说呢，我们会把一段声音讯号取一个范围，这个范围叫做一个 ==Window==
 
 ![image-20210404160614690](lihongyi_pic/image-20210404160614690.png)
 
-把这个Window里面的资讯描述成一个向量，这个向量就叫做一个==Frame==，在语音上，我们会把**一个向量叫做一个Frame**，通常这个Window的长度就是25个Millisecond
+把这个Window里面的资讯描述成一个向量，这个向量就叫做一个 ==Frame==，在语音上，我们会把**一个向量叫做一个Frame**，通常这个Window的长度就是25个Millisecond
 
 把这么一个小段的声音讯号变成一个Frame，变成一个向量就有百百种做法，那这边就不细讲
 
@@ -92,7 +92,7 @@ Word Embedding，如果你有兴趣的话，可以看一下以下的录影https:
 
 ![image-20210404165717142](lihongyi_pic/image-20210404165717142.png)
 
-- 举例来说 在文字处理上，假设你今天要做的是==POS Tagging==，POS Tagging就是词性标注，你要让机器自动决定每一个词汇 它是什么样的词性，它是名词 还是动词 还是形容词等等
+- 举例来说 在文字处理上，假设你今天要做的是 ==POS Tagging==，POS Tagging就是词性标注，你要让机器自动决定每一个词汇 它是什么样的词性，它是名词 还是动词 还是形容词等等
 
     这个任务啊，其实并没有很容易，举例来说，你现在看到一个句子，I saw a saw
 
@@ -130,7 +130,7 @@ Word Embedding，如果你有兴趣的话，可以看一下以下的录影https:
 
 ![image-20210404170045293](lihongyi_pic/image-20210404170045293.png)
 
-这种任务又叫做==sequence to sequence==的任务，那我们在作业五会有sequence to sequence的作业，所以这个之后我们还会再讲
+这种任务又叫做 ==sequence to sequence==的任务，那我们在作业五会有sequence to sequence的作业，所以这个之后我们还会再讲
 
 - 翻译就是sequence to sequence的任务，因为输入输出是不同的语言，它们的词汇的数目本来就不会一样多
 - 或者是语音辨识也是，真正的语音辨识也是一个sequence to sequence的任务，输入一句话，然后输出一段文字，这也是一个sequence to sequence的任务
@@ -141,7 +141,7 @@ Word Embedding，如果你有兴趣的话，可以看一下以下的录影https:
 
 ## Sequence Labeling
 
-那这种输入跟输出数目一样多的状况又叫做==Sequence Labeling==，你要给Sequence里面的每一个向量，都给它一个Label，那要怎么解Sequence Labeling的问题呢
+那这种输入跟输出数目一样多的状况又叫做 ==Sequence Labeling==，你要给Sequence里面的每一个向量，都给它一个Label，那要怎么解Sequence Labeling的问题呢
 
 那直觉的想法就是我们就拿个**Fully-Connected的Network**
 
@@ -216,7 +216,7 @@ Self-Attention的运作方式就是，**Self-Attention会吃一整个Sequence的
 
 
 
-有关Self-Attention，最知名的相关的文章，就是《Attention is all you need》。那在这篇Paper里面呢，Google提出了==Transformer==这样的Network架构，那Transformer就是变形金刚，所以提到这个Network的时候呢，我们就会有变形金刚这个形象
+有关Self-Attention，最知名的相关的文章，就是《Attention is all you need》。那在这篇Paper里面呢，Google提出了 ==Transformer==这样的Network架构，那Transformer就是变形金刚，所以提到这个Network的时候呢，我们就会有变形金刚这个形象
 
 ![image-20210404201325728](lihongyi_pic/image-20210404201325728.png)
 
@@ -254,11 +254,11 @@ Self-Attention的Input，它就是一串的Vector，那**这个Vector可能是�
 
 计算这个α的数值有各种不同的做法
 
-- 比较常见的做法呢，叫做用==dot product==，**输入的这两个向量分别乘上两个不同的矩阵**，左边这个向量乘上$W^q$这个矩阵得到矩阵$q$，右边这个向量乘上$W^k$这个矩阵得到矩阵$k$
+- 比较常见的做法呢，叫做用 ==dot product==，**输入的这两个向量分别乘上两个不同的矩阵**，左边这个向量乘上$W^q$这个矩阵得到矩阵$q$，右边这个向量乘上$W^k$这个矩阵得到矩阵$k$
 
     再把$q$跟$k$做dot product，就是把他们做element-wise的相乘，再全部加起来以后就得到一个 scalar，这个scalar就是α，这是一种计算α的方式
 
-- 有另外一个叫做==Additive==的计算方式，它的计算方法就是，把同样这两个向量通过$W^q$ $W^k$，得到$q$跟$k$，那我们不是把它做Dot-Product，是把它这个串起来，然后丢到这个过一个Activation Function
+- 有另外一个叫做 ==Additive==的计算方式，它的计算方法就是，把同样这两个向量通过$W^q$ $W^k$，得到$q$跟$k$，那我们不是把它做Dot-Product，是把它这个串起来，然后丢到这个过一个Activation Function
 
     然后再通过一个Transform，然后得到α
 
@@ -274,11 +274,11 @@ Self-Attention的Input，它就是一串的Vector，那**这个Vector可能是�
 
 ![image-20210404211656032](lihongyi_pic/image-20210404211656032.png)
 
-你把$a^1$乘上$W^q $得到$q^1$，那这个q有一个名字，我们叫做==Query==，它就像是你搜寻引擎的时候，去搜寻相关文章的问题，就像搜寻相关文章的关键字，所以这边叫做Query
+你把$a^1$乘上$W^q $得到$q^1$，那这个q有一个名字，我们叫做 ==Query==，它就像是你搜寻引擎的时候，去搜寻相关文章的问题，就像搜寻相关文章的关键字，所以这边叫做Query
 
-然后接下来呢，$a^2 a^3 a^4$你都要去把它乘上$W^k$，得到$k$这个Vector，$k$这个Vector叫做==Key==，那你把这个**Query q1，跟这个Key k2，算Inner-Product就得到α**
+然后接下来呢，$a^2 a^3 a^4$你都要去把它乘上$W^k$，得到$k$这个Vector，$k$这个Vector叫做 ==Key==，那你把这个**Query q1，跟这个Key k2，算Inner-Product就得到α**
 
-我们这边用$α_{1，2}$来代表说，Query是1提供的，Key是2提供的时候，这个1跟2他们之间的关联性，这个α这个关联性叫做==Attention的Score==，叫做Attention的分数，
+我们这边用$α_{1，2}$来代表说，Query是1提供的，Key是2提供的时候，这个1跟2他们之间的关联性，这个α这个关联性叫做 ==Attention的Score==，叫做Attention的分数，
 
 接下来也要跟$a^3 a^4$来计算
 

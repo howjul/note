@@ -52,7 +52,7 @@ $ w_1 $ 乘 $x_1$，$w_2$ 乘 $x_2$ 加上 b 以后就得到 y，然后会计算
 
 如果我们可以给不同的 dimension，同样的数值范围的话，那我们可能就可以制造比较好的 error surface，让 training 变得比较容易一点
 
-其实有很多不同的方法，这些不同的方法，往往就合起来统称为==Feature Normalization==
+其实有很多不同的方法，这些不同的方法，往往就合起来统称为 ==Feature Normalization==
 
 ### Feature Normalization
 
@@ -64,7 +64,7 @@ $ w_1 $ 乘 $x_1$，$w_2$ 乘 $x_2$ 加上 b 以后就得到 y，然后会计算
 
 那我们把**不同笔资料即不同 feature vector，同一个 dimension** 里面的数值，把它取出来，然后去计算某一个 dimension 的 mean，它的 mean 呢 就是$m_i$，我们计算第 i 个 dimension 的，standard deviation，我们用$\sigma_i$来表示它
 
-那接下来我们就可以做一种 normalization，那这种 normalization 其实叫做==**标准化**==，其实叫 ==standardization==，不过我们这边呢，就等一下都统称 normalization 就好了
+那接下来我们就可以做一种 normalization，那这种 normalization 其实叫做 ==**标准化**== ，其实叫 ==standardization== ，不过我们这边呢，就等一下都统称 normalization 就好了
 $$
 \tilde{x}^r_i ← \frac{x^r_i-m_i}{\sigma_i}
 $$
@@ -221,7 +221,7 @@ $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，�
 
 ## Internal Covariate Shift?
 
-好 接下来的问题就是，Batch Normalization，它为什么会有帮助呢，在原始的 Batch Normalization，那篇 paper 里面，他提出来一个概念，叫做 ==internal covariate shift==，==covariate shift==(训练集和预测集样本分布不一致的问题就叫做“*covariate shift*”现象) 这个词汇是原来就有的，internal covariate shift，我认为是，Batch Normalization 的作者自己发明的
+好 接下来的问题就是，Batch Normalization，它为什么会有帮助呢，在原始的 Batch Normalization，那篇 paper 里面，他提出来一个概念，叫做  ==internal covariate shift== ， ==covariate shift== (训练集和预测集样本分布不一致的问题就叫做“*covariate shift*”现象) 这个词汇是原来就有的，internal covariate shift，我认为是，Batch Normalization 的作者自己发明的
 
 他认为说今天在 train network 的时候，会有以下这个问题，这个问题是这样
 

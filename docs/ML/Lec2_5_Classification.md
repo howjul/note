@@ -107,9 +107,9 @@ $$
 
 如果举一个例子的话，本来 y₁等于3、y₂等于1、y₃等于-3，取完exponential的时候呢，就变成 exp3 就是20，exp1就是2.7，exp-3就是0.05，做完Normalization以后，这边就变成0.88  0.12 和0
 
-所以这个Soft-max它要做的事情，除了Normalized，让 y₁' y₂' y₃'，**变成0到1之间**，还有**和为1**以外，它还有一个附带的效果是，==它会让大的值跟小的值的差距更大==
+所以这个Soft-max它要做的事情，除了Normalized，让 y₁' y₂' y₃'，**变成0到1之间**，还有**和为1**以外，它还有一个附带的效果是， ==它会让大的值跟小的值的差距更大==
 
-本来 -3 然后通过exponential，再做Normalized以后，会变成趋近于0的值，然后这个Soft-max的输入，往往就叫它==logit==
+本来 -3 然后通过exponential，再做Normalized以后，会变成趋近于0的值，然后这个Soft-max的输入，往往就叫它 ==logit==
 
 
 
@@ -117,7 +117,7 @@ $$
 
 如果是两个class你当然可以直接套soft-max这个function没有问题，但是也许你更常听到的是，当有两个class的时候，我们就不套soft-max，我们直接取sigmoid
 
-那==当两个class用sigmoid，跟soft-max两个class，你如果推一下的话，会发现说这两件事情是等价的==
+那 ==当两个class用sigmoid，跟soft-max两个class，你如果推一下的话，会发现说这两件事情是等价的==
 
 ## Loss of Classification
 

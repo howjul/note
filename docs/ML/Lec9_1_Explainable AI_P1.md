@@ -1,4 +1,4 @@
-# **Explainable Machine Learning** P1-Why Does the Model Make This Prediction（已整理）
+# Explainable AI_P1: Why Does the Model Make This Prediction（已整理）
 
 到目前为止，我们已经训练了很多很多的模型，我们训练过影像辨识的模型，给它一张图片，它会给你答案，但我们并不满足于此，接下来我们要机器给我们它**得到答案的理由**，这个就是 Explainable 的 Machine Learning。
 

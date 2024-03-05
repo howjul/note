@@ -6,7 +6,7 @@
 
 ## Sequence-to-sequence (Seq2seq)
 
-Transformer就是一个==Sequence-to-sequence==的model，他的缩写，我们会写做==Seq2seq==，那Sequence-to-sequence的model，又是什么呢
+Transformer就是一个 ==Sequence-to-sequence== 的model，他的缩写，我们会写做 ==Seq2seq==，那Sequence-to-sequence的model，又是什么呢
 
 我们之前在讲input a sequence的，case的时候，我们说input是一个sequence，那output有几种可能
 
@@ -76,7 +76,7 @@ Transformer就是一个==Sequence-to-sequence==的model，他的缩写，我们�
 
 ![image-20210429103037724](https://github.com/unclestrong/DeepLearning_LHY21_Notes/blob/master/Notes_pic/image-20210429103037724.png?raw=true)
 
-直接训练一个模型，输入是声音讯号，输出直接就是中文的文字，这种没有想太多 直接资料倒进去，就训练一个模型的行为，就叫作==硬train一发==
+直接训练一个模型，输入是声音讯号，输出直接就是中文的文字，这种没有想太多 直接资料倒进去，就训练一个模型的行为，就叫作 ==硬train一发==
 
 那你可能会想说，这样子硬train一发到底能不能够，做一个台语语音辨识系统呢，其实 还真的是有可能的，以下是一些真正的结果
 
@@ -129,7 +129,7 @@ Transformer就是一个==Sequence-to-sequence==的model，他的缩写，我们�
 
 ### Question Answering (QA)
 
-那事实上Seq2Seq model，在NLP的领域，在natural language processing的领域的使用，是比你想象的更为广泛，其实很多**natural language processing的任务，都可以想成是==question answering，QA==的任务**
+那事实上Seq2Seq model，在NLP的领域，在natural language processing的领域的使用，是比你想象的更为广泛，其实很多**natural language processing的任务，都可以想成是 ==question answering，QA== 的任务**
 
 Question Answering，就是给机器读一段文字，然后你问机器一个问题，希望他可以给你一个正确的答案
 
@@ -196,7 +196,7 @@ train一个Seq2Seq model，读这个句子，然后直接输入这一串文字�
 
 还有一些任务可以用seq2seq's model，举例来说 ==multi-label的classification==
 
-==multi-class==的classification，跟==multi-label==的classification，听起来名字很像，但他们其实是不一样的事情，multi-class的classification意思是说，我们有不只一个class机器要做的事情，是从数个class里面，选择某一个class出来
+==multi-class== 的classification，跟 ==multi-label== 的classification，听起来名字很像，但他们其实是不一样的事情，multi-class的classification意思是说，我们有不只一个class机器要做的事情，是从数个class里面，选择某一个class出来
 
 但是multi-label的classification，意思是说**同一个东西，它可以属于多个class**，举例来说 你在做文章分类的时候
 
@@ -245,7 +245,7 @@ seq2seq model的起源，其实非常的早在14年的9月，就有一篇seq2seq
 
 ### Encoder
 
-seq2seq model ==Encoder==要做的事情，就是**给一排向量，输出另外一排向量**
+seq2seq model ==Encoder== 要做的事情，就是**给一排向量，输出另外一排向量**
 
 ![image-20210429205911444](lihongyi_pic/image-20210429205911444.png)
 
@@ -278,11 +278,11 @@ seq2seq model ==Encoder==要做的事情，就是**给一排向量，输出另�
 
 也就是说，这边假设这个vector叫做$a$，这个vector叫做$b$ 你要把$a+b$当作是新的输出
 
-这样子的network架构，叫做==residual connection==，那其实这种residual connection，在deep learning的领域用的是非常的广泛，之后如果我们有时间的话，再来详细介绍，为什么要用residual connection
+这样子的network架构，叫做 ==residual connection==，那其实这种residual connection，在deep learning的领域用的是非常的广泛，之后如果我们有时间的话，再来详细介绍，为什么要用residual connection
 
 那你现在就先知道说，有一种network设计的架构，叫做**residual connection，它会把input直接跟output加起来，得到新的vector**
 
-得到residual的结果以后，再把它做一件事情叫做normalization，这边用的不是batch normalization，这边用的叫做==layer normalization==
+得到residual的结果以后，再把它做一件事情叫做normalization，这边用的不是batch normalization，这边用的叫做 ==layer normalization==
 
 ![image-20210429211313025](lihongyi_pic/image-20210429211313025.png)
 
@@ -292,7 +292,7 @@ layer normalization做的事情，比bacth normalization更简单一点
 
 但是要注意一下，**==batch normalization==是对不同example，不同feature的同一个dimension，去计算mean跟standard deviation**
 
-但**==layer normalization==，它是对同一个feature，同一个example里面不同的dimension，去计算mean跟standard deviation**
+但 **==layer normalization==，它是对同一个feature，同一个example里面不同的dimension，去计算mean跟standard deviation**
 
 计算出mean，跟standard deviation以后，就可以做一个normalize，我们把input这个vector里面每一个，dimension减掉mean，再除以standard deviation以后得到x'，就是layer normalization的输出
 $$

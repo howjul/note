@@ -24,7 +24,7 @@
 
 ![image-20210601222431820](lihongyi_pic/image-20210601222431820.png)
 
-接下来，我们将计算每一个"果"的对应embedding。为什么这两个“果”不一样呢？在Encoder中存在Self-Attention，所以根据"果"的不同语境，得到的向量会有所不同。接下来，我们计算这些结果之间的==cosine similarity==，即计算它们的相似度。
+接下来，我们将计算每一个"果"的对应embedding。为什么这两个“果”不一样呢？在Encoder中存在Self-Attention，所以根据"果"的不同语境，得到的向量会有所不同。接下来，我们计算这些结果之间的 ==cosine similarity==，即计算它们的相似度。
 
 
 

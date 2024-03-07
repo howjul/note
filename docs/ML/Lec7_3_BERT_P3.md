@@ -1,6 +1,6 @@
 # BERT P3_GPT3（已整理）
 
-除了BERT以外，还有一个也是鼎鼎有名的模型，就是==GPT==系列
+除了BERT以外，还有一个也是鼎鼎有名的模型，就是 ==GPT== 系列
 
 ![image-20210605213111747](lihongyi_pic/image-20210605213111747.png)
 
@@ -92,7 +92,7 @@ GPT系列最知名的一个例子，就是用GPT写了一篇，跟独角兽有�
 
 不知道大家能不能够了解，这一个想法是多么地狂，在training的时候，GPT并没有教它做翻译这件事，它唯一学到的就是，给一段文字的前半段，把后半段补完，就像我们刚才给大家示范的例子一样，现在我们直接给它前半段的文字，就长这个样子，告诉它说你要做翻译了，给你几个例子，告诉你说翻译是怎么回事，接下来给它cheese这个英文单字，后面能不能就直接接出法文的翻译结果呢
 
-这个在GPT的文献里面，叫做==Few-shot Learning==，但是它跟一般的Few-shot Learning又不一样，所谓Few Shot的意思是说，确实只给了它一点例子，所以叫做Few Shot，但是它不是一般的learning，这里面**完全没有gradient descent**，完全没有要去调，GPT那个模型参数的意思，所以在GPT的文献里面，把这种训练给了一个特殊的名字，它们叫做==In-context Learning==，代表说它不是一种一般的learning，它连gradient descent都没有做
+这个在GPT的文献里面，叫做 ==Few-shot Learning==，但是它跟一般的Few-shot Learning又不一样，所谓Few Shot的意思是说，确实只给了它一点例子，所以叫做Few Shot，但是它不是一般的learning，这里面**完全没有gradient descent**，完全没有要去调，GPT那个模型参数的意思，所以在GPT的文献里面，把这种训练给了一个特殊的名字，它们叫做 ==In-context Learning==，代表说它不是一种一般的learning，它连gradient descent都没有做
 
 #### “One-shot” Learning  “Zero-shot” Learning
 

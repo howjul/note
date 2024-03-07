@@ -71,7 +71,7 @@
 
 ​我们知道说，我们今天用的optimization，在这门课里面，我们其实都只会用到gradient descent，这种optimization的方法，这种optimization的方法很多的问题。
 
-​举例来说 我们上周也讲过说，你可能会卡在==local minima==的地方，你没有办法找到一个，真的可以让loss很低的参数，如果用图具象化的方式来表示，就像这个样子
+​举例来说 我们上周也讲过说，你可能会卡在 ==local minima== 的地方，你没有办法找到一个，真的可以让loss很低的参数，如果用图具象化的方式来表示，就像这个样子
 
 ![image-20210311213108040](lihongyi_pic/image-20210311213108040.png)
 
@@ -227,7 +227,7 @@
 
 ![image-20210313211849093](lihongyi_pic/image-20210313211849093.png)
 
-- 给它**比较少的参数**，如果是deep learning的话，就给它比较少的神经元的数目，本来每层一千个神经元，改成一百个神经元之类的，或者是你可以让model共用参数，你可以让一些参数有一样的数值，那这个部分如果你没有很清楚的话，也没有关系，我们之后在讲CNN的时候，会讲到这个部分，所以这边先前情 先预告一下，就是我们之前讲的network的架构，叫做 ==fully-connected network==，那fully-connected network，其实是一个比较有弹性的架构，而 ==CNN是一个比较有限制的架构==，就说你可能会说，CNN不是比较厉害吗，大家都说做影像就是要CNN，比较厉害的model，难道它比较没有弹性吗，没错，它是一种比较没有弹性的model，它厉害的地方就是，它是针对影像的特性，来限制模型的弹性，所以你今天fully-connected的network，可以找出来的function所形成的集合，其实是比较大的，CNN这个model所找出来的function，它形成的集合其实是比较小的，其实包含在fully-connected的，network里面的，但是就是因为CNN给了，比较大的限制，所以CNN在影像上，反而会做得比较好，那这个之后都还会再提到，
+- 给它**比较少的参数**，如果是deep learning的话，就给它比较少的神经元的数目，本来每层一千个神经元，改成一百个神经元之类的，或者是你可以让model共用参数，你可以让一些参数有一样的数值，那这个部分如果你没有很清楚的话，也没有关系，我们之后在讲CNN的时候，会讲到这个部分，所以这边先前情 先预告一下，就是我们之前讲的network的架构，叫做 ==fully-connected network==，那fully-connected network，其实是一个比较有弹性的架构，而 ==CNN 是一个比较有限制的架构==，就说你可能会说，CNN不是比较厉害吗，大家都说做影像就是要CNN，比较厉害的model，难道它比较没有弹性吗，没错，它是一种比较没有弹性的model，它厉害的地方就是，它是针对影像的特性，来限制模型的弹性，所以你今天fully-connected的network，可以找出来的function所形成的集合，其实是比较大的，CNN这个model所找出来的function，它形成的集合其实是比较小的，其实包含在fully-connected的，network里面的，但是就是因为CNN给了，比较大的限制，所以CNN在影像上，反而会做得比较好，那这个之后都还会再提到，
 - 另外一个就是用**比较少的features**，那刚才助教已经示范过，本来给三天的资料，改成用给两天的资料，其实结果就好了一些，那这个是一个招数
 - 还有一个招数叫做**Early stopping**，Early stopping，Regularization跟Dropout，都是之后课程还会讲到的东西，那这三件事情在作业一的程式里面，这个Early stopping其实是有的，助教有写在它的code里面，所以不知道这是什么也没有关系，反正你直接执行sample code，里面就有了，Regularization，助教留下了一个空格给大家填，那你不知道什么是regularization，没有关系，反正你可以过得了middle的baseline，那如果你想做得更好，也许你可以先自己survey一下，regularization是什么，看有没有办法自己写
 - **Dropout**，这是另外一个在Deep Learning里面，常用来限制模型的方法

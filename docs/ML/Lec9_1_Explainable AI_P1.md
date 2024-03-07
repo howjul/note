@@ -235,7 +235,7 @@ Local 的 Explanation 是说，假设我们有一个 Image 的 Classify，我们
 
 
 
-那有没有什么方法，把 Explainable 的 Machine Learning 的 Saliency Map 画得更好呢，第一个方法就是助教刚才有提到的这个 ==SmoothGrad==，什么意思呢，这张图片是只瞪羚
+那有没有什么方法，把 Explainable 的 Machine Learning 的 Saliency Map 画得更好呢，第一个方法就是助教刚才有提到的这个    ==SmoothGrad==，什么意思呢，这张图片是只瞪羚
 
 ![image-20210822163130815](lihongyi_pic/image-20210822163130815.png)
 

@@ -75,7 +75,7 @@ Divergence 这就是衡量两个的 Distribution 相似度的一个 Measure
 
 我们算不出这个 Divergence，我们又要如何去找一个 G 去 Minimize 这个 Divergence ，这个就是 GAN 所遇到的问题，这就是我们在 Train 这一种，Generator 的时候会遇到的问题
 
-而 **==GAN==是一个很神奇的做法，它==可以突破，我们不知道怎么计算 Divergence 的限制==**
+而 ** ==GAN== 是一个很神奇的做法，它 ==可以突破，我们不知道怎么计算 Divergence 的限制== **
 
 ## Sampling is good enough ……
 
@@ -129,22 +129,22 @@ Discriminator 训练的目标，就是要**分辨好的图跟不好的图**，�
 
     
 
-我们希望这个 **Objective Function V越大越好**
+我们希望这个**Objective Function V越大越好**
 
 ![image-20210517112608814](lihongyi_pic/image-20210517112608814.png)
 
-- 意味著我们希望这边的 D (Y) 越大越好，我们希望 Y 如果是从 **Pdata Sample 出来的**，它就要**越大越好**
-- 我们希望说如果 Y 是从这个 **PG Sample 出来的**，它就要**越小越好**
+- 意味着我们希望这边的 D (Y) 越大越好，我们希望 Y 如果是从**Pdata Sample 出来的**，它就要**越大越好**
+- 我们希望说如果 Y 是从这个**PG Sample 出来的**，它就要**越小越好**
 
 
 
 让 D (Y) 越大越好，也就是让Discriminator Output 的值越小越好
 
-你可能觉得没事突然写出这个式子有点奇怪，但你**不一定要把这个 Objective Function 写成这个样子**，它完全可以有其他的写法，那最早年之所以写成这个样子，是有一个很明确的理由，是为了要把 **Discriminator跟 Binary Classification**，跟二元的分类**扯上关系**
+你可能觉得没事突然写出这个式子有点奇怪，但你**不一定要把这个 Objective Function 写成这个样子**，它完全可以有其他的写法，那最早年之所以写成这个样子，是有一个很明确的理由，是为了要把**Discriminator 跟 Binary Classification**，跟二元的分类**扯上关系**
 
 
 
-事实上这个 Objective Function，它就是 **Cross Entropy 乘一个负号**，我们知道我们在训练一个 Classifier 的时候，我们就是要 Minimize Cross Entropy，所以当我们**Maximize Cross Entropy 乘一个负号**的时候，其实等同于 **Minimize Cross Entropy**，也就是等同于是在**训练一个 Classifier**
+事实上这个 Objective Function，它就是**Cross Entropy 乘一个负号**，我们知道我们在训练一个 Classifier 的时候，我们就是要 Minimize Cross Entropy，所以当我们**Maximize Cross Entropy 乘一个负号**的时候，其实等同于**Minimize Cross Entropy**，也就是等同于是在**训练一个 Classifier**
 
 那这个 Discriminator，其实可以当做是一个 Classifier，它做的事情就是把蓝色这些点，从 Pdata Sample 出来的真实的 Image，当作 Class 1，把从 PG Sample出来的这些假的 Image，当作 Class 2
 
@@ -156,13 +156,13 @@ Discriminator 训练的目标，就是要**分辨好的图跟不好的图**，�
 
 那事实上有趣的事情是，我觉得最原始的 GAN 的 Paper，它的发想可能真的是从 Binary Classifier 来的，一开始是把 Discriminator，写成 Binary 的 Classifier，然后有了这样的 Objective Function，然后再经过一番推导以后，这个 Objective Function，它的 Maximum，就是你找到一个 D，可以让这个 Objective Function，它的值最大的时候，这个最大的值跟 JS Divergence 是有关的。它们没有完全一模一样，所以显然一开始，并不是针对 JS Divergence 设计的，而是经过一番推导以后，发现它们是非常有关联的，那至于实际上的推导过程，你可以参见原始 Ian J. Goodfellow 写的文章，那其实里面的推导过程，我觉得写得算是蛮清楚的
 
-所以真正神奇的地方就是，这一个 **Objective Function 的最大值，它跟 Divergence 是有关的**，所以我们刚才说，我们不知道怎么算 Divergence没关系，Train 你的 Discriminator，Train 完以后，看看它的 Objective Function 可以到多大，那个值就跟 Divergence 有关
+所以真正神奇的地方就是，这一个**Objective Function 的最大值，它跟 Divergence 是有关的**，所以我们刚才说，我们不知道怎么算 Divergence没关系，Train 你的 Discriminator，Train 完以后，看看它的 Objective Function 可以到多大，那个值就跟 Divergence 有关
 
 
 
-这边我们并没有把证明拿出来跟大家讲了，但是我们还是可以从**直观上**来理解一下，为什么这个 **Objective Function 的值，会跟 Divergence 有关**
+这边我们并没有把证明拿出来跟大家讲了，但是我们还是可以从**直观上**来理解一下，为什么这个**Objective Function 的值，会跟 Divergence 有关**
 
-你可以想想看，假设 PG 跟 Pdata，它的 **Divergence 很小**
+你可以想想看，假设 PG 跟 Pdata，它的**Divergence 很小**
 
 ![image-20210517145950583](lihongyi_pic/image-20210517145950583.png)
 

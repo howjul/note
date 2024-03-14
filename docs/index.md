@@ -12,11 +12,11 @@ comments: true
     
     个人笔记网址
 
-    - <https://howjul.github.io/note> or <http://zhz.zone/note>
+    - <https://howjul.github.io/note> or <https://note.zhz.zone>
 
     个人主页网址
 
-    - <https://howjul.github.io> or <http://zhz.zone>
+    - <https://howjul.github.io> or <https://zhz.zone>
 
 ???+ success "通过目录打开文章"
 

@@ -174,7 +174,7 @@ nav:
       - 余华小说赏析: 中国现当代小说赏析/余华小说赏析.md
       - 刘震云小说赏析: 中国现当代小说赏析/刘震云小说赏析.md
       - 鬼子小说赏析: 中国现当代小说赏析/鬼子小说赏析.md
-  - ML: 
+  - AI基础: 
     - Git学习笔记: ML/Git.md
     - Python学习笔记: ML/Python.md
     - Numpy学习笔记: ML/Numpy.md
@@ -214,7 +214,10 @@ nav:
       - Lec9 Explainable AI:
         - 1_Explainable AI: ML/Lec9_1_Explainable AI_P1.md
         - 2_Explainable AI: ML/Lec9_2_Explainable AI_P2.md
-
+  - AI安全:
+    - 说明: AI安全/intro.md
+    - 后门攻击综述: https://www.yuque.com/howjul/ypockp/sdwh5b6hq6om5w91?singleDoc#
+    - Fingerprint: https://www.yuque.com/howjul/ypockp/nwh3qt3f1lcyeys0?singleDoc#
 
   - Friend: Friend/link.md
   - Strange: 

@@ -1,10 +1,19 @@
 ---
 comments: true
+statistics: True
 ---
 
 # Hello~
 
 这里是👉👉👉HowJul👈👈👈的学习笔记
+
+<div class="grid cards" markdown>
+
+- :material-book-open-page-variant-outline: __页面__ {{ pages }} 个
+- :material-file-word-box-outline: __字数__ {{ words }} 个
+- :octicons-file-code-16: __代码__ {{ codes }} 行
+
+</div>
 
 ### Attention!!!!之前的笔记多级列表显示都是错误的，现已更正
 

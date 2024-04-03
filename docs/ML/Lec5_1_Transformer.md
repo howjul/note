@@ -310,7 +310,7 @@ $$
 
 所以我们这边讲的这一个图，其实就是我们刚才讲的那件事情
 
-![image-20210429212721750](https://github.com/unclestrong/DeepLearning_LHY21_Notes/blob/master/Notes_pic/image-20210429212721750.png?raw=true)
+![image-20240403164909626](./assets/image-20240403164909626.png)
 
 - 首先 你有self-attention，其实在input的地方，还有加上positional encoding，我们之前已经有讲过，如果你只光用self-attention，你没有未知的资讯，所以你需要加上positional的information，然后在这个图上，有特别画出positional的information
 - Multi-Head Attention，这个就是self-attention的block，这边有特别强调说，它是Multi-Head的self-attention

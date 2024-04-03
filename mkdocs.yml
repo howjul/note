@@ -6,11 +6,11 @@ site_description: zhz's site
 
 # [Navigtion]
 nav:
-  - Home: 
+  - 主页: 
     - Home: index.md
     - Secondary disease: head.md
     - About: about.md
-  - Conclusion:
+  - 总结:
     - 说明: ./课程总结/index.md
     - 大三春夏: ./课程总结/大三春夏.md
     - 大三秋冬: ./课程总结/大三秋冬.md
@@ -20,9 +20,16 @@ nav:
     - 大一暑假: ./课程总结/大一暑假.md
     - 大一春夏: ./课程总结/大一春夏.md
     - 大一秋冬: ./课程总结/大一秋冬.md
-  - Course: 
+  - 笔记: 
     - 说明: ./course.md
-    # - 计算机系统一: 系统一/系统一.md
+    - 面向信息安全的信号处理:
+      - 第一章 信号与系统: 面向信息安全的信号处理/lec1.md
+      - 第二章 信号频域分析: 面向信息安全的信号处理/lec2.md
+      - 第三章 采样与滤波: 面向信息安全的信号处理/lec3.md
+      - 第四章 语音信号处理: 面向信息安全的信号处理/lec4.md
+      - 第五章 数字图像处理与安全: 面向信息安全的信号处理/lec5.md
+      - 第六章 信息安全中的毫米波感知: 面向信息安全的信号处理/lec6.md
+      - 第七章 无线通信安全: 面向信息安全的信号处理/lec7.md
     - 技术沟通:
       - 1.文献检索: 技术沟通/1 文献检索.md
       - 2.文献阅读: 技术沟通/2 文献阅读.md
@@ -31,58 +38,7 @@ nav:
       - 5.技术文档的语言: 技术沟通/5 技术文档的语言.md
       - 6.演示方法: 技术沟通/6 演示方法.md
       - 7.演讲方法: 技术沟通/7 演讲方法.md
-    - 计算机系统二: 
-      - 1.OS Services & Structures: 系统二/1. OS Services & Structures (11.7、11.14).md
-      - 2.OS Structures: 系统二/2. OS Structures (11.17).md
-      - 3.Process: 系统二/3. Process(11.17、11.21、11.24).md
-      - 4.Threads: 系统二/4. Threads(11.24、11.28、12.1).md
-      - 5.Threads_b: 系统二/5. Threads_b(12.1).md
-      - 6.CPU_Scheduling: 系统二/6. CPU_Scheduling(12.5、12.8、12.12).md
-      - 7.Mars: 系统二/7. Mars(12.12).md
-      - 8.Synchronization Tools: 系统二/8. Synchronization Tools (12.14).md
-    - 数据结构基础:
-      - exam: 
-        - 说明: FDS/试卷/试卷.md
-        - 21-22期中卷: FDS/试卷/21-22 期中卷.md
-        - 期中卷: FDS/试卷/期中卷.md
-      # - hw:
-      #   - hw1-7: FDS/fds_hw/fds_hw1-7.md
-      #   - hw8: FDS/fds_hw/fds_hw8.md
-      #   - hw9: FDS/fds_hw/fds_hw9.md
-      #   - hw10: FDS/fds_hw/fds_hw10.md
-      #   - hw11: FDS/fds_hw/fds_hw11.md
-      #   - hw12: FDS/fds_hw/fds_hw12.md
-      #   - hw13: FDS/fds_hw/fds_hw13.md
-      #   - hw14: FDS/fds_hw/fds_hw14.md
-      #   - hw15: FDS/fds_hw/fds_hw15.md
-      - lec:
-        - lec1-6: FDS/fds_lec/fds_lec1-6.md
-        - lec7: FDS/fds_lec/fds_lec7.md 
-        - lec8: FDS/fds_lec/fds_lec8.md 
-        - lec9: FDS/fds_lec/fds_lec9.md 
-        - lec10: FDS/fds_lec/fds_lec10.md 
-        - lec11: FDS/fds_lec/fds_lec11.md 
-        - lec12: FDS/fds_lec/fds_lec12.md 
-        - lec13-14: FDS/fds_lec/fds_lec13&&lec_14.md 
-    - 面向对象程序设计:
-      - lec:
-        - exam: OOP/oop_lec/oop_exam.md 
-        - lec11: OOP/oop_lec/oop_lec11.md 
-        - lec12: OOP/oop_lec/oop_lec12.md 
-        - lec13: OOP/oop_lec/oop_lec13.md 
-        - lec14: OOP/oop_lec/oop_lec14.md 
-        - lec15: OOP/oop_lec/oop_lec15.md 
-      - selfstudy:
-        - self1: OOP/oop_self/oop_self1.md 
-        - self2: OOP/oop_self/oop_self2.md 
-        - self3: OOP/oop_self/oop_self3.md 
-        - self4: OOP/oop_self/oop_self4.md 
-        - self5: OOP/oop_self/oop_self5.md 
-        - self6: OOP/oop_self/oop_self6.md 
-        - self7: OOP/oop_self/oop_self7.md 
-        - self8: OOP/oop_self/oop_self8.md 
-        - self9: OOP/oop_self/oop_self9.md 
-        - self10: OOP/oop_self/oop_self10.md 
+    - 计算机动画: 计算机动画/复习.md 
     - 高级数据结构与算法分析:
       - 1.AVL Tree&Splay Tree: ADS/1. AVL Tree&Splay Tree 2.28.md
       - 2.Red-Black Trees&B+ Trees: ADS/2. Red-Black Trees&B+ Trees3.7.md
@@ -100,7 +56,7 @@ nav:
       - 14.Parallel Algorithms: ADS/14. Parallel Algorithms.md
       - 15.External Sorting: ADS/15. External Sorting.md
       - 参考: ADS/inference.md
-    - 计算机系统三:
+    - 计算机系统III:
       - 第3课: 系统三/第三课 3.6.md
       - 第4课: 系统三/第四课 3.9.md
       - 第5课: 系统三/第五课 3.13.md
@@ -125,6 +81,7 @@ nav:
       - 第28课: 系统三/第28课 6.5.md
       - 第29课: 系统三/第29课 6.8.md
       - 操作系统导论笔记: 系统三/操作系统导论笔记.md
+      - 期末: https://zhz.zone/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E7%9B%B8%E5%85%B3/
     - 密码学: 密码学/explain.md
     - 软件安全: 
       - 0.Introduce: 软件安全/0. Introduce.md
@@ -174,7 +131,62 @@ nav:
       - 余华小说赏析: 中国现当代小说赏析/余华小说赏析.md
       - 刘震云小说赏析: 中国现当代小说赏析/刘震云小说赏析.md
       - 鬼子小说赏析: 中国现当代小说赏析/鬼子小说赏析.md
-  - AI基础: 
+    - 计算机系统II: 
+      - 1.OS Services & Structures: 系统二/1. OS Services & Structures (11.7、11.14).md
+      - 2.OS Structures: 系统二/2. OS Structures (11.17).md
+      - 3.Process: 系统二/3. Process(11.17、11.21、11.24).md
+      - 4.Threads: 系统二/4. Threads(11.24、11.28、12.1).md
+      - 5.Threads_b: 系统二/5. Threads_b(12.1).md
+      - 6.CPU_Scheduling: 系统二/6. CPU_Scheduling(12.5、12.8、12.12).md
+      - 7.Mars: 系统二/7. Mars(12.12).md
+      - 8.Synchronization Tools: 系统二/8. Synchronization Tools (12.14).md
+      - 期末: https://zhz.zone/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E7%9B%B8%E5%85%B3/
+    - 数据结构基础:
+      - exam: 
+        - 说明: FDS/试卷/试卷.md
+        - 21-22期中卷: FDS/试卷/21-22 期中卷.md
+        - 期中卷: FDS/试卷/期中卷.md
+      # - hw:
+      #   - hw1-7: FDS/fds_hw/fds_hw1-7.md
+      #   - hw8: FDS/fds_hw/fds_hw8.md
+      #   - hw9: FDS/fds_hw/fds_hw9.md
+      #   - hw10: FDS/fds_hw/fds_hw10.md
+      #   - hw11: FDS/fds_hw/fds_hw11.md
+      #   - hw12: FDS/fds_hw/fds_hw12.md
+      #   - hw13: FDS/fds_hw/fds_hw13.md
+      #   - hw14: FDS/fds_hw/fds_hw14.md
+      #   - hw15: FDS/fds_hw/fds_hw15.md
+      - lec:
+        - lec1-6: FDS/fds_lec/fds_lec1-6.md
+        - lec7: FDS/fds_lec/fds_lec7.md 
+        - lec8: FDS/fds_lec/fds_lec8.md 
+        - lec9: FDS/fds_lec/fds_lec9.md 
+        - lec10: FDS/fds_lec/fds_lec10.md 
+        - lec11: FDS/fds_lec/fds_lec11.md 
+        - lec12: FDS/fds_lec/fds_lec12.md 
+        - lec13-14: FDS/fds_lec/fds_lec13&&lec_14.md 
+    - 面向对象程序设计:
+      - lec:
+        - exam: OOP/oop_lec/oop_exam.md 
+        - lec11: OOP/oop_lec/oop_lec11.md 
+        - lec12: OOP/oop_lec/oop_lec12.md 
+        - lec13: OOP/oop_lec/oop_lec13.md 
+        - lec14: OOP/oop_lec/oop_lec14.md 
+        - lec15: OOP/oop_lec/oop_lec15.md 
+      - selfstudy:
+        - self1: OOP/oop_self/oop_self1.md 
+        - self2: OOP/oop_self/oop_self2.md 
+        - self3: OOP/oop_self/oop_self3.md 
+        - self4: OOP/oop_self/oop_self4.md 
+        - self5: OOP/oop_self/oop_self5.md 
+        - self6: OOP/oop_self/oop_self6.md 
+        - self7: OOP/oop_self/oop_self7.md 
+        - self8: OOP/oop_self/oop_self8.md 
+        - self9: OOP/oop_self/oop_self9.md 
+        - self10: OOP/oop_self/oop_self10.md
+    - 计算机系统I: https://zhz.zone/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E7%9B%B8%E5%85%B3/
+    # - 计算机系统一: 系统一/系统一.md
+  - 科研工具: 
     - Git学习笔记: ML/Git.md
     - Python学习笔记: ML/Python.md
     - Numpy学习笔记: ML/Numpy.md
@@ -183,6 +195,7 @@ nav:
       - Pytorch1: ML/Pytorch1.md
       - Pytorch2: ML/Pytorch2.md
       - Pytorch3: ML/Pytorch3.md
+  - 人工智能基础:
     - 李宏毅机器学习课程:
       - Lec1 Introduction of Deep Learning: ML/Lec1_Introduction of Deep Learning.md
       - Lec2 What to do if my network fails to train:
@@ -214,17 +227,15 @@ nav:
       - Lec9 Explainable AI:
         - 1_Explainable AI: ML/Lec9_1_Explainable AI_P1.md
         - 2_Explainable AI: ML/Lec9_2_Explainable AI_P2.md
-  - AI安全:
-    - 说明: AI安全/intro.md
-    - 后门攻击综述: https://www.yuque.com/howjul/ypockp/sdwh5b6hq6om5w91?singleDoc#
-    - Fingerprint: https://www.yuque.com/howjul/ypockp/nwh3qt3f1lcyeys0?singleDoc#
+  - 人工智能安全:
+    - 说明: https://www.yuque.com/howjul/ypockp
 
-  - Friend: Friend/link.md
-  - Strange: 
+  - 友链: Friend/link.md
+  - 朋友: 
     - 209志怪录: Friend/pet.md
     - 丽泽秘闻: Friend/lize.md
     - 1/365 night: Friend/night.md
-  - Triviality:
+  - 琐碎:
     - 网页美化: 琐碎/triviality.md
   
 # [UI]

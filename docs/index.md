@@ -15,7 +15,7 @@ statistics: True
 
 :octicons-file-code-16: __代码__ {{ codes }} 行{ .card }
 
-> :material-sort-clock-ascending-outline: 持续更新中...
+:material-sort-clock-ascending-outline: **持续更新中...** { .card }
 
 </div>
 

@@ -12,6 +12,7 @@ statistics: True
 - :material-book-open-page-variant-outline: __页面__ {{ pages }} 个
 - :material-file-word-box-outline: __字数__ {{ words }} 个
 - :octicons-file-code-16: __代码__ {{ codes }} 行
+> :material-sort-clock-ascending-outline: 持续更新中...
 
 </div>
 

@@ -8,8 +8,9 @@ site_description: zhz's site
 nav:
   - 主页: 
     - Home: index.md
-    - Secondary disease: head.md
+    - Update: update.md
     - About: about.md
+    - Secondary disease: head.md
   - 总结:
     - 说明: ./课程总结/index.md
     - 大三春夏: ./课程总结/大三春夏.md
@@ -22,6 +23,7 @@ nav:
     - 大一秋冬: ./课程总结/大一秋冬.md
   - 笔记: 
     - 说明: ./course.md
+    - 网络安全原理与实践: https://www.yuque.com/howjul/rt9ms6
     - 面向信息安全的信号处理:
       - 第一章 信号与系统: 面向信息安全的信号处理/lec1.md
       - 第二章 信号频域分析: 面向信息安全的信号处理/lec2.md
@@ -227,8 +229,7 @@ nav:
       - Lec9 Explainable AI:
         - 1_Explainable AI: ML/Lec9_1_Explainable AI_P1.md
         - 2_Explainable AI: ML/Lec9_2_Explainable AI_P2.md
-  - 人工智能安全:
-    - 说明: https://www.yuque.com/howjul/ypockp
+  - 人工智能安全: https://www.yuque.com/howjul/ypockp
 
   - 友链: Friend/link.md
   - 朋友: 

@@ -3,6 +3,7 @@ comments: true
 ---
 ???+ question "2024年4月"
   
+    - 4.11 更换域名为👉howjul.com
     - 4.7 添加更新日志
     - 4.7 添加课程笔记推荐，添加网安链接
     - 4.3 添加上学期遗忘的面向信息安全的信号处理
@@ -39,3 +40,7 @@ comments: true
 ???+ note "2023年7月" 
   
     - 7.14 更正多级列表错误
+
+<hr>
+<span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
+<br/>

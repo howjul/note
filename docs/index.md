@@ -20,13 +20,12 @@ statistics: True
 
 ???+ abstract "网址"
     
-    个人笔记网址
-
-    - <https://howjul.github.io/note> or <https://note.zhz.zone>
-
-    个人主页网址
-
-    - <https://howjul.github.io> or <https://zhz.zone>
+    - 💡个人笔记网址：<https://note.howjul.com>
+    - 🏡个人主页网址：<https://howjul.com>
+    - 🌈网站更新日志：[点此跳转](https://howjul.com/)
+    - 🐤语雀数字花园：<https://www.yuque.com/howjul>
+    - 🌸NexT个人主页（已停止更新）：<https://next.howjul.com>
+    - 🌱matery个人主页（已停止更新）：<https://matery.howjul.com>
 
 ???+ example "通过目录打开文章"
 

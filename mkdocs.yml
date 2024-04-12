@@ -1,6 +1,6 @@
 # [Info]
 site_name: HowJul的学习笔记 # 左上角标题
-site_url: https://note.howjul.com
+site_url: https://howjul.githud.io/note
 site_author: howjul
 site_description: site of howjul
 
@@ -231,7 +231,7 @@ nav:
         - 2_Explainable AI: ML/Lec9_2_Explainable AI_P2.md
   - 人工智能安全: https://www.yuque.com/howjul/ypockp
 
-  - 友链: Friend/link.md
+  - 友链: https://howjul.com/blogroll/
   - 朋友: 
     - 209志怪录: Friend/pet.md
     - 丽泽秘闻: Friend/lize.md

@@ -23,6 +23,7 @@ nav:
     - 大一秋冬: ./课程总结/大一秋冬.md
   - 🌈 笔记: 
     - 说明: ./course.md
+    - 硬件安全基础: https://www.yuque.com/howjul/rt9ms6
     - 网络安全原理与实践: https://www.yuque.com/howjul/rt9ms6
     - 面向信息安全的信号处理:
       - 第一章 信号与系统: 面向信息安全的信号处理/lec1.md
@@ -251,7 +252,7 @@ theme:
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: slate # 夜间模式
+    - scheme: sunset-glow-dark # 夜间模式
       primary: teal
       accent: teal
       toggle:
@@ -380,10 +381,13 @@ extra_javascript:
   - javascripts/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  # - javascripts/snow.js # 背景雪花
 
 extra_css:
   - css/no-footer.css # 不使用底部的翻页
   - css/unordered-list-symbols.css # multiplt unordered list symbols
   - css/flink.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - css/stytlesheets.css 
+  # - status.css # 换主题颜色的按钮
 

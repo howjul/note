@@ -245,19 +245,28 @@ nav:
 theme:
   name: material
   custom_dir: overrides
-  palette:
-    - scheme: default # 日间模式
-      primary: teal # 上方的
-      accent: teal # 链接等可交互元件的高亮色
+  # palette:
+  #   - scheme: default # 日间模式
+  #     primary: teal # 上方的
+  #     accent: teal # 链接等可交互元件的高亮色
+  #     toggle:
+  #       icon: material/weather-night # 图标
+  #       name: 切换至夜间模式 # 鼠标悬浮提示
+  #   - scheme: sunset-glow-dark # 夜间模式
+  #     primary: teal
+  #     accent: teal
+  #     toggle:
+  #       icon: material/weather-sunny
+  #       name: 切换至日间模式
+  palette: 
+    - scheme: forest
       toggle:
-        icon: material/weather-night # 图标
-        name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: sunset-glow-dark # 夜间模式
-      primary: teal
-      accent: teal
+        icon: material/weather-night # 图标(可改，下同)
+        name: Switch to dark mode
+    - scheme: forest dark
       toggle:
         icon: material/weather-sunny
-        name: 切换至日间模式
+        name: Switch to light mode
   # 导航栏
   features:
     - navigation.tabs # 使用Tab来进行分类
@@ -390,4 +399,10 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - css/stytlesheets.css 
   # - status.css # 换主题颜色的按钮
+
+  # 字体
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
 

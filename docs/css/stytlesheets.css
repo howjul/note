@@ -208,7 +208,7 @@ body {
 
   --md-primary-fg-color: hsl(103, 20%, 36%);
   --md-primary-fg-color--light: hsl(103, 29%, 82%);
-  --md-primary-fg-color--dark: hsl(25, 26%, 34%);
+  --md-primary-fg-color--dark: hsl(103, 26%, 20%);
   --md-primary-bg-color: #fff;
   --md-primary-bg-color--light: #ffffffb3;
 

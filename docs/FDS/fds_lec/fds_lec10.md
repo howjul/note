@@ -28,8 +28,8 @@
 
 ![image-20221122084501315](../../img/test/202211220845339.png)
 
-- 1. 如果根结点有两个以上的儿子，一定是关节点（因为根的两边不会有连线）；
-- 2. 至少有一个儿子通不了天就是关节点；
+- 1.如果根结点有两个以上的儿子，一定是关节点（因为根的两边不会有连线）；
+- 2.至少有一个儿子通不了天就是关节点；
 
 ![image-20221122152856025](../../img/test/202211221528111.png)
 
@@ -46,11 +46,11 @@
 ![image-20221122154411113](../../img/test/202211221544156.png)
 
 #### 4. 欧拉路径与回路
-- 1. 判定：
+- 1.判定：
     - 欧拉回路存在当且仅当图是连通的且每个节点的度都是偶数；（An Euler circuit is possible only if the graph is connected and each vertex has an even degree.）
     -  欧拉环路，An Euler tour is possible if there are exactly two vertices having odd degree.  One must start at one of the odd-degree vertices.
 
-- 2. 算法：
+- 2.算法：
     - 任意一点出发深度遍历（这样一定能回到原点，因为有边出去一定有边回来，因为是偶数的度）；
     - 回到原点后，沿着刚刚遍历出来的环走，一定能够发现一个点有边没走完（如果都走完了，那程序就可以结束了）；
     - 然后刚刚那个没走完的点为原点，重复上述操作；

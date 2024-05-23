@@ -83,13 +83,14 @@ front 和 rear 指向头和尾会导致空和满是一样的，无法区分；
 
 ### Binary Trees
 【Definition】A binary tree is a tree in which no node can have more than two children.
+
 - 利用队列来实现中序遍历；
 - 利用循环来实现中序遍历；
-	- 左边走到底，边走边压栈；
-	- tree赋值栈顶，pop栈顶元素；
-	- 判断是否为空，如果空，则break；
-	- 如果不空，输出；
-	- 向右走；
+    - 左边走到底，边走边压栈；
+    - tree赋值栈顶，pop栈顶元素；
+    - 判断是否为空，如果空，则break；
+    - 如果不空，输出；
+    - 向右走；
 
 ![image-20221104221641398](../../img/test/image-20221104221641398.png)
 

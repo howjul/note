@@ -392,6 +392,7 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
   # - javascripts/snow.js # 背景雪花
+  - javascripts/baidu.js
 
 extra_css:
   - css/no-footer.css # 不使用底部的翻页

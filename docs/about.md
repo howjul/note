@@ -15,6 +15,6 @@ comments: true
     - 跟五年前开始的记日记一样，相信自己会逐渐完善起来这个笔记本的吧。
     - 在一个不知名的角落里，我的个人主页网站又被荒废了hhhh，自从4月份建立以来就没再去动过了乐，感觉平常的生活，日记和笔记似乎已经足够了？而且夏学期确实比春学期要忙很多，emm，感觉也没那么多闲工夫去写博客，en暑假可能会写写吧，还得自己有那个实力才行～
 
-<hr>
+<!-- <hr>
 <span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
-<br/>
+<br/> -->

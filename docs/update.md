@@ -3,7 +3,8 @@ comments: true
 ---
 ???+ warning "2024年5月"
 
-    - 5.23 修复一些错误
+    - 5.23 busuanzi的错误修复
+    - 5.23 修复一些错误，添加百度统计
     - 5.21 添加编译原理链接
 
 ???+ question "2024年4月"
@@ -50,6 +51,6 @@ comments: true
   
     - 7.14 更正多级列表错误
 
-<hr>
+<!-- <hr>
 <span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
-<br/>
+<br/> -->

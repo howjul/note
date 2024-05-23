@@ -99,6 +99,6 @@ comments: true
 
         这学期的计算机系统包括了数字逻辑设计部分和计算机组成的部分，最后的大作业是单周期CPU的设计，因为这学期还没学会用markdown，所以没有留下什么笔记，这里放一下期末考试的一张纸的小抄。
 
-<hr>
+<!-- <hr>
 <span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
-<br/>
+<br/> -->

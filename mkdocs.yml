@@ -365,8 +365,8 @@ markdown_extensions:
   - footnotes #注脚
   #图标
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      # emoji_index: !!python/name:material.extensions.emoji.twemoji
+      # emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -383,7 +383,8 @@ extra_javascript:
   # - https://polyfill.io/v3/polyfill.min.js?features=es6
   # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
   
-  - javascripts/busuanzi.pure.mini.js
+  # - javascripts/busuanzi.pure.mini.js
+  - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
   
   # - https://polyfill.io/v3/polyfill.min.js?features=es6
   # - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0

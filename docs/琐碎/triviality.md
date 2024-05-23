@@ -113,6 +113,6 @@ markdown_extensions:
 [图标编码](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#mkdocsyml){.md-button .md-button--primary}
 [官方插件](https://squidfunk.github.io/mkdocs-material/reference/){.md-button .md-button--primary}
 
-<hr>
+<!-- <hr>
 <span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
-<br/>
+<br/> -->

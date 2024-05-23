@@ -7,7 +7,8 @@ statistics: True
 
 这里是👉👉👉HowJul👈👈👈的学习笔记
 
-<span id="busuanzi_container_site_uv">本站总访客数<span id="busuanzi_value_site_uv"></span>次</font></span>
+<span id="busuanzi_container_site_uv">🐳总访客数<span id="busuanzi_value_site_uv"></span>人</font></span>
+<span id="busuanzi_container_site_pv"> 🦋总访问量<span id="busuanzi_value_site_pv"></span>次</font></span>
 <br/>
 
 <div class="grid cards" markdown>

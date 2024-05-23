@@ -305,8 +305,8 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/howjul
       name: GitHub | howjul
-  analytics: 
-    provider: google
+  analytics:
+    provider: false
     property: G-XXXXXXXXXX
     feedback:
       title: Was this page helpful?

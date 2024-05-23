@@ -15,8 +15,7 @@ jobs: # 工作流的具体内容
         with:
           python-version: 3.x
       - run: pip3 install mkdocs-material # 使用pip包管理工具安装mkdocs-material
-      - run: pip3 install mkdocs-encryptcontent-plugin
-      # - run: sed -i 's/<\/article>/<hr><span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"><\/span>次<\/font><\/span><br\/><\/article>/g' mkdocs-material/material/base.html
+      # - run: pip3 install mkdocs-encryptcontent-plugin
       - run: pip3 install mkdocs-statistics-plugin
       - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
 

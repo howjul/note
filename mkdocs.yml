@@ -281,6 +281,19 @@ theme:
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
   logo: ./img/logo.jpg
   favicon: ./img/logo.ico
 ## edit_uri: edit/main/docs # 编辑按钮跳转的链接
@@ -288,7 +301,7 @@ theme:
 repo_url: https://github.com/howjul/note # 右上角点击跳转的链接
 repo_name: note # 右上角的名字
 ## [bottom-left corner]
-copyright: HowJul. CC-BY-NC-4.0 # 左下角的版权声明
+copyright: '本页面的全部内容在 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a> 协议之条款下提供'
 ## [bottom-right corner]
 extra:
   vssue: shafish  # 随便填值，主要是设置{% set vssue = config.extra.vssue %}时，vssue初始值可用
@@ -364,9 +377,12 @@ markdown_extensions:
   - tables #表格
   - footnotes #注脚
   #图标
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -375,20 +391,7 @@ markdown_extensions:
 
 
 extra_javascript:
-  # latex支持
-  # check https://squidfunk.github.io/mkdocs-material/reference/mathjax/?h=math for more information
-  # notice `curl https://polyfill.io/v3/polyfill.min.js?features=es6 > docs/mkdocs/javascripts/polyfill.min.js && curl https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js > docs/mkdocs/javascripts/tex-mml-chtml.js` not works... because there are other resources that need to load
-  
-  # - javascripts/mathjax.js
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
-  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
-  
-  # - javascripts/busuanzi.pure.mini.js
   - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
-  
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
-  # - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
-  
   - javascripts/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
@@ -401,10 +404,8 @@ extra_css:
   - css/flink.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - css/stytlesheets.css 
-  # - status.css # 换主题颜色的按钮
-
-  # 字体
-  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  - css/admonition.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css # 字体
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css

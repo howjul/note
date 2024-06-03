@@ -60,6 +60,7 @@ nav:
       - 14.Parallel Algorithms: ADS/14. Parallel Algorithms.md
       - 15.External Sorting: ADS/15. External Sorting.md
       - 参考: ADS/inference.md
+      # - 期末复习: ADS/ads.md
     - 计算机系统III:
       - 第3课: 系统三/第三课 3.6.md
       - 第4课: 系统三/第四课 3.9.md
@@ -146,6 +147,7 @@ nav:
       - 8.Synchronization Tools: 系统二/8. Synchronization Tools (12.14).md
       - 期末: https://howjul.com/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E7%9B%B8%E5%85%B3/
     - 数据结构基础:
+      - 期末复习: FDS/fds.md
       - exam: 
         - 说明: FDS/试卷/试卷.md
         - 21-22期中卷: FDS/试卷/21-22 期中卷.md
@@ -170,6 +172,7 @@ nav:
         - lec12: FDS/fds_lec/fds_lec12.md 
         - lec13-14: FDS/fds_lec/fds_lec13&&lec_14.md 
     - 面向对象程序设计:
+      - 期末复习: OOP/oop.md
       - lec:
         - exam: OOP/oop_lec/oop_exam.md 
         - lec11: OOP/oop_lec/oop_lec11.md 

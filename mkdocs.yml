@@ -44,6 +44,7 @@ nav:
       - 7.演讲方法: 技术沟通/7 演讲方法.md
     - 计算机动画: 计算机动画/复习.md 
     - 高级数据结构与算法分析:
+      - 期末复习: ADS/ads.md
       - 1.AVL Tree&Splay Tree: ADS/1. AVL Tree&Splay Tree 2.28.md
       - 2.Red-Black Trees&B+ Trees: ADS/2. Red-Black Trees&B+ Trees3.7.md
       - 3.Inverted File Index: ADS/3. Inverted File Index.md
@@ -60,7 +61,6 @@ nav:
       - 14.Parallel Algorithms: ADS/14. Parallel Algorithms.md
       - 15.External Sorting: ADS/15. External Sorting.md
       - 参考: ADS/inference.md
-      # - 期末复习: ADS/ads.md
     - 计算机系统III:
       - 第3课: 系统三/第三课 3.6.md
       - 第4课: 系统三/第四课 3.9.md

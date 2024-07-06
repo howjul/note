@@ -1,3 +1,7 @@
+???+ danger "2024年7月"
+
+    - 7.6 大二暑假课程总结
+
 ???+ failure "2024年6月"
 
     - 6.3 ads复习资料上传
@@ -55,7 +59,3 @@
 ???+ note "2023年7月" 
   
     - 7.14 更正多级列表错误
-
-<!-- <hr>
-<span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
-<br/> -->

@@ -11,6 +11,3 @@
     * [:fontawesome-solid-moon: 1/365 night](./Friend/night.md){ .md-button }
     * [:fontawesome-solid-house: Home](./head.md){ .md-button }
 
-<!-- <hr>
-<span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
-<br/> -->

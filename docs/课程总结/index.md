@@ -17,8 +17,3 @@ comments: true
 !!! example "作业指数介绍"
 
     作业指数并不是与学分相称的作业指数，比如5.5分的计算机系统，那作业就是五星的，而中国共产党历史，作业就是一星的。
-    
-
-<!-- <hr>
-<span id="busuanzi_container_page_pv"><font size="3" color="grey">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</font></span>
-<br/> -->

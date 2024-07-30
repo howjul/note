@@ -6,7 +6,7 @@
 
 #### 1.2 指针
 
-- 可以实现；![image-20221205153121195](/Users/zhz/Library/Application Support/typora-user-images/image-20221205153121195.png)
+- 可以实现；![image-20221205153121195](../../img/test/image-20221205153121195.png)
 
 #### 1.3 引用
 

@@ -20,7 +20,7 @@
 - Ambiguities
 - ![image-20221127111339916](../../img/test/202211271113931.png)
 - Namespace aliases
-- ![image-20221127111403633](/Users/zhz/Library/Application Support/typora-user-images/image-20221127111403633.png)
+- ![image-20221127111403633](../../img/test/image-20221127111403633.png)
 
 - Namespace conposition（合并namespace）
 - ![image-20221127111608840](../../img/test/202211271116856.png)

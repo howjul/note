@@ -192,7 +192,6 @@ nav:
         - self9: OOP/oop_self/oop_self9.md 
         - self10: OOP/oop_self/oop_self10.md
     - 计算机系统I: https://howjul.com/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E7%9B%B8%E5%85%B3/
-    # - 计算机系统一: 系统一/系统一.md
   - 🌱 科研工具: 
     - Git学习笔记: ML/Git.md
     - Python学习笔记: ML/Python.md
@@ -203,6 +202,38 @@ nav:
       - Pytorch2: ML/Pytorch2.md
       - Pytorch3: ML/Pytorch3.md
   - 🤖 人工智能基础:
+    - 动手学深度学习:
+      - 第零章 安装: 
+        - 安装: d2l/chapter0_installation/index.ipynb
+      - 第一章 引言: 
+        - 引言: d2l/chapter1_introduction/index.ipynb
+      - 第二章 预备知识:
+        - 数据操作: d2l/chapter2_preliminaries/2.1_数据操作(ndarray).ipynb
+        - 数据预处理: d2l/chapter2_preliminaries/2.2_数据预处理(pandas).ipynb
+        - 线性代数: d2l/chapter2_preliminaries/2.3_线性代数.ipynb
+        - 微积分: d2l/chapter2_preliminaries/2.4_微积分.ipynb
+        - 自动微分: d2l/chapter2_preliminaries/2.5_自动微分.ipynb
+        - 概率: d2l/chapter2_preliminaries/2.6_概率.ipynb
+        - 查阅文档: d2l/chapter2_preliminaries/2.7_查阅文档.ipynb
+      - 第三章 线性神经网络:
+        - 线性回归: d2l/chapter3_linear-networks/3.1_线性回归.ipynb
+        - 线性回归的从零开始实现: d2l/chapter3_linear-networks/3.2_线性回归的从零开始实现.ipynb
+        - 线性回归的简洁实现: d2l/chapter3_linear-networks/3.3_线性回归的简洁实现.ipynb
+        - softmax回归: d2l/chapter3_linear-networks/3.4_softmax回归.ipynb
+        - 图像分类数据集: d2l/chapter3_linear-networks/3.5_图像分类数据集.ipynb
+        - softmax回归的从零开始实现: d2l/chapter3_linear-networks/3.6_softmax回归的从零开始实现.ipynb
+        - softmax回归的简洁实现: d2l/chapter3_linear-networks/3.7_softmax回归的简洁实现.ipynb
+      - 第四章 多层感知机:
+        - 多层感知机: d2l/chapter4_multilayer-perceptrons/4.1_多层感知机.ipynb
+        - 多层感知机的从零开始实现: d2l/chapter4_multilayer-perceptrons/4.2_多层感知机的从零开始实现.ipynb
+        - 多层感知机的简洁实现: d2l/chapter4_multilayer-perceptrons/4.3_多层感知机的简洁实现.ipynb
+        - 模型选择、欠拟合和过拟合: d2l/chapter4_multilayer-perceptrons/4.4_模型选择、欠拟合和过拟合.ipynb
+        - 权重衰减: d2l/chapter4_multilayer-perceptrons/4.5_权重衰减.ipynb
+        - 暂退法(dropout): d2l/chapter4_multilayer-perceptrons/4.6_暂退法(Dropout).ipynb
+        - 前向传播、反向传播和计算图: d2l/chapter4_multilayer-perceptrons/4.7_前向传播、反向传播和计算图.ipynb
+        - 数值稳定性和模型初始化: d2l/chapter4_multilayer-perceptrons/4.8_数值稳定性和模型初始化.ipynb
+        - 环境和分布偏移: d2l/chapter4_multilayer-perceptrons/4.9_环境和分布偏移.ipynb
+        - 实战:预测房价: d2l/chapter4_multilayer-perceptrons/4.10_实战Kaggle比赛：预测房价.ipynb
     - 李宏毅机器学习课程:
       - Lec1 Introduction of Deep Learning: ML/Lec1_Introduction of Deep Learning.md
       - Lec2 What to do if my network fails to train:
@@ -347,6 +378,10 @@ plugins:
         - ja
   - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
   - statistics
+  - mkdocs-jupyter:
+      include_source: True
+      execute: False
+      ignore: ["*.py"]
   #- encryptcontent: {}
       #global_password: '1221504'
 
@@ -380,12 +415,12 @@ markdown_extensions:
   - tables #表格
   - footnotes #注脚
   #图标
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
-  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji 
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji 
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys

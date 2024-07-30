@@ -17,5 +17,6 @@ jobs: # 工作流的具体内容
       - run: pip3 install mkdocs-material # 使用pip包管理工具安装mkdocs-material
       # - run: pip3 install mkdocs-encryptcontent-plugin
       - run: pip3 install mkdocs-statistics-plugin
+      - run: pip3 install mkdocs-jupyter
       - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支
 

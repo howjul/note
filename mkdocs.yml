@@ -234,6 +234,20 @@ nav:
         - 数值稳定性和模型初始化: d2l/chapter4_multilayer-perceptrons/4.8_数值稳定性和模型初始化.ipynb
         - 环境和分布偏移: d2l/chapter4_multilayer-perceptrons/4.9_环境和分布偏移.ipynb
         - 实战:预测房价: d2l/chapter4_multilayer-perceptrons/4.10_实战Kaggle比赛：预测房价.ipynb
+      - 第五章 深度学习计算:
+        - 层和块: d2l/chapter5_deep-learning-computation/5.1_层和块.ipynb
+        - 参数管理: d2l/chapter5_deep-learning-computation/5.2_参数管理.ipynb
+        - 延后初始化: d2l/chapter5_deep-learning-computation/5.3_延后初始化.ipynb
+        - 自定义层: d2l/chapter5_deep-learning-computation/5.4_自定义层.ipynb
+        - 读写文件: d2l/chapter5_deep-learning-computation/5.5_读写文件.ipynb
+        - GPU: d2l/chapter5_deep-learning-computation/5.6_GPU.ipynb
+      - 第六章 卷积神经网络:
+        - 从全连接层到卷积: d2l/chapter6_convolutional-neural-networks/6.1_从全连接层到卷积.ipynb
+        - 图像卷积: d2l/chapter6_convolutional-neural-networks/6.2_图像卷积.ipynb
+        - 填充和步长: d2l/chapter6_convolutional-neural-networks/6.3_填充padding和步长strides.ipynb
+        - 多输入多输出通道: d2l/chapter6_convolutional-neural-networks/6.4_多输入多输出通道.ipynb
+        - 汇聚层: d2l/chapter6_convolutional-neural-networks/6.5_汇聚层.ipynb
+        - 卷积神经网络(LeNet): d2l/chapter6_convolutional-neural-networks/6.6_卷积神经网络(LeNet).ipynb
     - 李宏毅机器学习课程:
       - Lec1 Introduction of Deep Learning: ML/Lec1_Introduction of Deep Learning.md
       - Lec2 What to do if my network fails to train:

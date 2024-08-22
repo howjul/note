@@ -248,6 +248,14 @@ nav:
         - 多输入多输出通道: d2l/chapter6_convolutional-neural-networks/6.4_多输入多输出通道.ipynb
         - 汇聚层: d2l/chapter6_convolutional-neural-networks/6.5_汇聚层.ipynb
         - 卷积神经网络(LeNet): d2l/chapter6_convolutional-neural-networks/6.6_卷积神经网络(LeNet).ipynb
+      - 第七章 现代卷积神经网络:
+        - 引言: d2l/chapter7_convolutional-modern/7.0_引言.ipynb
+        - 深度卷积神经网络(AlexNet): d2l/chapter7_convolutional-modern/7.1_深度卷积神经网络(AlexNet).ipynb
+        - 使用块的网络(VGG): d2l/chapter7_convolutional-modern/7.2_使用块的网络(VGG).ipynb
+        - 含并行连接的网络(GoogLeNet): d2l/chapter7_convolutional-modern/7.4_含并行连接的网络(GoogLeNet).ipynb
+        - 批量规范化: d2l/chapter7_convolutional-modern/7.5_批量规范化.ipynb
+        - 残差网络(ResNet): d2l/chapter7_convolutional-modern/7.6_残差网络(ResNet).ipynb
+        - 稠密连接网络(DenseNet): d2l/chapter7_convolutional-modern/7.7_稠密连接网络(DenseNet).ipynb
     - 李宏毅机器学习课程:
       - Lec1 Introduction of Deep Learning: ML/Lec1_Introduction of Deep Learning.md
       - Lec2 What to do if my network fails to train:

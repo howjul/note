@@ -6,12 +6,13 @@ site_description: site of howjul
 
 # [Navigtion]
 nav:
-  - 🏡 主页: 
+  - 🏡 开始: 
     - Home: index.md
-    - 🐾 Update: update.md
-    - 🐽 About: about.md
-    - 🥴 Secondary disease: head.md
-  - 🌸 总结:
+    - 🐾 更新: update.md
+    - 🐽 关于: about.md
+    - 🥴 中二: head.md
+    - 😇 友链: https://howjul.com/blogroll/
+  - 🌸 课程总结:
     - 说明: ./课程总结/index.md
     - 大三春夏: ./课程总结/大三春夏.md
     - 大三秋冬: ./课程总结/大三秋冬.md
@@ -21,7 +22,7 @@ nav:
     - 大一暑假: ./课程总结/大一暑假.md
     - 大一春夏: ./课程总结/大一春夏.md
     - 大一秋冬: ./课程总结/大一秋冬.md
-  - 🌈 笔记: 
+  - 🌈 课程笔记: 
     - 说明: ./course.md
     - 编译原理: https://www.yuque.com/howjul/rt9ms6
     - 硬件安全基础: https://www.yuque.com/howjul/rt9ms6
@@ -192,7 +193,7 @@ nav:
         - self9: OOP/oop_self/oop_self9.md 
         - self10: OOP/oop_self/oop_self10.md
     - 计算机系统I: https://howjul.com/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E7%9B%B8%E5%85%B3/
-  - 🌱 科研工具: 
+  - 🌱 工具琐碎: 
     - Git学习笔记: ML/Git.md
     - Python学习笔记: ML/Python.md
     - Numpy学习笔记: ML/Numpy.md
@@ -201,6 +202,7 @@ nav:
       - Pytorch1: ML/Pytorch1.md
       - Pytorch2: ML/Pytorch2.md
       - Pytorch3: ML/Pytorch3.md
+    - 网页美化: 琐碎/triviality.md
   - 🤖 人工智能基础:
     - 动手学深度学习:
       - 第零章 安装: 
@@ -289,13 +291,10 @@ nav:
         - 2_Explainable AI: ML/Lec9_2_Explainable AI_P2.md
   - ⭐️ 人工智能安全: https://www.yuque.com/howjul/ypockp
 
-  - 😇 友链: https://howjul.com/blogroll/
   - 😍 朋友: 
     - 209志怪录: Friend/pet.md
     - 丽泽秘闻: Friend/lize.md
     - 1/365 night: Friend/night.md
-  - 🪵 琐碎:
-    - 网页美化: 琐碎/triviality.md
   
 # [UI]
 ## [top]

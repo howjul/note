@@ -12,6 +12,9 @@ nav:
     - 🐽 关于: about.md
     - 🥴 中二: head.md
     - 😇 友链: https://howjul.com/blogroll/
+    - 👹 209志怪录: Friend/pet.md
+    - 👽 丽泽秘闻: Friend/lize.md
+    - 🌕 1/365 night: Friend/night.md
   - 🌸 课程总结:
     - 说明: ./课程总结/index.md
     - 大三春夏: ./课程总结/大三春夏.md
@@ -204,6 +207,7 @@ nav:
       - Pytorch3: ML/Pytorch3.md
     - 网页美化: 琐碎/triviality.md
   - 🤖 人工智能基础:
+    - 开始: ML/start.md
     - 动手学深度学习:
       - 第零章 安装: 
         - 安装: d2l/chapter0_installation/index.ipynb
@@ -290,11 +294,6 @@ nav:
         - 1_Explainable AI: ML/Lec9_1_Explainable AI_P1.md
         - 2_Explainable AI: ML/Lec9_2_Explainable AI_P2.md
   - ⭐️ 人工智能安全: https://www.yuque.com/howjul/ypockp
-
-  - 😍 朋友: 
-    - 209志怪录: Friend/pet.md
-    - 丽泽秘闻: Friend/lize.md
-    - 1/365 night: Friend/night.md
   
 # [UI]
 ## [top]

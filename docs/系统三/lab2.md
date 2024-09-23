@@ -484,7 +484,7 @@ end
 
 时间上，S_FILL状态中，一个word需要4个时钟周期，而这个状态要写4个word进去，所以应该停16拍，wait状态判断停顿一拍，然后再转到S_IDLE。
 
-<img src="./assets/11.png" alt="1" style="zoom:50%;" />
+![1](./assets/11.png)
 
 **Read hit 与 Write hit**
 
@@ -497,7 +497,7 @@ data[3] = 40'h1_3_00000014; // write hit 1
 
 时间上，同时，由于都在IDLE状态。所以这里都是1拍过，hit下直接读。
 
-<img src="./assets/12.png" alt="2" style="zoom:50%;" />
+![2](./assets/12.png)
 
 **dirty 情况下的miss替换**
 
@@ -512,7 +512,7 @@ data[7] = 40'h4_2_00000414; // read miss + dirty 1+17+17
 
 时间上，在PRE_BACK停1拍，然后需要处理写回和新写入，同样都是4个word，所以各自4*4为16拍，因此2和3都停留了16拍，4状态停留1拍。
 
-<img src="./assets/Snipaste_2023-04-09_17-09-29.png" alt="Snipaste_2023-04-09_17-09-29" style="zoom:50%;" />
+![Snipaste_2023-04-09_17-09-29](./assets/Snipaste_2023-04-09_17-09-29.png)
 
 
 
@@ -524,11 +524,11 @@ data[7] = 40'h4_2_00000414; // read miss + dirty 1+17+17
 
 时间上和前面的差不多。
 
-<img src="./assets/14.png" alt="4" style="zoom:50%;" />
+![4](./assets/14.png)
 
 ### 上板验证
 
-<img src="./assets/Snipaste_2023-04-09_17-37-04.png" alt="Snipaste_2023-04-09_17-37-04" style="zoom:60%;" />
+![Snipaste_2023-04-09_17-37-04](./assets/Snipaste_2023-04-09_17-37-04.png)
 
 ## 6、思考题
 

@@ -216,7 +216,7 @@ Self-Attention的运作方式就是，**Self-Attention会吃一整个Sequence的
 
 
 
-有关Self-Attention，最知名的相关的文章，就是《Attention is all you need》。那在这篇Paper里面呢，Google提出了 ==Transformer==这样的Network架构，那Transformer就是变形金刚，所以提到这个Network的时候呢，我们就会有变形金刚这个形象
+有关Self-Attention，最知名的相关的文章，就是《Attention is all you need》。那在这篇Paper里面呢，Google提出了 ==Transformer== 这样的Network架构，那Transformer就是变形金刚，所以提到这个Network的时候呢，我们就会有变形金刚这个形象
 
 ![image-20210404201325728](lihongyi_pic/image-20210404201325728.png)
 
@@ -236,7 +236,7 @@ Self-Attention的Input，它就是一串的Vector，那**这个Vector可能是�
 
 我们用$a$来表示它，代表它有可能是前面已经做过一些处理，它是某个Hidden Layer的Output，那Input一排a这个向量以后，Self-Attention要Output另外一排b这个向量
 
-那这**每一个b都是考虑了所有的a以后才生成出来的**，所以这边刻意画了非常非常多的箭头，告诉你$b^1 $考虑了$a^1$到$a^4$产生的，$b^2$考虑$a^1$到$a^4$产生的，$b^3 b^4$也是一样，考虑整个input的sequence，才产生出来的
+那这**每一个b都是考虑了所有的a以后才生成出来的**，所以这边刻意画了非常非常多的箭头，告诉你$b^1$考虑了$a^1$到$a^4$产生的，$b^2$考虑$a^1$到$a^4$产生的，$b^3 b^4$也是一样，考虑整个input的sequence，才产生出来的
 
 那接下来呢就是要跟大家说明，**怎么产生$b^1$这个向量**，那你知道怎么产生$b^1$这个向量以后，你就知道怎么产生剩下$b^1 b^2 b^3 b^4$剩下的向量
 

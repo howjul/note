@@ -60,7 +60,7 @@ $ w_1 $ 乘 $x_1$，$w_2$ 乘 $x_2$ 加上 b 以后就得到 y，然后会计算
 
 ![image-20210426202545360](lihongyi_pic/image-20210426202545360.png)
 
-我们把所有训练资料的 feature vector ，统统都集合起来，那每一个 vector ，$x_1$ 里面就 $x^1_1 $代表 $x_1$ 的第一个 element，$x^2_1 $，就代表 $x_2$ 的第一个 element，以此类推
+我们把所有训练资料的 feature vector ，统统都集合起来，那每一个 vector ，$x_1$ 里面就 $x^1_1$ 代表 $x_1$ 的第一个 element，$x^2_1$，就代表 $x_2$ 的第一个 element，以此类推
 
 那我们把**不同笔资料即不同 feature vector，同一个 dimension** 里面的数值，把它取出来，然后去计算某一个 dimension 的 mean，它的 mean 呢 就是$m_i$，我们计算第 i 个 dimension 的，standard deviation，我们用$\sigma_i$来表示它
 
@@ -96,7 +96,7 @@ $\tilde{x}$ 代表 normalize 的 feature，把它丢到 deep network 里面，�
 
 对 $w_2$ 来说，这边的 a 或这边的 z 其实也是一种 feature，我们应该要对这些 feature 也做 normalization
 
-那如果你选择的是 Sigmoid，那可能比较推荐对 z 做 Feature Normalization，因为Sigmoid 是一个 s 的形状，那它在 0 附近斜率比较大，所以如果你对 z 做 Feature Normalization，把所有的值都挪到 0 附近，那你到时候算 gradient 的时候，算出来的值会比较大
+那如果你选择的是 Sigmoid，那可能比较推荐对 z 做 Feature Normalization，因为 Sigmoid 是一个 s 的形状，那它在 0 附近斜率比较大，所以如果你对 z 做 Feature Normalization，把所有的值都挪到 0 附近，那你到时候算 gradient 的时候，算出来的值会比较大
 
 那不过因为你不见得是用 sigmoid ，所以你也不一定要把 Feature Normalization放在 z 这个地方，如果是选别的，也许你选a也会有好的结果，也说不定，**Ingeneral 而言，这个 normalization，要放在 activation function 之前，或之后都是可以的，在实作上，可能没有太大的差别**，好 那我们这边呢，就是对 z 呢，做一下 Feature Normalization
 

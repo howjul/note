@@ -8,13 +8,15 @@ site_description: site of howjul
 nav:
   - 🏡 开始: 
     - Home: index.md
-    - 🐾 更新: update.md
-    - 🐽 关于: about.md
-    - 🥴 中二: head.md
-    - 😇 友链: https://howjul.com/blogroll/
-    - 👹 209志怪录: Friend/pet.md
-    - 👽 丽泽秘闻: Friend/lize.md
-    - 🌕 1/365 night: Friend/night.md
+    - 更新: update.md
+    - 关于: about.md
+    # - 🐾 更新: update.md
+    # - 🐽 关于: about.md
+    # - 🥴 中二: head.md
+    # - 😇 友链: https://howjul.com/blogroll/
+    # - 👹 209志怪录: Friend/pet.md
+    # - 👽 丽泽秘闻: Friend/lize.md
+    # - 🌕 1/365 night: Friend/night.md
   # - 🌸 课程总结:
   #   - 说明: ./课程总结/index.md
   #   - 大三春夏: ./课程总结/大三春夏.md
@@ -25,6 +27,8 @@ nav:
   #   - 大一暑假: ./课程总结/大一暑假.md
   #   - 大一春夏: ./课程总结/大一春夏.md
   #   - 大一秋冬: ./课程总结/大一秋冬.md
+  - 🌏 个人主页➚: https://howjul.github.io
+  - 🌾 本科四年➚: https://www.yuque.com/howjul/rt9ms6
   - 🌈 课程笔记: 
     - 说明: ./course.md
     - 编译原理: https://www.yuque.com/howjul/rt9ms6
@@ -95,7 +99,7 @@ nav:
       - lab3: 系统三/lab3.md
       - lab4: 系统三/lab4.md
       - lab5: 系统三/lab5.md
-      - 期末: https://howjul.com/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E7%9B%B8%E5%85%B3/
+      - 期末: 系统三/期末.md
     - 密码学: 密码学/explain.md
     - 软件安全: 
       - 0.Introduce: 软件安全/0. Introduce.md
@@ -155,7 +159,7 @@ nav:
       - 6.CPU_Scheduling: 系统二/6. CPU_Scheduling(12.5、12.8、12.12).md
       - 7.Mars: 系统二/7. Mars(12.12).md
       - 8.Synchronization Tools: 系统二/8. Synchronization Tools (12.14).md
-      - 期末: https://howjul.com/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E7%9B%B8%E5%85%B3/
+      - 期末: 系统二/期末.md
     - 数据结构基础:
       - 期末复习: FDS/fds.md
       - exam: 
@@ -201,7 +205,7 @@ nav:
         - self8: OOP/oop_self/oop_self8.md 
         - self9: OOP/oop_self/oop_self9.md 
         - self10: OOP/oop_self/oop_self10.md
-    - 计算机系统I: https://howjul.com/2023/11/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95%E7%9B%B8%E5%85%B3/
+    - 计算机系统I: 系统一/期末.md
   - 🌱 工具琐碎: 
     - Git学习笔记: ML/Git.md
     - Python学习笔记: ML/Python.md
@@ -299,8 +303,7 @@ nav:
       - Lec9 Explainable AI:
         - 1_Explainable AI: ML/Lec9_1_Explainable AI_P1.md
         - 2_Explainable AI: ML/Lec9_2_Explainable AI_P2.md
-  - 🌾 本科三年➚: https://www.yuque.com/howjul/rt9ms6
-  - ⭐️ 人工智能安全➚: https://www.yuque.com/howjul/ypockp
+  # - ⭐️ 人工智能安全➚: https://www.yuque.com/howjul/ypockp
   
 # [UI]
 ## [top]
@@ -456,7 +459,7 @@ markdown_extensions:
 
 
 extra_javascript:
-  - https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  - https://events.vercount.one/js # 访问计数：Vercount，兼容原来的不蒜子标签
   - javascripts/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js

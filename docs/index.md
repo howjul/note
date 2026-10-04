@@ -1,58 +1,47 @@
 ---
-comments: true
 statistics: True
+hide:
+  - toc
 ---
 
-# Hello~
+# HowJul 的学习笔记
 
-这里是👉👉👉HowJul👈👈👈的学习笔记
-
-<span id="busuanzi_container_site_uv">🐳总访客数<span id="busuanzi_value_site_uv"></span>人</font></span>
-<span id="busuanzi_container_site_pv"> 🦋总访问量<span id="busuanzi_value_site_pv"></span>次</font></span>
-<br/>
+这里是我本科阶段（浙江大学信息安全，2021–2025）的课程笔记，已于 2026 年 10 月停止更新。
 
 <div class="grid cards" markdown>
 
-- :material-book-open-page-variant-outline: __页面__ {{ pages }} 个
-- :material-file-word-box-outline: __字数__ {{ words }} 个
-- :octicons-file-code-16: __代码__ {{ codes }} 行
-- :material-sort-clock-ascending-outline: **持续更新中...** 
+-   :material-school-outline:{ .lg .middle } __课程笔记__
+
+    ---
+
+    系统、安全、算法等 17 门本科课程的笔记与复习资料
+
+    [:octicons-arrow-right-24: 进入](./course.md)
+
+-   :material-brain:{ .lg .middle } __人工智能基础__
+
+    ---
+
+    《动手学深度学习》和李宏毅机器学习课程的笔记
+
+    [:octicons-arrow-right-24: 进入](./ML/start.md)
+
+-   :material-tools:{ .lg .middle } __工具琐碎__
+
+    ---
+
+    Git、Python、Numpy、Linux、PyTorch 的入门笔记
+
+    [:octicons-arrow-right-24: 进入](./ML/Git.md)
+
+-   :material-compass-outline:{ .lg .middle } __其他地方__
+
+    ---
+
+    我现在的[个人主页](https://howjul.github.io)，以及语雀上的[本科四年](https://www.yuque.com/howjul/rt9ms6)笔记
+
+    [:octicons-arrow-right-24: 更新日志](./update.md)
 
 </div>
 
-### 若有错误可在页面下方留言～～
-
-???+ failure "重要提示"
-
-    - 如果想看我的本科相关，例如：课程笔记、课程总结、个人本科总结等，请至 ->
-        - 🐤语雀仓库 <https://www.yuque.com/howjul/rt9ms6>
-    - 这个网站其实内容比较杂，有笔记有总结，也有科研工具的记录，也有人工智能入门的一些教程。
-    - 如果想看我的科研相关，不现在来说，只有一些论文阅读的笔记，请至 ->
-        - 🐤语雀仓库 <https://www.yuque.com/howjul/ypockp>
-
-???+ abstract "网址"
-    
-    - 💡个人笔记网址：<https://note.howjul.com>
-    - 🏡个人主页网址：<https://howjul.com>
-    - 🐤语雀数字花园：<https://www.yuque.com/howjul>
-    - 🌸NexT个人主页（已停止更新）：<https://next.howjul.com>
-    - 🌱matery个人主页（已停止更新）：<https://matery.howjul.com>
-
-???+ example "通过目录打开文章"
-
-    - PC端 
-        - 在上方标签栏选择主题 
-        - 在左侧目录选择文章
-    - 移动端 
-        - 点击左上角图标选择主题和文章
-
-???+ warning 
-
-    - 网站仅供学习生活交流
-    - 有什么建议都可以留言呀！
-    - 🚀🚀🚀🚀🚀🚀🚀🚀
-
-???+ success "点此跳转"
-
-    - [:material-update: 更新日志](./update.md){ .md-button }
-    - [:fontawesome-solid-user: 个人主页](https://howjul.github.io){ .md-button }
+<small>共 {{ pages }} 个页面 · {{ words }} 字 · {{ codes }} 行代码<br><span id="busuanzi_container_site_uv">访客 <span id="busuanzi_value_site_uv"></span> 人</span> · <span id="busuanzi_container_site_pv">访问 <span id="busuanzi_value_site_pv"></span> 次</span></small>
